@@ -2,20 +2,20 @@
 cif2qewan.py is a simple python script to create quantum-ESPRESSO and wannier90 inputs from cif files.
 
 ## Usage ######################################
-  1. Prepare cif2cell. (See for details, https://sourceforge.net/projects/cif2cell/)
+  1. Prepare cif2cell-informal_py3. (See for details, https://github.com/by-student-2017/cif2cell-informal_py3.git)
   
   2. Prepare pseudopotentials in PSLibrary.
   
   3. Download or clone the github repository, e.g.
   
-     % git clone https://github.com/wannier-utils-dev/cif2qewan
+     % git clone https://github.com/by-student-2017/cif2qewan.git
   
   
   4. Edit cif2cell_path and pseudo_dir in cif2qewan.py.
   
   5. Run.
 
-     % python cif2qewan.py **.cif
+     % python3 cif2qewan.py **.cif
   
      % pw.x < scf.in > scf.out
       
@@ -45,7 +45,7 @@ cif2qewan.py prepares band calculation input files in directory "band".
 
 	 % cd ..
 
-	 % python band_comp.py
+	 % python3 band_comp.py
 
 Then, you can get the band structure plot of DFT and wannier90.
 
@@ -62,7 +62,7 @@ Here, the code checks the energy difference of DFT and wannier90 on the shifted 
 
 	% cd ..
 
-	% python wannier_conv.py
+	% python3 wannier_conv.py
 
 	% cat check_wannier/CONV
 

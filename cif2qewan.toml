@@ -1,7 +1,7 @@
 cif2cell_path = "cif2cell"
-pseudo_dir="/home4/koretsune/PWSCF/pseudo_psl031"
+pseudo_dir="./"
 pp_file_name = "pp_psl_rrkj.csv"
-scf_k_resolution=0.15
+scf_k_resolution=0.40
 degauss=0.01
 [pw2wan]
 write_unk = ".true."
