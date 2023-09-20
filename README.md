@@ -2,6 +2,12 @@
 cif2qewan.py is a simple python script to create quantum-ESPRESSO and wannier90 inputs from cif files.
 
 
+## Info ######################################
+- Tests: QE 7.2 + Python 3.10 on Ubuntu 22.04.1 LTS (WLS2, windows11)
+- Need: cif2cell-informal_py3
+- Other tools: Seek-path
+
+
 ## Usage ######################################
   1. Prepare cif2cell-informal_py3. (See for details, https://github.com/by-student-2017/cif2cell-informal_py3.git)
   
