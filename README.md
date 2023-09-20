@@ -93,7 +93,11 @@ A series of calculations can be performed using "submit_all.sh". "submit_all.sh"
 
 	% cd FeS2
 
-	% submit_all.sh
+	% cp ./../../submit_all.sh
+
+	% chmod +x submit_all.sh
+
+	% ./submit_all.sh
 
 
 ## Reference ######################################
