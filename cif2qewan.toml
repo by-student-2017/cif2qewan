@@ -1,6 +1,6 @@
 cif2cell_path = "cif2cell"
 pseudo_dir="./../../pseudo/psl031_PBE"
-pp_file_name = "./../../pp_psl_csv/pp_psl_kjpaw_psl031_PBE.csv"
+pp_file_name = "./../../pp_psl_csv/pp_psl_rrkj_psl031_PBE.csv"
 scf_k_resolution=0.40
 degauss=0.01
 conv_thr="1.0d-4"
