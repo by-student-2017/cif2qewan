@@ -9,20 +9,27 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO and wannier90 
 
 
 ## Usage ######################################
-  1. Prepare cif2cell-informal_py3. (See for details, https://github.com/by-student-2017/cif2cell-informal_py3.git)
+  1. Install python3, etc, e.g.
   
-  2. Prepare pseudopotentials in PSLibrary.
+     % sudo apt update
+     
+     % sudo apt -y install python3 python3-dev python3-numpy python3-docopt
+  
+  
+  2. Prepare cif2cell-informal_py3. (See for details, https://github.com/by-student-2017/cif2cell-informal_py3.git)
   
   3. Download or clone the github repository, e.g.
   
      % git clone https://github.com/by-student-2017/cif2qewan.git
   
   
-  4. Edit cif2cell_path and pseudo_dir in cif2qewan.py.
+  4. Edit pseudo_dir in cif2qewan.py.
   
-  5. Run.
+  5. Edit path settings in cif2qewan.toml.
+  
+  6. Run.
 
-     % python3 cif2qewan.py **.cif
+     % python3 cif2qewan.py *.cif cif2qewan.toml
   
      % pw.x < scf.in > scf.out
       
@@ -32,9 +39,9 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO and wannier90 
       
      % pw2wannier90.x < pw2wan.in
 
-  6. Edit dis_froz_max in pwscf.win. Recommended value is around EF+1eV ~ EF+3eV.
+  7. Edit dis_froz_max in pwscf.win. Recommended value is around EF+1eV ~ EF+3eV.
 
-  7. Wannierize.
+  8. Wannierize.
   
      % wannier90.x pwscf
 
@@ -77,6 +84,16 @@ wannier_conv.py calculates the energy differences and outputs the result in chec
 average diff means \delta defined by
 
 \delta^2 = \frac{1}{N} \sum_{n,k} (e_{n,k}^{DFT} - e_{n,k}^{Wannier})^2.
+
+
+## Bash script (Examples: FeS2) ######################################
+A series of calculations can be performed using "submit_all.sh". "submit_all.sh" and "cif2qewan.toml" are currently working in the directory created in Examples.
+
+	% cd Examples
+
+	% cd FeS2
+
+	% submit_all.sh
 
 
 ## Reference ######################################
