@@ -5,8 +5,8 @@ WANNIER90_OMP=5
 MPI_PREFIX="mpirun -n 10"
 ESPRESSO_DIR=/usr
 WANNIER90_DIR=/usr/bin
-CIF2QEWAN_DIR=./../cif2qewan
-TOML_FILE=./../cif2qewan/cif2qewan.toml
+CIF2QEWAN_DIR=./../../
+TOML_FILE=./../../cif2qewan.toml
 
 python3 $CIF2QEWAN_DIR/cif2qewan.py *.cif $TOML_FILE
 
