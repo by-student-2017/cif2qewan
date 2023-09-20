@@ -26,6 +26,8 @@ class qe_wannier_in:
         self.pseudo_dir = info["pseudo_dir"]
         self.pp_file_name = info["pp_file_name"]
         self.info_pw2wan = info["pw2wan"]
+        self.conv_thr = info["conv_thr"]
+        self.noncolin = info["noncolin"]
 
         self.so = so
         self.mag = mag
@@ -43,7 +45,7 @@ class qe_wannier_in:
 
         self.set_control()
 
-        self.set_electrons(conv_thr="1.0d-4")
+        #self.set_electrons(conv_thr="1.0d-4")
 
 
     def cif2cell_scf_in(self, cif_file):
@@ -85,7 +87,7 @@ class qe_wannier_in:
                 self.system_str += "  starting_magnetization(" + str(i+1) + ") = 3.0\n"
         elif(self.so):
             self.system_str += "  lspinorb = .true.\n"
-            self.system_str += "  noncolin = .true.\n"
+            self.system_str += "  noncolin = {}\n".format(self.noncolin)
 
     def set_control(self):
         self.control_str += "  calculation = 'scf'\n"
@@ -101,7 +103,7 @@ class qe_wannier_in:
     def set_electrons(self, conv_thr):
         self.electrons_str += "  mixing_mode = 'plain'\n"
         self.electrons_str += "  mixing_beta = 0.1\n"
-        self.electrons_str += "  conv_thr = {}\n".format(conv_thr)
+        self.electrons_str += "  conv_thr = {}\n".format(self.conv_thr)
 
     def read_set_pseudo_other(self, ntyp, nat, pp_file_name):
         ecut_rho = 0
@@ -173,7 +175,7 @@ class qe_wannier_in:
             if(self.so):
                 self.pseudo_str = self.pseudo_str.replace('.pbe', '.rel-pbe')
 
-        self.electrons_str = re.sub("  conv_thr.*\n", "  conv_thr = 1.d-4\n", self.electrons_str)
+        self.electrons_str = re.sub("  conv_thr.*\n", "  conv_thr = "+self.conv_thr+"\n", self.electrons_str)
         #self.electrons_str += "  diago_full_acc = .true.\n"
 
         self.nscfk = [ min( max(nk, 4), 8 ) for nk in self.kmesh ]
@@ -199,7 +201,7 @@ class qe_wannier_in:
             nbnd = self.nexclude + int(self.num_wann*1.5)
         self.system_str = re.sub("  nbnd.*\n", "  nbnd = {}\n".format(nbnd), self.system_str)
         self.electrons_str = self.electrons_str.replace("  diago_full_acc = .true.\n", "")
-        self.electrons_str = re.sub("  conv_thr.*\n", "  conv_thr = 1.d-4\n", self.electrons_str)
+        self.electrons_str = re.sub("  conv_thr.*\n", "  conv_thr = "+self.conv_thr+"\n", self.electrons_str)
         self.kpoints_str = "K_POINTS {automatic}\n"
         self.kpoints_str += "{0[0]} {0[1]} {0[2]}  1 1 1\n".format(self.nscfk)
 
