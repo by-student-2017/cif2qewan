@@ -1,6 +1,6 @@
 cif2cell_path = "cif2cell"
 pseudo_dir="./"
-pp_file_name = "pp_psl_rrkj.csv"
+pp_file_name = "pp_psl_rrkj_psl031.csv"
 scf_k_resolution=0.40
 degauss=0.01
 [pw2wan]
