@@ -58,7 +58,7 @@ rm -r work
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
-echo "set dis_froz_max = EF+1eV from nscf.out"
+echo "set dis_froz_max = EF + 1 eV from nscf.out"
 date
 ef=$(grep Fermi nscf.out | cut -c27-35)
 ef1=$(bc -l <<< "$ef + 1")

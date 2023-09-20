@@ -50,7 +50,7 @@ class Hamiltonian(object):
 
             # print(ndegen)
 
-            self.ham_r = np.zeros((self.num_wann, self.num_wann, self.nrpts), dtype=np.complex)
+            self.ham_r = np.zeros((self.num_wann, self.num_wann, self.nrpts), dtype=complex)
             self.irvec = np.zeros((3,self.nrpts), dtype=np.float64)
 
             self.ir0 = -1

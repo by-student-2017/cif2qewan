@@ -86,8 +86,9 @@ average diff means \delta defined by
 \delta^2 = \frac{1}{N} \sum_{n,k} (e_{n,k}^{DFT} - e_{n,k}^{Wannier})^2.
 
 
-## Bash script (Examples: FeS2) ######################################
+## Bash script: submit_all.sh (Examples: FeS2) ######################################
 A series of calculations can be performed using "submit_all.sh". "submit_all.sh" and "cif2qewan.toml" are currently working in the directory created in Examples.
+The two lines immediately after "calculation command:" are from cif2cell, so don't worry about it.
 
 	% cd Examples
 
@@ -98,6 +99,10 @@ A series of calculations can be performed using "submit_all.sh". "submit_all.sh"
 	% chmod +x submit_all.sh
 
 	% ./submit_all.sh
+
+	% cd band
+
+	% evince band_compare.eps
 
 
 ## Reference ######################################
