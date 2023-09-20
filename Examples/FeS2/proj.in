@@ -1,0 +1,8 @@
+&projwfc
+ prefix = 'pwscf'
+ outdir = './work'
+ kresolveddos = .false.
+ degauss = 0.010
+ Emax = 
+ Emin = 
+/
