@@ -103,8 +103,16 @@ class qe_wannier_in:
 
     def set_electrons(self, conv_thr):
         self.electrons_str += "  mixing_mode = 'plain'\n"
-        self.electrons_str += "  mixing_beta = {}\n".format(self.mixing_beta)
-        self.electrons_str += "  conv_thr = {}\n".format(self.conv_thr)
+        if(self.mixing_beta!=0.0):
+            self.electrons_str += "  mixing_beta = {}\n".format(self.mixing_beta)
+        else:
+            for line in self.lines:
+                if ("mixing_beta" in line): self.electrons_str += line
+        if(conv_thr!="0.0"):
+            self.electrons_str += "  conv_thr = {}\n".format(self.conv_thr)
+        else:
+            for line in self.lines:
+                if ("conv_thr" in line): self.electrons_str += line
 
     def read_set_pseudo_other(self, ntyp, nat, pp_file_name):
         ecut_rho = 0

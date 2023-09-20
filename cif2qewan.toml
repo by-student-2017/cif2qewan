@@ -1,10 +1,10 @@
 cif2cell_path = "cif2cell"
 pseudo_dir="./../../pseudo/psl100_PBE"
 pp_file_name = "./../../pp_psl_csv/pp_rrkjus_psl100_PBE.csv"
-scf_k_resolution=0.40
-degauss=0.01
-conv_thr="1.0d-4"
-mixing_beta=0.7
+scf_k_resolution=0.40  #  0.2:DOS, 0.3:SCF, 0.4:rough calculations
+degauss=0.01           #  0.0:default value
+conv_thr="0.0"         # "0.0" is auto (value of cif2cell-infromal_py3)
+mixing_beta=0.7        #  0.0  is auto (value of cif2cell-infromal_py3), 0.7:default value
 noncolin=".false."
 [pw2wan]
 write_unk = ".true."
