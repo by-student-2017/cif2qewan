@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export OMP_NUM_THREADS=1
+WANNIER90_OMP=5
 MPI_PREFIX="mpirun -n 10"
 ESPRESSO_DIR=/usr
 WANNIER90_DIR=/usr/bin
@@ -14,7 +15,7 @@ cp -r work check_wannier/
 cp -r work band/
 
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out
-export OMP_NUM_THREADS=5
+export OMP_NUM_THREADS=$WANNIER90_OMP
 $WANNIER90_DIR/wannier90.x -pp pwscf
 export OMP_NUM_THREADS=1
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw2wannier90.x < pw2wan.in > pw2wan.out
@@ -25,7 +26,7 @@ ef=$(grep Fermi nscf.out | cut -c27-35)
 ef1=$(bc -l <<< "$ef + 1.2")
 sed -i "s/dis_froz_max .*/dis_froz_max = $ef1/g" pwscf.win
 
-export OMP_NUM_THREADS=5
+export OMP_NUM_THREADS=$WANNIER90_OMP
 $WANNIER90_DIR/wannier90.x pwscf
 export OMP_NUM_THREADS=1
 
