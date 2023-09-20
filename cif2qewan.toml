@@ -1,6 +1,6 @@
 cif2cell_path = "cif2cell"
-pseudo_dir="./../../pseudo/rrkjus_psl100_PBE"
-pp_file_name = "./../../pp_psl_csv/pp_psl_rrkjus_psl100_PBE.csv"
+pseudo_dir="./../../pseudo/psl100_PBE"
+pp_file_name = "./../../pp_psl_csv/pp_rrkjus_psl100_PBE.csv"
 scf_k_resolution=0.40
 degauss=0.01
 conv_thr="1.0d-4"

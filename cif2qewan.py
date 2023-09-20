@@ -56,7 +56,7 @@ class qe_wannier_in:
             # replace "(" and ")"
             cif_file = sys.argv[1].replace("(", "\(").replace(")", "\)")
             # call cif2cell
-            os.system(self.cif2cell_path + " -p pwscf --setup-all --pwscf-pseudo-PSLibrary-libdr={} --k-resolution={:0.3f} --print-digits=10 -o {} -f {}".format(self.pseudo_dir,self.scf_k_resolution, cif_scf_in, cif_file))
+            os.system(self.cif2cell_path + " -p pwscf --setup-all --pwscf-pseudo-PSEUDO-libdr={} --k-resolution={:0.3f} --print-digits=10 -o {} -f {}".format(self.pseudo_dir,self.scf_k_resolution, cif_scf_in, cif_file))
             os.system('mv cif_scf.scf.in cif_scf.in')
         return open(cif_scf_in).readlines()
 
