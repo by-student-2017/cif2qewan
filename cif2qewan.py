@@ -27,6 +27,7 @@ class qe_wannier_in:
         self.pp_file_name = info["pp_file_name"]
         self.info_pw2wan = info["pw2wan"]
         self.conv_thr = info["conv_thr"]
+        self.mixing_beta = info["mixing_beta"]
         self.noncolin = info["noncolin"]
 
         self.so = so
@@ -45,7 +46,7 @@ class qe_wannier_in:
 
         self.set_control()
 
-        #self.set_electrons(conv_thr="1.0d-4")
+        self.set_electrons(conv_thr=self.conv_thr)
 
 
     def cif2cell_scf_in(self, cif_file):
@@ -102,7 +103,7 @@ class qe_wannier_in:
 
     def set_electrons(self, conv_thr):
         self.electrons_str += "  mixing_mode = 'plain'\n"
-        self.electrons_str += "  mixing_beta = 0.1\n"
+        self.electrons_str += "  mixing_beta = {}\n".format(self.mixing_beta)
         self.electrons_str += "  conv_thr = {}\n".format(self.conv_thr)
 
     def read_set_pseudo_other(self, ntyp, nat, pp_file_name):
