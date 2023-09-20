@@ -5,7 +5,7 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO and wannier90 
 ## Information ######################################
 - Tests: QE 7.2 + Python 3.10 on Ubuntu 22.04.1 LTS (WLS2, windows11)
 - Need: cif2cell-informal_py3
-- Other tools: Seek-path
+- Other tools (Now not recommend !!!): Seek-path (AttributeError: module 'pymatgen' has no attribute 'Element' )
 
 
 ## Usage ######################################
