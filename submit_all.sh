@@ -6,6 +6,9 @@ WANNIER90_DIR=/usr/bin
 CIF2QEWAN_DIR=./../../
 TOML_FILE=./../../cif2qewan.toml
 #----------------------------------------------------------------------
+# For dis_froz_max = EF + ${Expand_E} eV from nscf.out
+Expand_E=1.0
+#----------------------------------------------------------------------
 # 0 is auto setting
 NCORE=0
 NTHRE=0
@@ -76,10 +79,10 @@ echo "output files: pwscf.amn, pwscf.mmn and pwscf.eig"
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
-echo "set dis_froz_max = EF + 1 eV from nscf.out"
+echo "set dis_froz_max = EF + ${Expand_E} eV from nscf.out"
 date
 ef=$(grep Fermi nscf.out | cut -c27-35)
-ef1=$(bc -l <<< "$ef + 1")
+ef1=$(bc -l <<< "$ef + ${Expand_E}")
 sed -i "s/dis_froz_max .*/dis_froz_max = $ef1/g" pwscf.win
 echo "----------------------------------------------------------------"
 
