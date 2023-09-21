@@ -177,8 +177,8 @@ class qe_wannier_in:
             #system_add_str += "  nbnd = {}\n".format(self.nexclude + self.num_wann*3)
             system_add_str += "  nbnd = {}\n".format(int(self.nexclude + self.num_wann*self.num_wann_times*1.1))
         self.system_str = self.system_str.replace("&system\n", "&system\n" + system_add_str)
-        print("self.nexclude =",self.nexclude)
-        print("self.num_wann =",self.num_wann)
+        print("self.nexclude =",self.nexclude,"at convert2nscf")
+        print("self.num_wann =",self.num_wann,"at convert2nscf")
 
         if(self.mag):
             if(self.so):
