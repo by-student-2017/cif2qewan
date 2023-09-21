@@ -27,6 +27,12 @@ def get_ef_from_scfout():
     ef = 0
     with open(scfout) as fp:
         for line in fp.readlines():
+            #if "Fermi" in line: # <- Error: "Minimization algorithm failed to find Fermi energy: reverting to bisection" case
+            if "the Fermi energy is" in line:
+                ef = float(line.split()[-2])
+    if(ef == 0):
+        with open(scfout) as fp:
+            for line in fp.readlines():
             if "Fermi" in line:
                 ef = float(line.split()[-2])
 
