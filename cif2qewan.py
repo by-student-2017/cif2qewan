@@ -235,6 +235,7 @@ class qe_wannier_in:
         except ImportError:
             # "Points inside the Brillouin zone"
             # http://web.mit.edu/espresso_v6.1/i386_linux26/qe-6.1/Doc/brillouin_zones.pdf
+            # https://www.quantum-espresso.org/Doc/INPUT_PW.html
             if (self.ibrav == 0):
                 print("Failed to import seek path. Simple kpath is used instead. free (ibrav = "+str(self.ibrav)+")")
                 self.tick_labels = ['R', 'G', 'X', 'M', 'G']
