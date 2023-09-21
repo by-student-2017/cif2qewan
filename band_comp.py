@@ -98,18 +98,26 @@ def main():
     # plot with matplotlib.pyplot
     plt.rcParams["font.size"] = 16
 
-    plt.title("Red=QE, Black=Wannier")
+    plt.title("Red=QE, Black=Wannier, Blue=$E_{\mathrm{F}}$")
     plt.plot(x_qe, y_qe - ef, c="r", lw=1, label="QE")
     plt.plot(x, y - ef, c="k", lw=0.5, label="Wannier")
-    plt.ylabel("$E - E_{\mathrm{F}}$[eV]")
+    plt.ylabel("$E - E_{\mathrm{F}}$ [eV]")
     plt.xticks(klabel[0], klabel[1])
     plt.xlim([0, 1])
     y_min = np.min(y-ef)
     y_max = np.max(y-ef)
     plt.ylim([y_min - 0.05*(y_max-y_min), y_max + 0.05*(y_max-y_min)])
+    plt.axhline(y=0, linestyle='--', linewidth=0.8, color='blue')
 
     plt.savefig("./band/band_compare.png", bbox_inches='tight')
     plt.savefig("./band/band_compare.eps", bbox_inches='tight')
+
+    # plot narrow
+    plt.yticks(np.arange(-12,4.001,4))
+    plt.ylim([-12, 4])
+
+    plt.savefig("./band/band_compare_narrow.png", bbox_inches='tight')
+    plt.savefig("./band/band_compare_narrow.eps", bbox_inches='tight')
 
 
 if __name__ == "__main__":
