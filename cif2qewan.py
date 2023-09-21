@@ -29,6 +29,7 @@ class qe_wannier_in:
         self.conv_thr = info["conv_thr"]
         self.mixing_beta = info["mixing_beta"]
         self.noncolin = info["noncolin"]
+        self.band_path_type = info["band_path_type"]
 
         self.so = so
         self.mag = mag
@@ -236,12 +237,25 @@ class qe_wannier_in:
             # "Points inside the Brillouin zone"
             # http://web.mit.edu/espresso_v6.1/i386_linux26/qe-6.1/Doc/brillouin_zones.pdf
             # https://www.quantum-espresso.org/Doc/INPUT_PW.html
-            if (self.ibrav == 0):
-                print("Failed to import seek path. Simple kpath is used instead. free (ibrav = "+str(self.ibrav)+")")
-                self.tick_labels = ['R', 'G', 'X', 'M', 'G']
-                self.tick_locs = [[0.5, 0.5, 0.5], [0.0, 0.0, 0.0], [0.5, 0.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.0, 0.0]]
+            #print("Failed to import seek path.")
+            if(self.band_path_type == "P"):
+                print("Simple kpath is used instead. Type P (SC), (ibrav = "+str(self.ibrav)+")")
+                self.tick_labels = ['R','gG','X','M','gG']
+                self.tick_locs = [[0.5, 0.5, 0.5], [0.0, 0.0, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.0, 0.0, 0.0]]
+            elif(self.band_path_type == "F"):
+                print("Simple kpath is used instead. Type F (FCC), (ibrav = "+str(self.ibrav)+")")
+                self.tick_labels = ['W','L','gG','X','W','K']
+                self.tick_locs = [[0.5, 0.25, 0.75], [0.0, 0.5, 0.0], [0.0, 0.0, 0.0], [0.0, 0.5, 0.5], [0.75, 0.5, 0.25], [0.75, 0.375, 0.375]]
+            elif(self.band_path_type == "I"):
+                print("Simple kpath is used instead. Type I (BCC), (ibrav = "+str(self.ibrav)+")")
+                self.tick_labels = ['gG','H','N','gG','P'] 
+                self.tick_locs = [[0.0, 0.0, 0.0], [0.5,-0.5, 0.5], [0.0, 0.0, 0.5], [0.0, 0.0, 0.0], [0.25, 0.25, 0.25]]
+            elif(self.band_path_type == "H"):
+                print("Simple kpath is used instead. Type H (HCP), (ibrav = "+str(self.ibrav)+")")
+                self.tick_labels = ['gG','M','K','gG','A'] 
+                self.tick_locs = [[0.0, 0.0, 0.0], [0.5, 0.0, 0.0], [0.333, 0.333, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.5]]
             else:
-                print("Failed to import seek path. Simple kpath is used instead. (ibrav = "+str(self.ibrav)+")")
+                print("Simple kpath is used instead. (ibrav = "+str(self.ibrav)+")")
                 self.tick_labels = ['R', 'G', 'X', 'M', 'G']
                 self.tick_locs = [[0.5, 0.5, 0.5], [0.0, 0.0, 0.0], [0.5, 0.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.0, 0.0]]
             return
