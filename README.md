@@ -39,7 +39,7 @@ The two lines immediately after "calculation command:" are from cif2cell, so don
 
 	% cd band
 
-	% evince band_compare.eps
+	% evince band_compare_narrow.eps
 
 
 ## Usage (Step by Step) ######################################

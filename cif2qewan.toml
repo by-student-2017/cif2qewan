@@ -7,6 +7,6 @@ conv_thr="0.0"         # "0.0" is auto (value of cif2cell-infromal_py3)
 mixing_beta=0.7        #  0.0  is auto (value of cif2cell-infromal_py3), 0.7:default value
 num_wann_times=1.00    # self.num_wann * num_wann_times (=num_bands)
 noncolin=".false."     # ".true." for non-collinear spin calculation
-band_path_type="X"     # "P", "F", "I", "H" : P=SC, F=FCC, I=BCC, H=HCP, X=cif2qewan
+band_path_type="X"     # "P", "F", "I", "H", "X" : P=SC, F=FCC, I=BCC, H=HCP, X=cif2qewan
 [pw2wan]
 write_unk=".false."    # ".true." for wannier_plot

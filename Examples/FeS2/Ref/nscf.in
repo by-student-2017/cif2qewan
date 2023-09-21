@@ -11,7 +11,7 @@
   verbosity = 'high'
 /
 &system
-  nbnd = 90
+  nbnd = 84
   ibrav = 0
   A =    5.39682
   nat = 12
@@ -35,8 +35,8 @@ CELL_PARAMETERS {alat}
   0.000000000000000   0.000000000000000   1.000000000000000 
 
 ATOMIC_SPECIES
-  Fe   55.84500  Fe.pbe-spn-rrkjus_psl.1.0.0.UPF
-   S   32.06750  S.pbe-n-rrkjus_psl.1.0.0.UPF 
+   S   32.06750  S.pbe-n-rrkjus_psl.1.0.0.UPF
+  Fe   55.84500  Fe.pbe-spn-rrkjus_psl.1.0.0.UPF 
 
 ATOMIC_POSITIONS {crystal}
   Fe   0.000000000000000   0.500000000000000   0.500000000000000 

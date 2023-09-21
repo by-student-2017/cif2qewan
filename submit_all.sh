@@ -6,7 +6,7 @@ WANNIER90_DIR=/usr/bin
 CIF2QEWAN_DIR=./../../
 TOML_FILE=./../../cif2qewan.toml
 #----------------------------------------------------------------------
-# For dis_froz_max = EF + ${Expand_E} eV from nscf.out
+# For dis_froz_max = EF + ${Expand_E} eV from nscf.out, Expand_E is about 1.0 to 3.0.
 Expand_E=1.0
 #----------------------------------------------------------------------
 # 0 is auto setting
