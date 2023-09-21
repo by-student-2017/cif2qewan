@@ -40,6 +40,7 @@ echo "SCF calculation"
 echo "$MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < scf.in > scf.out"
 date
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < scf.in > scf.out
+grep -n "number of Kohn-Sham states" scf.out
 cp -r work check_wannier/
 cp -r work band/
 echo "----------------------------------------------------------------"
@@ -49,6 +50,7 @@ echo "NSCF calculation"
 echo "$MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out"
 date
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out
+grep -n "number of Kohn-Sham states" nscf.out
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
