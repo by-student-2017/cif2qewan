@@ -8,7 +8,7 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO and wannier90 
 - Other tools (Now not recommend !!!): Seek-path (AttributeError: module 'pymatgen' has no attribute 'Element' )
 
 
-## Usage ######################################
+## Installation ######################################
   1. Install python3, etc, e.g.
   
      % sudo apt update
@@ -21,13 +21,38 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO and wannier90 
   3. Download or clone the github repository, e.g.
   
      % git clone https://github.com/by-student-2017/cif2qewan.git
+
+
+## Bash script: submit_all.sh (Examples: FeS2) ######################################
+A series of calculations can be performed using "submit_all.sh". "submit_all.sh" and "cif2qewan.toml" are currently working in the directory created in Examples.
+The two lines immediately after "calculation command:" are from cif2cell, so don't worry about it.
+
+	% cd Examples
+
+	% cd FeS2
+
+	% cp ./../../submit_all.sh ./
+
+	% chmod +x submit_all.sh
+
+	% ./submit_all.sh
+
+	% cd band
+
+	% evince band_compare.eps
+
+
+## Usage (Step by Step) ######################################
+  1. Enter the "cif2qewan" directory.
+  
+     % cd cif2qewan
   
   
-  4. Edit pseudo_dir in cif2qewan.py.
+  2. Edit pseudo_dir in cif2qewan.py.
   
-  5. Edit path settings in cif2qewan.toml.
+  3. Edit path settings in cif2qewan.toml.
   
-  6. Run.
+  4. Run.
 
      % python3 cif2qewan.py *.cif cif2qewan.toml
   
@@ -39,9 +64,9 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO and wannier90 
       
      % pw2wannier90.x < pw2wan.in
 
-  7. Edit dis_froz_max in pwscf.win. Recommended value is around EF+1eV ~ EF+3eV.
+  5. Edit dis_froz_max in pwscf.win. Recommended value is around EF+1eV ~ EF+3eV.
 
-  8. Wannierize.
+  6. Wannierize.
   
      % wannier90.x pwscf
 
@@ -84,25 +109,6 @@ wannier_conv.py calculates the energy differences and outputs the result in chec
 average diff means \delta defined by
 
 \delta^2 = \frac{1}{N} \sum_{n,k} (e_{n,k}^{DFT} - e_{n,k}^{Wannier})^2.
-
-
-## Bash script: submit_all.sh (Examples: FeS2) ######################################
-A series of calculations can be performed using "submit_all.sh". "submit_all.sh" and "cif2qewan.toml" are currently working in the directory created in Examples.
-The two lines immediately after "calculation command:" are from cif2cell, so don't worry about it.
-
-	% cd Examples
-
-	% cd FeS2
-
-	% cp ./../../submit_all.sh ./
-
-	% chmod +x submit_all.sh
-
-	% ./submit_all.sh
-
-	% cd band
-
-	% evince band_compare.eps
 
 
 ## Reference ######################################
