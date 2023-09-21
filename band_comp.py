@@ -115,9 +115,14 @@ def main():
     # plot narrow
     plt.yticks(np.arange(-12,4.001,4))
     plt.ylim([-12, 4])
-
     plt.savefig("./band/band_compare_narrow.png", bbox_inches='tight')
     plt.savefig("./band/band_compare_narrow.eps", bbox_inches='tight')
+    
+    # plot near EF
+    plt.yticks(np.arange(-1,1.001,0.2))
+    plt.ylim([-1, 1])
+    plt.savefig("./band/band_compare_nearEF.png", bbox_inches='tight')
+    plt.savefig("./band/band_compare_nearEF.eps", bbox_inches='tight')
 
 
 if __name__ == "__main__":
