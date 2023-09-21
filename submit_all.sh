@@ -56,6 +56,9 @@ echo "----------------------------------------------------------------"
 echo "----------------------------------------------------------------"
 echo "wannier90 settings"
 echo "$WANNIER90_DIR/wannier90.x -pp pwscf"
+grep -n "num_bands" pwscf.win
+grep -n "num_wann" pwscf.win
+grep -n "exclude_bands" pwscf.win
 date
 export OMP_NUM_THREADS=$WANNIER90_OMP
 $WANNIER90_DIR/wannier90.x -pp pwscf

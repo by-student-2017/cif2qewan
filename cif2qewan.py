@@ -115,7 +115,9 @@ class qe_wannier_in:
             self.electrons_str += "  conv_thr = {}\n".format(self.conv_thr)
         else:
             for line in self.lines:
-                if ("conv_thr" in line): self.electrons_str += line
+                if ("conv_thr" in line):
+                    self.electrons_str += line
+                    self.conv_thr = line.split("=")[1]
 
     def read_set_pseudo_other(self, ntyp, nat, pp_file_name):
         ecut_rho = 0
@@ -192,7 +194,12 @@ class qe_wannier_in:
         self.electrons_str = re.sub("  conv_thr.*\n", "  conv_thr = "+self.conv_thr+"\n", self.electrons_str)
         #self.electrons_str += "  diago_full_acc = .true.\n"
 
-        self.nscfk = [ min( max(nk, 4), 8 ) for nk in self.kmesh ]
+        if(self.alat > (3.0/0.52918*3)):
+            self.nscfk = [ min( max(nk, 1), 2 ) for nk in self.kmesh ]
+        elif(self.alat > (3.0/0.52918*2)):
+            self.nscfk = [ min( max(nk, 2), 4 ) for nk in self.kmesh ]
+        else:
+            self.nscfk = [ min( max(nk, 4), 8 ) for nk in self.kmesh ]
         self.kpoints_str = "K_POINTS {crystal}\n"
         self.kpoints_str += "{}\n".format(np.prod( self.nscfk ))
         self.wan_kmesh = ""
