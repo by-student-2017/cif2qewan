@@ -21,15 +21,16 @@ class qe_wannier_in:
 
         info = toml.load(toml_file)
         self.cif2cell_path=info["cif2cell_path"]
-        self.scf_k_resolution = info["scf_k_resolution"]
-        self.degauss = info["degauss"]
-        self.pseudo_dir = info["pseudo_dir"]
+        self.pseudo_dir   = info["pseudo_dir"]
         self.pp_file_name = info["pp_file_name"]
-        self.info_pw2wan = info["pw2wan"]
-        self.conv_thr = info["conv_thr"]
-        self.mixing_beta = info["mixing_beta"]
-        self.noncolin = info["noncolin"]
+        self.scf_k_resolution = info["scf_k_resolution"]
+        self.degauss      = info["degauss"]
+        self.conv_thr     = info["conv_thr"]
+        self.mixing_beta  = info["mixing_beta"]
+        self.noncolin     = info["noncolin"]
         self.band_path_type = info["band_path_type"]
+        self.info_pw2wan  = info["pw2wan"]
+        #self.write_unk    = info["write_unk"]
 
         self.so = so
         self.mag = mag
@@ -360,7 +361,12 @@ class qe_wannier_in:
             fp.write("write_hr = .true.\n")
             fp.write("write_tb = .true.\n")
             fp.write("fermi_surface_plot = .true.\n")
-            fp.write("wannier_plot = .true.\n")
+            #fp.write("wannier_plot = .true.\n")
+            info = self.info_pw2wan
+            if(info["write_unk"] == ".true."):
+                fp.write("wannier_plot = .true.\n")
+            else:
+                fp.write("wannier_plot = .false.\n")
             fp.write("\n")
 
             fp.write("begin unit_cell_cart\n")
