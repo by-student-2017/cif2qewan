@@ -62,6 +62,7 @@ grep -n "exclude_bands" pwscf.win
 date
 export OMP_NUM_THREADS=$WANNIER90_OMP
 $WANNIER90_DIR/wannier90.x -pp pwscf
+echo "Note: nscf results + pwscf.win -> pwscf.nnkp"
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
@@ -71,6 +72,7 @@ date
 export OMP_NUM_THREADS=1
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw2wannier90.x < pw2wan.in > pw2wan.out
 rm -r work
+echo "output files: pwscf.amn, pwscf.mmn and pwscf.eig"
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
@@ -88,6 +90,7 @@ date
 export OMP_NUM_THREADS=$WANNIER90_OMP
 $WANNIER90_DIR/wannier90.x pwscf
 export OMP_NUM_THREADS=1
+echo "Note: pwscf.amn + pwscf.mmn + pwscf.eig + pwscf.win -> output files"
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
