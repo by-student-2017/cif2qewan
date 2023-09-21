@@ -11,7 +11,7 @@
   verbosity = 'high'
 /
 &system
-  nbnd = 94
+  nbnd = 90
   ibrav = 0
   A =    5.39682
   nat = 12

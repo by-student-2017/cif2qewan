@@ -59,6 +59,7 @@ echo "$WANNIER90_DIR/wannier90.x -pp pwscf"
 grep -n "num_bands" pwscf.win
 grep -n "num_wann" pwscf.win
 grep -n "exclude_bands" pwscf.win
+echo "nbnd (at nscf) = num_bands + exclude_bands"
 date
 export OMP_NUM_THREADS=$WANNIER90_OMP
 $WANNIER90_DIR/wannier90.x -pp pwscf
