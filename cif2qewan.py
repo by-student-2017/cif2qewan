@@ -329,7 +329,7 @@ class qe_wannier_in:
             if(self.so or self.mag): so_factor = 2
             #fp.write("num_bands = {}\n".format(self.num_wann*3*so_factor))
             ##fp.write("num_bands = {}\n".format(int(self.nexclude + self.num_wann*1.0)*so_factor)
-            fp.write("num_bands = {}\n".format(int(self.num_wann*1.1+4)*so_factor)))
+            fp.write("num_bands = {}\n".format(int(self.num_wann*1.1+4)*so_factor))
             fp.write("num_wann  = {}\n".format(self.num_wann*so_factor))
             if(self.nexclude > 0):
                 fp.write("exclude_bands = 1-{}\n\n".format(self.nexclude*so_factor))
