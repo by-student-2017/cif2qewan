@@ -169,10 +169,10 @@ class qe_wannier_in:
         system_add_str  = "  nosym = .true.\n"
         if(self.so or self.mag):
             #system_add_str += "  nbnd = {}\n".format((self.nexclude + self.num_wann*3)*2)
-            system_add_str += "  nbnd = {}\n".format(int(self.num_wann*1.0)*2)
+            system_add_str += "  nbnd = {}\n".format(int(self.num_wann*1.1+4)*2)
         else:
             #system_add_str += "  nbnd = {}\n".format(self.nexclude + self.num_wann*3)
-            system_add_str += "  nbnd = {}\n".format(int(self.num_wann*1.0))
+            system_add_str += "  nbnd = {}\n".format(int(self.num_wann*1.1+4))
         self.system_str = self.system_str.replace("&system\n", "&system\n" + system_add_str)
 
         if(self.mag):
@@ -211,10 +211,10 @@ class qe_wannier_in:
         self.system_str = self.system_str.replace("  nosym = .true.\n", "")
         if(self.so or self.mag):
             #nbnd = (self.nexclude + int(self.num_wann*1.5))*2
-            nbnd = int(self.num_wann*1.0)*2
+            nbnd = int(self.num_wann*1.1+4)*2
         else:
             #nbnd = self.nexclude + int(self.num_wann*1.5)
-            nbnd = int(self.num_wann*1.0)
+            nbnd = int(self.num_wann*1.1+4)
         self.system_str = re.sub("  nbnd.*\n", "  nbnd = {}\n".format(nbnd), self.system_str)
         self.electrons_str = self.electrons_str.replace("  diago_full_acc = .true.\n", "")
         self.electrons_str = re.sub("  conv_thr.*\n", "  conv_thr = "+self.conv_thr+"\n", self.electrons_str)
@@ -329,7 +329,7 @@ class qe_wannier_in:
             if(self.so or self.mag): so_factor = 2
             #fp.write("num_bands = {}\n".format(self.num_wann*3*so_factor))
             ##fp.write("num_bands = {}\n".format(int(self.nexclude + self.num_wann*1.0)*so_factor)
-            fp.write("num_bands = {}\n".format(int(self.num_wann*1.0*so_factor)))
+            fp.write("num_bands = {}\n".format(int(self.num_wann*1.1+4)*so_factor)))
             fp.write("num_wann  = {}\n".format(self.num_wann*so_factor))
             if(self.nexclude > 0):
                 fp.write("exclude_bands = 1-{}\n\n".format(self.nexclude*so_factor))
