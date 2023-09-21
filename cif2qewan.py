@@ -64,7 +64,9 @@ class qe_wannier_in:
         # set ibrav, A, ntyp, nat
         # return ntyp, nat
         for line in self.lines:
-            if ("ibrav" in line): self.system_str += line
+            if ("ibrav" in line):
+                self.system_str += line
+                self.ibrav = float(line.split("=")[1])
             if ("A =" in line): 
                 self.system_str += line
                 self.alat = float(line.split("=")[1])
@@ -231,9 +233,16 @@ class qe_wannier_in:
             import seekpath
 
         except ImportError:
-            print("Failed to import seek path. Simple kpath is used instead.")
-            self.tick_labels = ['R', 'G', 'X', 'M', 'G']
-            self.tick_locs = [[0.5, 0.5, 0.5], [0.0, 0.0, 0.0], [0.5, 0.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.0, 0.0]]
+            # "Points inside the Brillouin zone"
+            # http://web.mit.edu/espresso_v6.1/i386_linux26/qe-6.1/Doc/brillouin_zones.pdf
+            if (self.ibrav == 0):
+                print("Failed to import seek path. Simple kpath is used instead. free (ibrav = "+str(self.ibrav)+")")
+                self.tick_labels = ['R', 'G', 'X', 'M', 'G']
+                self.tick_locs = [[0.5, 0.5, 0.5], [0.0, 0.0, 0.0], [0.5, 0.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.0, 0.0]]
+            else:
+                print("Failed to import seek path. Simple kpath is used instead. (ibrav = "+str(self.ibrav)+")")
+                self.tick_labels = ['R', 'G', 'X', 'M', 'G']
+                self.tick_locs = [[0.5, 0.5, 0.5], [0.0, 0.0, 0.0], [0.5, 0.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.0, 0.0]]
             return
 
         import pymatgen as mg
