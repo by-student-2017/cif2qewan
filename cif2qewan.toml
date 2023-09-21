@@ -6,6 +6,6 @@ degauss=0.01           #  0.0:default value
 conv_thr="0.0"         # "0.0" is auto (value of cif2cell-infromal_py3)
 mixing_beta=0.7        #  0.0  is auto (value of cif2cell-infromal_py3), 0.7:default value
 noncolin=".false."
-band_path_type="F"     # "P", "F", "I", "H" : P=SC, F=FCC, I=BCC, H=HCP
+band_path_type="P"     # "P", "F", "I", "H" : P=SC, F=FCC, I=BCC, H=HCP
 [pw2wan]
 write_unk = ".true."
