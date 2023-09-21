@@ -1,8 +1,23 @@
 #!/bin/bash
 
 #----------------------------------------------------------------------
-NCORE=`lscpu -b -p=Core,Socket | grep -v '^#' | sort -u | wc -l`
-NTHRE=$(bc <<< "$NCORE/2")
+ESPRESSO_DIR=/usr
+WANNIER90_DIR=/usr/bin
+CIF2QEWAN_DIR=./../../
+TOML_FILE=./../../cif2qewan.toml
+#----------------------------------------------------------------------
+# 0 is auto setting
+NCORE=0
+NTHRE=0
+#----------------------------------------------------------------------
+
+#----------------------------------------------------------------------
+if [ $NCORE = 0 ]; then
+  NCORE=`lscpu -b -p=Core,Socket | grep -v '^#' | sort -u | wc -l`
+fi
+if [ $NTHRE = 0 ]; then
+  NTHRE=$(bc <<< "$NCORE/2")
+fi
 echo "----------------------------------------------------------------"
 echo "MPI    for main (except wannier90.x): "$NCORE" cores"
 echo "OpenMP for wannier90.x              : "$NTHRE" threads"
@@ -11,10 +26,6 @@ export OMP_NUM_THREADS=1
 WANNIER90_OMP=$NTHRE
 #----------------------------------------------------------------------
 MPI_PREFIX="mpirun -n $NCORE"
-ESPRESSO_DIR=/usr
-WANNIER90_DIR=/usr/bin
-CIF2QEWAN_DIR=./../../
-TOML_FILE=./../../cif2qewan.toml
 #----------------------------------------------------------------------
 
 echo "----------------------------------------------------------------"
