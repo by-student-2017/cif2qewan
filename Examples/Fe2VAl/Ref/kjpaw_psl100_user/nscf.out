@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.1 starts on 21Sep2023 at 20:11:22 
+     Program PWSCF v.7.1 starts on 22Sep2023 at 11:26:14 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -15,7 +15,7 @@
      Threads/MPI process:                     1
 
      MPI processes distributed on     1 nodes
-     11779 MiB available memory on the printing compute node when the environment starts
+     11740 MiB available memory on the printing compute node when the environment starts
 
      Waiting for input...
      Reading input from standard input
@@ -38,8 +38,7 @@
 
      R & G space division:  proc/nbgrp/npool/nimage =      10
      Subspace diagonalization in iterative solution of the eigenvalue problem:
-     one sub-group per band group will be used
-     scalapack distributed-memory algorithm (size of sub-group:  2*  2 procs)
+     a serial algorithm will be used
 
 
      Parallelization info
@@ -59,7 +58,7 @@
      number of atoms/cell      =           16
      number of atomic types    =            3
      number of electrons       =       192.00
-     number of Kohn-Sham states=          172
+     number of Kohn-Sham states=          124
      kinetic-energy cutoff     =      71.0000  Ry
      charge density cutoff     =     641.0000  Ry
      Exchange-correlation= SLA  PW   PBX  PBC
@@ -916,9 +915,9 @@
 
      Smooth grid:    98985 G-vectors     FFT dimensions: (  60,  60,  60)
 
-     Dynamical RAM for                 wfc:       3.24 MB
+     Dynamical RAM for                 wfc:       2.33 MB
 
-     Dynamical RAM for     wfc (w. buffer):     330.34 MB
+     Dynamical RAM for     wfc (w. buffer):     238.15 MB
 
      Dynamical RAM for           str. fact:       1.53 MB
 
@@ -932,32 +931,32 @@
 
      Dynamical RAM for           G-vectors:       1.99 MB
 
-     Dynamical RAM for          h,s,v(r/c):       1.35 MB
+     Dynamical RAM for          h,s,v(r/c):       2.82 MB
 
-     Dynamical RAM for          <psi|beta>:       0.76 MB
+     Dynamical RAM for          <psi|beta>:       0.54 MB
 
-     Dynamical RAM for                 psi:       6.48 MB
+     Dynamical RAM for                 psi:       4.67 MB
 
-     Dynamical RAM for                hpsi:       6.48 MB
+     Dynamical RAM for                hpsi:       4.67 MB
 
-     Dynamical RAM for                spsi:       6.48 MB
+     Dynamical RAM for                spsi:       4.67 MB
 
-     Dynamical RAM for      wfcinit/wfcrot:       7.16 MB
+     Dynamical RAM for      wfcinit/wfcrot:       5.55 MB
 
      Dynamical RAM for           addusdens:      99.13 MB
 
-     Estimated static dynamical RAM per process >     353.41 MB
+     Estimated static dynamical RAM per process >     261.22 MB
 
-     Estimated max dynamical RAM per process >     452.54 MB
+     Estimated max dynamical RAM per process >     360.35 MB
 
-     Estimated total dynamical RAM >       4.42 GB
+     Estimated total dynamical RAM >       3.52 GB
 
      Check: negative core charge=   -0.000001
 
      The potential is recalculated from file :
      ./work/pwscf.save/charge-density
 
-     Starting wfcs are  136 randomized atomic wfcs +   36 random wfcs
+     Starting wfcs are  136 randomized atomic wfcs
      Checking if some PAW data can be deallocated... 
        PAW data deallocated on    6 nodes for type:  1
        PAW data deallocated on    6 nodes for type:  2
@@ -967,311 +966,311 @@
      Davidson diagonalization with overlap
 
      Computing kpt #:     1  of   101
-     total cpu time spent up to now is        5.0 secs
+     total cpu time spent up to now is        4.4 secs
 
      Computing kpt #:     2  of   101
-     total cpu time spent up to now is        8.4 secs
+     total cpu time spent up to now is        6.9 secs
 
      Computing kpt #:     3  of   101
-     total cpu time spent up to now is       12.4 secs
+     total cpu time spent up to now is        9.7 secs
 
      Computing kpt #:     4  of   101
-     total cpu time spent up to now is       16.4 secs
+     total cpu time spent up to now is       12.4 secs
 
      Computing kpt #:     5  of   101
-     total cpu time spent up to now is       20.1 secs
+     total cpu time spent up to now is       15.3 secs
 
      Computing kpt #:     6  of   101
-     total cpu time spent up to now is       24.0 secs
+     total cpu time spent up to now is       18.2 secs
 
      Computing kpt #:     7  of   101
-     total cpu time spent up to now is       27.8 secs
+     total cpu time spent up to now is       21.0 secs
 
      Computing kpt #:     8  of   101
-     total cpu time spent up to now is       31.6 secs
+     total cpu time spent up to now is       23.8 secs
 
      Computing kpt #:     9  of   101
-     total cpu time spent up to now is       35.7 secs
+     total cpu time spent up to now is       26.7 secs
 
      Computing kpt #:    10  of   101
-     total cpu time spent up to now is       39.6 secs
+     total cpu time spent up to now is       29.6 secs
 
      Computing kpt #:    11  of   101
-     total cpu time spent up to now is       43.5 secs
+     total cpu time spent up to now is       32.5 secs
 
      Computing kpt #:    12  of   101
-     total cpu time spent up to now is       46.9 secs
+     total cpu time spent up to now is       35.4 secs
 
      Computing kpt #:    13  of   101
-     total cpu time spent up to now is       50.2 secs
+     total cpu time spent up to now is       37.9 secs
 
      Computing kpt #:    14  of   101
-     total cpu time spent up to now is       53.4 secs
+     total cpu time spent up to now is       40.3 secs
 
      Computing kpt #:    15  of   101
-     total cpu time spent up to now is       56.7 secs
+     total cpu time spent up to now is       43.0 secs
 
      Computing kpt #:    16  of   101
-     total cpu time spent up to now is       59.9 secs
+     total cpu time spent up to now is       45.5 secs
 
      Computing kpt #:    17  of   101
-     total cpu time spent up to now is       63.2 secs
+     total cpu time spent up to now is       47.8 secs
 
      Computing kpt #:    18  of   101
-     total cpu time spent up to now is       67.1 secs
+     total cpu time spent up to now is       50.3 secs
 
      Computing kpt #:    19  of   101
-     total cpu time spent up to now is       71.0 secs
+     total cpu time spent up to now is       52.8 secs
 
      Computing kpt #:    20  of   101
-     total cpu time spent up to now is       74.2 secs
+     total cpu time spent up to now is       55.1 secs
 
      Computing kpt #:    21  of   101
-     total cpu time spent up to now is       77.2 secs
+     total cpu time spent up to now is       57.4 secs
 
      Computing kpt #:    22  of   101
-     total cpu time spent up to now is       80.2 secs
+     total cpu time spent up to now is       59.6 secs
 
      Computing kpt #:    23  of   101
-     total cpu time spent up to now is       83.1 secs
+     total cpu time spent up to now is       61.9 secs
 
      Computing kpt #:    24  of   101
-     total cpu time spent up to now is       86.0 secs
+     total cpu time spent up to now is       64.0 secs
 
      Computing kpt #:    25  of   101
-     total cpu time spent up to now is       89.0 secs
+     total cpu time spent up to now is       66.1 secs
 
      Computing kpt #:    26  of   101
-     total cpu time spent up to now is       92.5 secs
+     total cpu time spent up to now is       68.3 secs
 
      Computing kpt #:    27  of   101
-     total cpu time spent up to now is       95.9 secs
+     total cpu time spent up to now is       70.4 secs
 
      Computing kpt #:    28  of   101
-     total cpu time spent up to now is       99.4 secs
+     total cpu time spent up to now is       72.6 secs
 
      Computing kpt #:    29  of   101
-     total cpu time spent up to now is      102.3 secs
+     total cpu time spent up to now is       74.7 secs
 
      Computing kpt #:    30  of   101
-     total cpu time spent up to now is      105.8 secs
+     total cpu time spent up to now is       76.8 secs
 
      Computing kpt #:    31  of   101
-     total cpu time spent up to now is      109.2 secs
+     total cpu time spent up to now is       78.9 secs
 
      Computing kpt #:    32  of   101
-     total cpu time spent up to now is      113.8 secs
+     total cpu time spent up to now is       81.4 secs
 
      Computing kpt #:    33  of   101
-     total cpu time spent up to now is      117.4 secs
+     total cpu time spent up to now is       83.9 secs
 
      Computing kpt #:    34  of   101
-     total cpu time spent up to now is      120.9 secs
+     total cpu time spent up to now is       86.4 secs
 
      Computing kpt #:    35  of   101
-     total cpu time spent up to now is      124.6 secs
+     total cpu time spent up to now is       88.9 secs
 
      Computing kpt #:    36  of   101
-     total cpu time spent up to now is      129.0 secs
+     total cpu time spent up to now is       91.5 secs
 
      Computing kpt #:    37  of   101
-     total cpu time spent up to now is      132.6 secs
+     total cpu time spent up to now is       94.0 secs
 
      Computing kpt #:    38  of   101
-     total cpu time spent up to now is      136.2 secs
+     total cpu time spent up to now is       96.5 secs
 
      Computing kpt #:    39  of   101
-     total cpu time spent up to now is      139.7 secs
+     total cpu time spent up to now is       98.5 secs
 
      Computing kpt #:    40  of   101
-     total cpu time spent up to now is      143.2 secs
+     total cpu time spent up to now is      100.9 secs
 
      Computing kpt #:    41  of   101
-     total cpu time spent up to now is      146.6 secs
+     total cpu time spent up to now is      102.8 secs
 
      Computing kpt #:    42  of   101
-     total cpu time spent up to now is      150.1 secs
+     total cpu time spent up to now is      105.2 secs
 
      Computing kpt #:    43  of   101
-     total cpu time spent up to now is      153.7 secs
+     total cpu time spent up to now is      107.8 secs
 
      Computing kpt #:    44  of   101
-     total cpu time spent up to now is      157.5 secs
+     total cpu time spent up to now is      110.5 secs
 
      Computing kpt #:    45  of   101
-     total cpu time spent up to now is      161.3 secs
+     total cpu time spent up to now is      113.2 secs
 
      Computing kpt #:    46  of   101
-     total cpu time spent up to now is      165.1 secs
+     total cpu time spent up to now is      115.4 secs
 
      Computing kpt #:    47  of   101
-     total cpu time spent up to now is      168.6 secs
+     total cpu time spent up to now is      117.7 secs
 
      Computing kpt #:    48  of   101
-     total cpu time spent up to now is      171.6 secs
+     total cpu time spent up to now is      120.1 secs
 
      Computing kpt #:    49  of   101
-     total cpu time spent up to now is      174.8 secs
+     total cpu time spent up to now is      122.4 secs
 
      Computing kpt #:    50  of   101
-     total cpu time spent up to now is      178.6 secs
+     total cpu time spent up to now is      124.6 secs
 
      Computing kpt #:    51  of   101
-     total cpu time spent up to now is      182.3 secs
+     total cpu time spent up to now is      126.8 secs
 
      Computing kpt #:    52  of   101
-     total cpu time spent up to now is      186.2 secs
+     total cpu time spent up to now is      129.0 secs
 
      Computing kpt #:    53  of   101
-     total cpu time spent up to now is      190.1 secs
+     total cpu time spent up to now is      131.3 secs
 
      Computing kpt #:    54  of   101
-     total cpu time spent up to now is      194.1 secs
+     total cpu time spent up to now is      133.5 secs
 
      Computing kpt #:    55  of   101
-     total cpu time spent up to now is      197.9 secs
+     total cpu time spent up to now is      135.6 secs
 
      Computing kpt #:    56  of   101
-     total cpu time spent up to now is      201.8 secs
+     total cpu time spent up to now is      137.9 secs
 
      Computing kpt #:    57  of   101
-     total cpu time spent up to now is      205.7 secs
+     total cpu time spent up to now is      140.1 secs
 
      Computing kpt #:    58  of   101
-     total cpu time spent up to now is      209.8 secs
+     total cpu time spent up to now is      142.2 secs
 
      Computing kpt #:    59  of   101
-     total cpu time spent up to now is      213.4 secs
+     total cpu time spent up to now is      144.5 secs
 
      Computing kpt #:    60  of   101
-     total cpu time spent up to now is      217.2 secs
+     total cpu time spent up to now is      146.7 secs
 
      Computing kpt #:    61  of   101
-     total cpu time spent up to now is      221.1 secs
+     total cpu time spent up to now is      148.9 secs
 
      Computing kpt #:    62  of   101
-     total cpu time spent up to now is      225.3 secs
+     total cpu time spent up to now is      151.0 secs
 
      Computing kpt #:    63  of   101
-     total cpu time spent up to now is      229.3 secs
+     total cpu time spent up to now is      153.2 secs
 
      Computing kpt #:    64  of   101
-     total cpu time spent up to now is      233.2 secs
+     total cpu time spent up to now is      155.4 secs
 
      Computing kpt #:    65  of   101
-     total cpu time spent up to now is      237.2 secs
+     total cpu time spent up to now is      157.7 secs
 
      Computing kpt #:    66  of   101
-     total cpu time spent up to now is      242.0 secs
+     total cpu time spent up to now is      159.9 secs
 
      Computing kpt #:    67  of   101
-     total cpu time spent up to now is      245.9 secs
+     total cpu time spent up to now is      162.2 secs
 
      Computing kpt #:    68  of   101
-     total cpu time spent up to now is      249.2 secs
+     total cpu time spent up to now is      164.4 secs
 
      Computing kpt #:    69  of   101
-     total cpu time spent up to now is      252.4 secs
+     total cpu time spent up to now is      167.0 secs
 
      Computing kpt #:    70  of   101
-     total cpu time spent up to now is      256.1 secs
+     total cpu time spent up to now is      169.8 secs
 
      Computing kpt #:    71  of   101
-     total cpu time spent up to now is      260.0 secs
+     total cpu time spent up to now is      172.5 secs
 
      Computing kpt #:    72  of   101
-     total cpu time spent up to now is      263.6 secs
+     total cpu time spent up to now is      175.2 secs
 
      Computing kpt #:    73  of   101
-     total cpu time spent up to now is      267.3 secs
+     total cpu time spent up to now is      177.9 secs
 
      Computing kpt #:    74  of   101
-     total cpu time spent up to now is      271.0 secs
+     total cpu time spent up to now is      180.3 secs
 
      Computing kpt #:    75  of   101
-     total cpu time spent up to now is      274.7 secs
+     total cpu time spent up to now is      182.7 secs
 
      Computing kpt #:    76  of   101
-     total cpu time spent up to now is      278.4 secs
+     total cpu time spent up to now is      185.1 secs
 
      Computing kpt #:    77  of   101
-     total cpu time spent up to now is      281.7 secs
+     total cpu time spent up to now is      187.8 secs
 
      Computing kpt #:    78  of   101
-     total cpu time spent up to now is      285.0 secs
+     total cpu time spent up to now is      190.4 secs
 
      Computing kpt #:    79  of   101
-     total cpu time spent up to now is      288.9 secs
+     total cpu time spent up to now is      193.1 secs
 
      Computing kpt #:    80  of   101
-     total cpu time spent up to now is      292.0 secs
+     total cpu time spent up to now is      195.4 secs
 
      Computing kpt #:    81  of   101
-     total cpu time spent up to now is      295.1 secs
+     total cpu time spent up to now is      197.7 secs
 
      Computing kpt #:    82  of   101
-     total cpu time spent up to now is      298.2 secs
+     total cpu time spent up to now is      200.1 secs
 
      Computing kpt #:    83  of   101
-     total cpu time spent up to now is      301.2 secs
+     total cpu time spent up to now is      202.5 secs
 
      Computing kpt #:    84  of   101
-     total cpu time spent up to now is      304.3 secs
+     total cpu time spent up to now is      204.8 secs
 
      Computing kpt #:    85  of   101
-     total cpu time spent up to now is      307.5 secs
+     total cpu time spent up to now is      207.1 secs
 
      Computing kpt #:    86  of   101
-     total cpu time spent up to now is      310.6 secs
+     total cpu time spent up to now is      209.7 secs
 
      Computing kpt #:    87  of   101
-     total cpu time spent up to now is      313.7 secs
+     total cpu time spent up to now is      212.4 secs
 
      Computing kpt #:    88  of   101
-     total cpu time spent up to now is      316.9 secs
+     total cpu time spent up to now is      215.0 secs
 
      Computing kpt #:    89  of   101
-     total cpu time spent up to now is      320.2 secs
+     total cpu time spent up to now is      217.8 secs
 
      Computing kpt #:    90  of   101
-     total cpu time spent up to now is      323.4 secs
+     total cpu time spent up to now is      220.5 secs
 
      Computing kpt #:    91  of   101
-     total cpu time spent up to now is      326.6 secs
+     total cpu time spent up to now is      223.3 secs
 
      Computing kpt #:    92  of   101
-     total cpu time spent up to now is      329.9 secs
+     total cpu time spent up to now is      226.0 secs
 
      Computing kpt #:    93  of   101
-     total cpu time spent up to now is      333.3 secs
+     total cpu time spent up to now is      228.9 secs
 
      Computing kpt #:    94  of   101
-     total cpu time spent up to now is      336.6 secs
+     total cpu time spent up to now is      231.7 secs
 
      Computing kpt #:    95  of   101
-     total cpu time spent up to now is      340.3 secs
+     total cpu time spent up to now is      234.5 secs
 
      Computing kpt #:    96  of   101
-     total cpu time spent up to now is      344.1 secs
+     total cpu time spent up to now is      237.4 secs
 
      Computing kpt #:    97  of   101
-     total cpu time spent up to now is      347.9 secs
+     total cpu time spent up to now is      240.3 secs
 
      Computing kpt #:    98  of   101
-     total cpu time spent up to now is      351.9 secs
+     total cpu time spent up to now is      243.1 secs
 
      Computing kpt #:    99  of   101
-     total cpu time spent up to now is      356.0 secs
+     total cpu time spent up to now is      246.0 secs
 
      Computing kpt #:   100  of   101
-     total cpu time spent up to now is      359.9 secs
+     total cpu time spent up to now is      248.8 secs
 
      Computing kpt #:   101  of   101
-     total cpu time spent up to now is      363.9 secs
+     total cpu time spent up to now is      251.5 secs
 
-     ethr =  6.25E-07,  avg # of iterations = 23.5
+     ethr =  6.25E-07,  avg # of iterations = 19.7
 
-     total cpu time spent up to now is      363.9 secs
+     total cpu time spent up to now is      251.5 secs
 
      End of band structure calculation
 
@@ -1292,13 +1291,7 @@
     17.8457  17.8588  17.9559  18.0087  18.0230  18.0565  18.1554  18.1903
     18.3249  18.3311  18.3679  18.4583  18.5048  18.5056  18.5384  18.6106
     18.8698  18.9241  19.7305  19.7687  20.1741  20.2383  20.3495  20.3614
-    21.5619  21.5805  21.9177  21.9333  23.5570  23.6037  24.0653  24.0840
-    24.9569  24.9745  25.2485  25.2505  25.2947  25.3316  26.5536  26.5978
-    26.8155  26.8558  28.0502  28.0619  28.5360  28.5416  28.9108  28.9329
-    29.3102  29.3375  30.5140  30.5531  30.8695  30.8793  31.4089  31.4233
-    32.8922  32.9530  33.5693  33.5706  34.2147  34.2231  34.7468  34.7509
-    34.9227  34.9529  35.4887  35.4913  35.7474  35.7676  36.1400  36.1715
-    36.2319  36.2526  37.2843  37.3179
+    21.5619  21.5805  21.9177  21.9333
 
           k = 0.4750 0.2625 0.7125 ( 12328 PWs)   bands (ev):
 
@@ -1317,13 +1310,7 @@
     17.8717  17.8902  17.9631  18.0083  18.0290  18.0585  18.1388  18.1744
     18.3609  18.3794  18.3950  18.4913  18.5160  18.5275  18.5703  18.6297
     18.8938  18.9323  19.5220  19.7039  20.4115  20.4753  20.6077  20.6300
-    21.5048  21.8061  21.8279  22.2584  23.4992  23.5430  23.8788  23.9189
-    24.6149  24.9625  25.0062  25.1337  25.1858  25.2984  26.4596  26.5012
-    26.8909  27.0236  28.0993  28.1962  28.6247  28.7284  28.8160  28.9588
-    29.1480  29.4321  30.1267  30.1658  30.7720  31.2909  31.3901  31.4292
-    32.9058  32.9679  33.3935  33.6044  34.0013  34.2810  34.8441  35.0026
-    35.1274  35.1393  35.1727  35.3349  35.7418  35.8604  36.2694  36.3094
-    36.3330  36.6121  37.4434  37.4682
+    21.5048  21.8061  21.8279  22.2584
 
           k = 0.4500 0.2750 0.6750 ( 12331 PWs)   bands (ev):
 
@@ -1342,13 +1329,7 @@
     17.8935  17.9208  17.9608  18.0043  18.0334  18.0685  18.1197  18.1552
     18.3932  18.4081  18.4342  18.5219  18.5237  18.5527  18.5999  18.6488
     18.9176  18.9512  19.3334  19.6493  20.6050  20.7323  20.8790  20.9200
-    21.4354  21.6875  22.0548  22.5944  23.4582  23.5066  23.6605  23.7678
-    24.2585  24.7345  24.9250  25.0266  25.2051  25.3151  26.0947  26.1366
-    27.2255  27.4598  28.0408  28.2997  28.3988  28.9350  28.9739  28.9971
-    29.1408  29.5178  29.7713  29.8290  30.7223  31.3442  31.4991  31.6961
-    32.9636  33.0462  33.1304  33.6018  33.6851  34.3188  34.4205  34.7610
-    34.9868  35.4016  35.5105  35.6666  35.9770  35.9858  36.3083  36.3960
-    36.4697  36.9080  37.5007  37.5497
+    21.4354  21.6875  22.0548  22.5944
 
           k = 0.4250 0.2875 0.6375 ( 12337 PWs)   bands (ev):
 
@@ -1367,13 +1348,7 @@
     17.9144  17.9441  17.9544  18.0045  18.0340  18.0758  18.1060  18.1345
     18.4217  18.4285  18.4718  18.5279  18.5438  18.5762  18.6225  18.6667
     18.9286  18.9975  19.1827  19.5902  20.7664  21.0091  21.1553  21.1818
-    21.3655  21.5720  22.2271  22.9120  23.4061  23.4788  23.5016  23.6323
-    23.9406  24.5153  24.8675  24.9228  25.2643  25.3603  25.7325  25.7774
-    27.5686  27.8586  27.9737  28.2519  28.3946  28.8200  29.0453  29.0959
-    29.3215  29.4955  29.5561  29.5692  30.7337  31.3208  31.6567  31.9395
-    33.0287  33.0497  33.1439  33.4026  33.5715  33.8335  34.3113  34.4453
-    35.1697  35.5452  35.6370  35.8820  36.0931  36.2911  36.4902  36.5795
-    36.5957  36.7107  37.0824  37.4756
+    21.3655  21.5720  22.2271  22.9120
 
           k = 0.4000 0.3000 0.6000 ( 12326 PWs)   bands (ev):
 
@@ -1392,13 +1367,7 @@
     17.9304  17.9488  17.9621  18.0071  18.0335  18.0705  18.1034  18.1176
     18.4441  18.4465  18.4971  18.5323  18.5580  18.5888  18.6382  18.6797
     18.9354  19.0512  19.0851  19.5268  20.9061  21.2849  21.2914  21.3415
-    21.4602  21.4669  22.3122  23.0857  23.3383  23.3984  23.5135  23.5215
-    23.7761  24.3948  24.8051  24.8247  25.2840  25.4096  25.4180  25.4696
-    27.9077  27.9213  28.1309  28.1848  28.4884  28.7684  29.0906  29.1169
-    29.1681  29.3856  29.5214  29.5273  30.8158  31.3584  31.8737  31.8778
-    33.1378  33.1777  33.1866  33.2779  33.3238  33.5216  34.2326  34.2634
-    35.3801  35.4089  35.8344  36.1834  36.1899  36.2442  36.2553  36.6056
-    36.7038  36.7693  37.1911  37.2198
+    21.4602  21.4669  22.3122  23.0857
 
           k = 0.3750 0.3125 0.5625 ( 12329 PWs)   bands (ev):
 
@@ -1417,13 +1386,7 @@
     17.9316  17.9576  17.9706  18.0113  18.0321  18.0630  18.0919  18.1182
     18.4568  18.4633  18.5010  18.5444  18.5659  18.5870  18.6476  18.6853
     18.9410  18.9910  19.1574  19.4599  21.0217  21.2228  21.3500  21.3796
-    21.5682  21.7660  22.2795  22.8717  23.3467  23.4290  23.4435  23.5483
-    23.9150  24.4090  24.7015  24.7805  25.0301  25.0986  25.4697  25.5108
-    27.8699  28.0814  28.2520  28.2708  28.5758  28.8497  28.9227  29.1440
-    29.1666  29.2950  29.3927  29.5092  30.9793  31.4555  31.7103  31.9704
-    32.9885  32.9951  33.0652  33.3169  33.4492  33.7756  34.0684  34.2728
-    35.2790  35.6121  35.7228  35.9716  36.1670  36.2992  36.5104  36.5653
-    36.7898  36.8078  36.8456  37.5791
+    21.5682  21.7660  22.2795  22.8718
 
           k = 0.3500 0.3250 0.5250 ( 12331 PWs)   bands (ev):
 
@@ -1442,13 +1405,7 @@
     17.9322  17.9484  17.9873  18.0186  18.0304  18.0482  18.0903  18.1225
     18.4611  18.4743  18.4898  18.5573  18.5667  18.5752  18.6492  18.6845
     18.9436  18.9514  19.2595  19.3911  21.0957  21.1620  21.2642  21.2931
-    21.8174  22.0781  22.1221  22.5309  23.3333  23.3802  23.5536  23.5840
-    24.2228  24.5386  24.5665  24.7737  24.8132  24.8284  25.5563  25.5969
-    27.8389  27.9426  28.3930  28.5465  28.6298  28.6407  29.0738  29.1364
-    29.1529  29.2611  29.2940  29.4050  31.2270  31.5505  31.5965  31.7033
-    32.8796  32.9384  33.0980  33.3482  33.5165  33.8443  34.2654  34.3870
-    35.2020  35.3168  35.8549  36.0197  36.0791  36.3513  36.4054  36.4456
-    36.7795  36.8355  37.0891  37.5377
+    21.8174  22.0781  22.1221  22.5309
 
           k = 0.3250 0.3375 0.4875 ( 12327 PWs)   bands (ev):
 
@@ -1467,13 +1424,7 @@
     17.9291  17.9413  17.9888  18.0219  18.0297  18.0442  18.0950  18.1278
     18.4542  18.4701  18.4780  18.5572  18.5609  18.5675  18.6427  18.6796
     18.9392  18.9450  19.3112  19.3869  21.0487  21.1016  21.1917  21.2093
-    21.8701  22.0248  22.1645  22.3922  23.3434  23.3841  23.6006  23.6181
-    24.3566  24.5323  24.6356  24.7769  24.8051  24.8241  25.6459  25.6867
-    27.7682  27.8311  28.4645  28.5810  28.5923  28.6134  29.0331  29.0548
-    29.2215  29.3262  29.3547  29.3628  31.2921  31.5315  31.5501  31.5614
-    32.8618  32.9199  33.1947  33.3254  33.6343  33.8027  34.4368  34.4716
-    35.2444  35.2775  35.8632  35.9456  35.9812  36.1287  36.4951  36.5168
-    36.7660  36.8033  37.1739  37.3811
+    21.8701  22.0248  22.1645  22.3922
 
           k = 0.3000 0.3500 0.4500 ( 12332 PWs)   bands (ev):
 
@@ -1492,18 +1443,12 @@
     17.9174  17.9432  17.9702  18.0102  18.0326  18.0641  18.1010  18.1341
     18.4339  18.4440  18.4732  18.5391  18.5502  18.5716  18.6296  18.6710
     18.9335  18.9641  19.2422  19.5171  20.8708  21.0109  21.1424  21.1835
-    21.5636  21.7955  22.1647  22.6999  23.3847  23.4461  23.5461  23.6388
-    24.1068  24.5581  24.7656  24.8794  25.0533  25.1251  25.7347  25.7762
-    27.6078  27.8163  28.2313  28.3355  28.4817  28.8599  28.9828  29.0558
-    29.2294  29.4389  29.4904  29.4986  30.9123  31.4190  31.5857  31.8309
-    32.9532  33.0281  33.0391  33.4930  33.5027  34.1301  34.1406  34.4831
-    35.4033  35.4269  35.7421  35.7559  35.8883  36.3814  36.5083  36.5266
-    36.6432  36.6711  37.0549  37.6065
+    21.5636  21.7955  22.1647  22.7000
 
           k = 0.2750 0.3625 0.4125 ( 12339 PWs)   bands (ev):
 
    -69.5969 -69.5953 -69.5945 -69.5931 -69.5929 -69.5915 -69.5907 -69.5891
-   -47.3737 -47.3736 -47.3733 -46.9675 -35.7052 -35.7040 -35.7029 -35.7007
+   -47.3736 -47.3736 -47.3733 -46.9675 -35.7052 -35.7040 -35.7029 -35.7007
    -35.6970 -35.6960 -35.6942 -35.6917 -35.6916 -35.6902 -35.6888 -35.6857
    -35.6729 -35.6706 -35.6692 -35.6670 -35.6658 -35.6656 -35.6630 -35.6612
    -35.6581 -35.6564 -35.6556 -35.6538 -21.2203 -21.2126 -21.2123 -21.2119
@@ -1517,19 +1462,13 @@
     17.9079  17.9367  17.9441  17.9996  18.0348  18.0833  18.1130  18.1400
     18.4048  18.4109  18.4600  18.5185  18.5330  18.5740  18.6113  18.6583
     18.9224  19.0153  19.1720  19.6629  20.6469  20.9398  21.0859  21.1159
-    21.2317  21.4355  22.2209  22.9922  23.4269  23.4762  23.5465  23.6587
-    23.9119  24.5432  24.9523  24.9888  25.4239  25.5295  25.8188  25.8672
-    27.4564  27.7828  27.7974  28.2120  28.2996  28.7438  29.0898  29.1774
-    29.3678  29.5832  29.5959  29.6924  30.6070  31.2498  31.6731  31.9323
-    33.0749  33.1098  33.2090  33.4096  33.6201  33.7571  34.4311  34.4967
-    34.9486  35.4885  35.6736  35.7842  36.1159  36.3259  36.4377  36.5070
-    36.6146  36.8180  37.2491  37.3698
+    21.2317  21.4355  22.2209  22.9922
 
           k = 0.2500 0.3750 0.3750 ( 12334 PWs)   bands (ev):
 
    -69.5973 -69.5951 -69.5951 -69.5932 -69.5929 -69.5909 -69.5909 -69.5887
    -47.3737 -47.3736 -47.3733 -46.9675 -35.7073 -35.7055 -35.7055 -35.7025
-   -35.6964 -35.6961 -35.6957 -35.6935 -35.6924 -35.6922 -35.6902 -35.6891
+   -35.6964 -35.6961 -35.6957 -35.6935 -35.6924 -35.6921 -35.6902 -35.6891
    -35.6701 -35.6680 -35.6669 -35.6666 -35.6655 -35.6638 -35.6619 -35.6617
    -35.6563 -35.6539 -35.6539 -35.6516 -21.2200 -21.2127 -21.2125 -21.2120
    -21.2108 -21.2104 -21.2064 -21.2062 -21.2049 -20.8194 -20.8194 -20.8193
@@ -1542,13 +1481,7 @@
     17.8988  17.9111  17.9262  17.9873  18.0362  18.0984  18.1243  18.1499
     18.3717  18.3738  18.4354  18.4990  18.5097  18.5722  18.5887  18.6408
     18.9100  19.0876  19.1174  19.8197  20.4151  20.8750  20.8790  20.9335
-    21.0873  21.0936  22.2016  23.2087  23.3869  23.4696  23.6718  23.6828
-    23.8985  24.5971  25.1115  25.1314  25.8125  25.9289  25.9402  25.9781
-    27.3205  27.3317  27.6693  28.0765  28.1012  28.6300  29.0811  29.4338
-    29.4525  29.7336  29.7387  29.9423  30.3774  31.1306  31.8007  31.8056
-    33.2535  33.2882  33.3433  33.4584  33.4852  33.6597  34.5164  34.5965
-    34.6184  35.2374  35.6700  35.6750  35.8959  36.3674  36.3858  36.7686
-    36.7899  37.0215  37.0281  37.6187
+    21.0873  21.0936  22.2016  23.2087
 
           k = 0.2250 0.3875 0.3375 ( 12329 PWs)   bands (ev):
 
@@ -1567,13 +1500,7 @@
     17.8698  17.8991  17.9056  17.9736  18.0364  18.1009  18.1331  18.1681
     18.3314  18.3403  18.4019  18.4798  18.4853  18.5559  18.5708  18.6198
     18.8980  19.0388  19.2239  19.9841  20.1864  20.5401  20.6895  20.7539
-    20.8434  21.0731  22.1293  23.0614  23.5394  23.5605  23.6987  23.8355
-    24.0275  24.7248  25.2633  25.2848  25.9262  26.0328  26.3369  26.3770
-    26.8746  27.2358  27.3307  27.9023  28.0564  28.6622  28.9951  29.4465
-    29.4889  29.8697  30.0963  30.2089  30.2206  31.1276  31.6321  31.9101
-    33.1316  33.2446  33.3853  33.5636  33.6386  33.8920  34.1184  34.6777
-    34.8048  35.0897  35.2233  35.5614  35.9415  36.3328  36.3686  36.3973
-    36.8447  37.2165  37.2387  37.6575
+    20.8434  21.0731  22.1293  23.0614
 
           k = 0.2000 0.4000 0.3000 ( 12345 PWs)   bands (ev):
 
@@ -1592,13 +1519,7 @@
     17.8344  17.8662  17.9047  17.9608  18.0352  18.0882  18.1437  18.1846
     18.2858  18.3091  18.3676  18.4516  18.4720  18.5241  18.5590  18.5984
     18.8855  18.9838  19.3782  19.9562  20.1626  20.2169  20.4085  20.4425
-    20.8090  21.0635  22.0240  22.8163  23.6842  23.7109  23.7517  24.0162
-    24.2251  24.9081  25.4031  25.4483  25.9802  26.0468  26.4924  26.6805
-    26.8090  26.8793  27.2647  27.7184  28.1333  28.7789  28.8317  29.2965
-    29.5199  29.9885  30.0854  30.4902  30.5462  31.2739  31.5336  31.8752
-    33.1040  33.2001  33.3292  33.3589  33.7404  33.9215  34.3586  34.6380
-    34.7902  35.0530  35.0862  35.4540  35.7555  35.8558  36.4252  36.4592
-    36.7764  36.9866  37.3160  37.5587
+    20.8090  21.0635  22.0240  22.8163
 
           k = 0.1750 0.4125 0.2625 ( 12338 PWs)   bands (ev):
 
@@ -1617,13 +1538,7 @@
     17.7977  17.8271  17.9047  17.9525  18.0323  18.0736  18.1410  18.1926
     18.2416  18.2811  18.3360  18.4249  18.4634  18.4894  18.5439  18.5814
     18.8672  18.9382  19.5644  19.7441  19.9197  20.1068  20.1386  20.3415
-    20.7934  21.0599  21.9008  22.5665  23.7460  23.8613  23.8844  24.2171
-    24.4804  25.1132  25.5282  25.6184  25.8142  26.0275  26.3605  26.4029
-    26.7675  27.1868  27.5419  27.6012  28.2729  28.6306  28.9499  29.0546
-    29.5527  29.9982  30.0999  30.7456  30.9776  31.5455  31.5739  31.6818
-    33.0242  33.1657  33.2398  33.3065  33.3664  34.1878  34.4246  34.5322
-    34.7731  35.1792  35.1933  35.2177  35.3570  35.7970  36.3966  36.5356
-    36.5547  36.5776  37.2790  37.3691
+    20.7934  21.0599  21.9008  22.5665
 
           k = 0.1500 0.4250 0.2250 ( 12334 PWs)   bands (ev):
 
@@ -1633,7 +1548,7 @@
    -35.6758 -35.6719 -35.6711 -35.6652 -35.6555 -35.6540 -35.6505 -35.6499
    -35.6489 -35.6484 -35.6456 -35.6442 -21.2184 -21.2143 -21.2130 -21.2124
    -21.2097 -21.2088 -21.2075 -21.2067 -21.2048 -20.8194 -20.8193 -20.8193
-     8.8210   9.4682  10.7033  10.8402  12.1669  12.2112  12.5864  12.9667
+     8.8210   9.4682  10.7033  10.8402  12.1669  12.2113  12.5864  12.9667
     13.0037  13.0497  13.7050  13.7857  13.9364  14.1220  14.2141  14.2472
     14.3160  14.3424  14.4353  14.5590  14.6803  14.7565  14.8046  14.9420
     14.9923  15.0507  15.1655  15.2844  15.3486  15.4516  15.4918  15.5850
@@ -1642,13 +1557,7 @@
     17.7601  17.7845  17.9054  17.9508  18.0280  18.0649  18.1129  18.1850
     18.2130  18.2568  18.3042  18.4038  18.4504  18.4663  18.5271  18.5711
     18.8349  18.9033  19.5424  19.6557  19.7672  19.8261  19.8478  20.5183
-    20.7936  21.0621  21.7698  22.3256  23.7795  23.9368  24.1239  24.4358
-    24.7687  25.3045  25.4338  25.6437  25.7916  25.9360  26.0667  26.3856
-    26.7296  27.2257  27.7207  27.9194  28.4630  28.5099  28.7866  29.1563
-    29.6011  29.9529  30.1947  30.9802  31.2852  31.4302  31.7892  31.9326
-    32.7097  32.9933  33.1555  33.2633  33.2962  34.2094  34.2828  34.3795
-    34.8823  34.9880  35.1439  35.2780  35.3380  35.6699  36.1163  36.3757
-    36.4688  36.6861  37.0857  37.1709
+    20.7936  21.0621  21.7698  22.3256
 
           k = 0.1250 0.4375 0.1875 ( 12337 PWs)   bands (ev):
 
@@ -1666,14 +1575,8 @@
     16.2178  16.2662  16.4223  16.4670  16.4718  16.4995  16.7208  16.7688
     17.7217  17.7404  17.9120  17.9557  18.0255  18.0615  18.0711  18.1631
     18.1929  18.2313  18.2765  18.3891  18.4231  18.4694  18.5114  18.5668
-    18.7860  18.8698  19.3602  19.4407  19.5262  19.5713  20.0234  20.6916
-    20.8086  21.0709  21.6379  22.1000  23.8160  23.9864  24.3973  24.6703
-    25.0570  25.0608  25.3446  25.6351  25.7521  25.9504  26.1011  26.4156
-    26.6695  27.0853  27.7004  28.0724  28.6845  28.6989  28.7432  29.3812
-    29.6739  29.9662  30.2534  31.2037  31.2091  31.4564  32.1663  32.3128
-    32.4118  32.6311  33.0787  33.2013  33.2771  33.8153  34.2010  34.4614
-    34.8238  34.8540  34.8966  35.2288  35.4523  35.5242  35.8913  36.3824
-    36.6308  36.8297  36.9167  37.0632
+    18.7860  18.8698  19.3602  19.4407  19.5262  19.5714  20.0235  20.6916
+    20.8086  21.0709  21.6379  22.1000
 
           k = 0.1000 0.4500 0.1500 ( 12333 PWs)   bands (ev):
 
@@ -1692,13 +1595,7 @@
     17.6832  17.6968  17.9296  17.9674  18.0233  18.0320  18.0657  18.1332
     18.1674  18.1958  18.2670  18.3804  18.4026  18.4793  18.4975  18.5649
     18.7197  18.8223  19.2044  19.2559  19.2838  19.3318  20.2733  20.8377
-    20.8532  21.0883  21.5100  21.8941  23.8542  24.0183  24.6965  24.7125
-    24.9186  24.9648  25.3841  25.7332  25.8535  26.0890  26.1324  26.4267
-    26.6086  26.9260  27.4796  27.8142  28.9142  29.0808  29.1156  29.6028
-    29.7669  30.0799  30.2398  31.0811  31.4293  31.6000  32.1304  32.2944
-    32.4704  32.5846  32.7232  33.3205  33.3827  33.4407  34.0196  34.4034
-    34.4536  34.5930  34.8916  35.1994  35.3281  35.7274  36.0156  36.3944
-    36.4812  36.9818  37.1049  37.1298
+    20.8532  21.0883  21.5100  21.8941
 
           k = 0.0750 0.4625 0.1125 ( 12347 PWs)   bands (ev):
 
@@ -1717,13 +1614,7 @@
     17.6474  17.6563  17.9597  17.9862  17.9987  18.0329  18.0669  18.1005
     18.1371  18.1547  18.2800  18.3797  18.3912  18.4830  18.4914  18.5582
     18.6379  18.7562  19.0210  19.0783  19.1105  19.2030  20.5246  20.8800
-    20.9913  21.1166  21.3892  21.7108  23.8921  24.0351  24.4159  24.6044
-    25.0153  25.1777  25.6578  25.8746  25.9491  26.1519  26.2042  26.4123
-    26.5492  26.7593  27.2232  27.4610  29.0962  29.5153  29.5530  29.8158
-    29.8410  30.1900  30.3181  31.0831  31.6486  31.7511  31.8514  32.0142
-    32.3306  32.6019  32.6789  32.8339  33.7350  33.7745  33.8585  33.9031
-    33.9453  34.3057  35.2186  35.2823  35.3050  35.9366  36.2488  36.3040
-    36.3341  37.1279  37.2286  37.2837
+    20.9913  21.1166  21.3892  21.7108
 
           k = 0.0500 0.4750 0.0750 ( 12338 PWs)   bands (ev):
 
@@ -1742,13 +1633,7 @@
     17.6177  17.6227  17.9813  18.0007  18.0102  18.0388  18.0602  18.0766
     18.1081  18.1166  18.3163  18.3865  18.3929  18.4609  18.5021  18.5328
     18.5611  18.6925  18.8240  18.8960  19.0449  19.1459  20.7593  20.9346
-    21.0896  21.1590  21.2779  21.5518  23.9271  24.0371  24.1853  24.3061
-    25.3451  25.4426  25.9019  26.0035  26.0377  26.1688  26.2714  26.3721
-    26.4799  26.5746  26.9971  27.1200  29.2193  29.7425  29.9156  29.9531
-    30.0940  30.2625  30.6457  31.1666  31.5727  31.7997  31.8716  31.9248
-    31.9365  32.3678  32.6313  32.6896  33.3816  33.4241  33.7304  34.0149
-    34.1336  34.1752  35.3312  35.3946  35.7070  36.0881  36.1389  36.1531
-    36.6907  37.0426  37.0961  37.2445
+    21.0896  21.1590  21.2779  21.5519
 
           k = 0.0250 0.4875 0.0375 ( 12334 PWs)   bands (ev):
 
@@ -1767,13 +1652,7 @@
     17.5981  17.6000  17.9774  18.0289  18.0338  18.0426  18.0527  18.0707
     18.0874  18.0883  18.3647  18.3784  18.4303  18.4396  18.4843  18.5102
     18.5162  18.6478  18.6696  18.7662  19.0139  19.1200  20.9524  21.0000
-    21.1290  21.1782  21.2186  21.4174  23.9559  24.0080  24.0522  24.1129
-    25.6657  25.6982  26.0893  26.1056  26.1296  26.1743  26.2818  26.3055
-    26.3534  26.3762  26.8356  26.8775  29.3197  29.5840  30.2110  30.2479
-    30.3462  30.4277  31.0184  31.2802  31.3549  31.5732  31.6343  31.9274
-    32.1107  32.1392  32.6285  32.6806  32.9142  32.9578  33.6672  33.8062
-    34.4086  34.4377  35.6008  35.6583  35.9814  36.0432  36.0965  36.3042
-    36.5836  36.6395  37.0071  37.2187
+    21.1290  21.1782  21.2186  21.4174
 
           k = 0.0000 0.5000 0.0000 ( 12356 PWs)   bands (ev):
 
@@ -1792,13 +1671,7 @@
     17.5916  17.5917  17.9773  18.0352  18.0384  18.0384  18.0686  18.0686
     18.0773  18.0798  18.3534  18.4114  18.4410  18.4410  18.5031  18.5031
     18.5122  18.5381  18.6551  18.7167  19.0046  19.1124  21.0564  21.0564
-    21.1104  21.1104  21.2874  21.3218  23.9679  23.9781  24.0000  24.0677
-    25.8498  25.8605  26.1613  26.1613  26.2055  26.2055  26.2255  26.2255
-    26.2413  26.2413  26.7667  26.8096  29.4349  29.4382  30.3229  30.3593
-    30.4558  30.5354  31.3214  31.3214  31.3397  31.3397  31.5672  31.5984
-    32.3046  32.3233  32.6263  32.6263  32.6784  32.6784  33.6745  33.7032
-    34.4974  34.5225  35.9433  35.9433  36.0028  36.0028  36.1678  36.2224
-    36.3203  36.3454  37.2194  37.2210
+    21.1104  21.1104  21.2874  21.3218
 
           k = 0.0000 0.4750 0.0000 ( 12336 PWs)   bands (ev):
 
@@ -1817,18 +1690,12 @@
     17.5899  17.5934  17.9535  18.0308  18.0308  18.0342  18.0761  18.0761
     18.0788  18.0988  18.3431  18.3922  18.4324  18.4324  18.5102  18.5102
     18.5109  18.5494  18.6603  18.7246  19.0030  19.1108  20.9120  20.9120
-    21.1061  21.2565  21.2565  21.5011  23.9170  23.9635  24.0737  24.0745
-    25.7974  25.8055  25.9749  25.9749  26.0470  26.0470  26.3973  26.3973
-    26.4279  26.4279  26.8280  26.8683  29.1733  29.7014  30.3234  30.3598
-    30.4548  30.5368  31.0836  31.0836  31.2744  31.5789  31.5789  31.8973
-    32.3043  32.3230  32.5846  32.5846  32.7203  32.7203  33.5538  33.8229
-    34.4994  34.5246  35.9133  35.9133  36.0323  36.0323  36.1397  36.1711
-    36.2255  36.5341  36.9304  36.9304
+    21.1061  21.2565  21.2565  21.5011
 
           k = 0.0000 0.4500 0.0000 ( 12340 PWs)   bands (ev):
 
    -69.5993 -69.5984 -69.5934 -69.5934 -69.5925 -69.5925 -69.5877 -69.5868
-   -47.3740 -47.3735 -47.3731 -46.9675 -35.7221 -35.7218 -35.7147 -35.7144
+   -47.3740 -47.3735 -47.3730 -46.9675 -35.7221 -35.7218 -35.7147 -35.7144
    -35.7136 -35.7136 -35.7120 -35.7120 -35.6902 -35.6862 -35.6862 -35.6793
    -35.6776 -35.6745 -35.6745 -35.6668 -35.6470 -35.6470 -35.6460 -35.6460
    -35.6407 -35.6404 -35.6399 -35.6397 -21.2160 -21.2160 -21.2148 -21.2127
@@ -1842,13 +1709,7 @@
     17.5881  17.5952  17.9065  18.0167  18.0167  18.0310  18.0755  18.0901
     18.0902  18.1380  18.3153  18.3481  18.4127  18.4127  18.5070  18.5255
     18.5255  18.5692  18.6766  18.7459  18.9980  19.1058  20.7458  20.7458
-    20.9093  21.4276  21.4276  21.6918  23.8575  23.9527  24.0891  24.1737
-    25.6675  25.6711  25.7725  25.7725  25.8713  25.8713  26.6029  26.6029
-    26.6407  26.6407  26.9810  27.0169  28.9127  29.9663  30.3251  30.3613
-    30.4520  30.5408  30.8385  30.8385  30.9734  31.8279  31.8279  32.2164
-    32.3036  32.3219  32.5253  32.5253  32.7801  32.7801  33.4173  33.9563
-    34.5057  34.5308  35.8655  35.8655  35.9555  36.0776  36.0776  36.1809
-    36.2349  36.6384  36.6384  36.7428
+    20.9093  21.4276  21.4276  21.6918
 
           k = 0.0000 0.4250 0.0000 ( 12356 PWs)   bands (ev):
 
@@ -1867,13 +1728,7 @@
     17.5864  17.5969  17.8531  18.0011  18.0011  18.0259  18.0702  18.1052
     18.1052  18.1736  18.2798  18.2926  18.3874  18.3874  18.5008  18.5430
     18.5430  18.5845  18.7030  18.7756  18.9895  19.0975  20.5815  20.5815
-    20.7151  21.6001  21.6001  21.8757  23.8077  23.9391  24.1108  24.2899
-    25.5009  25.5013  25.5766  25.5766  25.7036  25.7036  26.8080  26.8080
-    26.8663  26.8663  27.1818  27.2143  28.6561  30.2298  30.3277  30.3637
-    30.4479  30.5469  30.5956  30.5956  30.6798  32.0775  32.0775  32.3021
-    32.3199  32.4655  32.4655  32.5402  32.8407  32.8407  33.2764  34.0925
-    34.5162  34.5413  35.7797  35.8162  35.8162  36.1204  36.1204  36.1973
-    36.2505  36.3436  36.3436  36.9593
+    20.7151  21.6001  21.6001  21.8757
 
           k = 0.0000 0.4000 0.0000 ( 12360 PWs)   bands (ev):
 
@@ -1891,14 +1746,8 @@
     16.5238  16.5248  16.5922  16.6124  16.6907  16.6907  16.7705  16.8107
     17.5847  17.5986  17.7970  17.9856  17.9856  18.0189  18.0627  18.1200
     18.1200  18.1753  18.2308  18.2675  18.3587  18.3587  18.4923  18.5607
-    18.5607  18.5946  18.7352  18.8093  18.9780  19.0860  20.4199  20.4199
-    20.5261  21.7730  21.7730  22.0504  23.7662  23.9246  24.1365  24.4241
-    25.3194  25.3211  25.3883  25.3883  25.5444  25.5444  27.0170  27.0170
-    27.0991  27.0991  27.4068  27.4371  28.4047  30.3309  30.3553  30.3553
-    30.3669  30.3950  30.4432  30.4903  30.5545  32.2997  32.3168  32.3270
-    32.3270  32.4069  32.4069  32.8678  32.9002  32.9002  33.1300  34.2330
-    34.5310  34.5563  35.6127  35.7678  35.7678  36.0461  36.0461  36.1550
-    36.1550  36.2199  36.2722  37.1833
+    18.5607  18.5946  18.7353  18.8093  18.9780  19.0860  20.4199  20.4199
+    20.5261  21.7730  21.7730  22.0504
 
           k = 0.0000 0.3750 0.0000 ( 12368 PWs)   bands (ev):
 
@@ -1917,13 +1766,7 @@
     17.5830  17.6000  17.7395  17.9703  17.9704  18.0097  18.0531  18.1283
     18.1341  18.1341  18.1644  18.2952  18.3271  18.3271  18.4817  18.5783
     18.5783  18.6017  18.7696  18.8445  18.9634  19.0717  20.2615  20.2615
-    20.3444  21.9453  21.9453  22.2141  23.7318  23.9104  24.1649  24.5767
-    25.1360  25.1390  25.2083  25.2083  25.3938  25.3938  27.2311  27.2311
-    27.3371  27.3371  27.6454  27.6743  28.1595  30.1177  30.1179  30.1179
-    30.3363  30.3710  30.4379  30.5632  30.7459  32.2960  32.3124  32.3495
-    32.3495  32.5767  32.5767  32.9577  32.9577  32.9768  33.1980  34.3788
-    34.5503  34.5768  35.4546  35.7198  35.7198  35.7485  35.7485  36.1731
-    36.1731  36.2488  36.2998  37.4143
+    20.3444  21.9453  21.9453  22.2141
 
           k = 0.0000 0.3500 0.0000 ( 12392 PWs)   bands (ev):
 
@@ -1942,13 +1785,7 @@
     17.5814  17.6016  17.6813  17.9556  17.9556  17.9985  18.0416  18.0642
     18.0943  18.1472  18.1472  18.2926  18.2926  18.3324  18.4691  18.5954
     18.5954  18.6068  18.8035  18.8794  18.9461  19.0546  20.1067  20.1067
-    20.1718  22.1164  22.1164  22.3661  23.7035  23.8967  24.1957  24.7475
-    24.9563  24.9601  25.0371  25.0371  25.2526  25.2526  27.4502  27.4502
-    27.5794  27.5794  27.8918  27.9177  27.9240  29.8511  29.8841  29.8841
-    30.3416  30.3757  30.4324  30.5726  30.9947  32.2907  32.2947  32.2947
-    32.3061  32.8161  32.8247  32.8247  33.0127  33.0127  33.5299  34.5260
-    34.5740  34.6090  35.3056  35.4470  35.4470  35.6763  35.6763  36.1640
-    36.1640  36.2837  36.3331  37.6520
+    20.1718  22.1164  22.1164  22.3661
 
           k = 0.0000 0.3250 0.0000 ( 12393 PWs)   bands (ev):
 
@@ -1967,13 +1804,7 @@
     17.5799  17.6032  17.6230  17.9414  17.9414  17.9848  17.9932  18.0211
     18.0288  18.1589  18.1589  18.2556  18.2556  18.3699  18.4546  18.6108
     18.6119  18.6119  18.8358  18.9130  18.9264  19.0352  19.9560  19.9560
-    20.0100  22.2852  22.2852  22.5062  23.6803  23.8839  24.2287  24.7832
-    24.7871  24.8752  24.8752  24.9352  25.1215  25.1215  27.6742  27.6742
-    27.6931  27.8251  27.8251  28.1431  28.1706  29.5949  29.6546  29.6546
-    30.3475  30.3810  30.4271  30.5825  31.2347  32.2423  32.2423  32.2830
-    32.2975  32.6473  33.0509  33.0509  33.0841  33.0841  33.8623  34.6025
-    34.6119  34.7176  35.1463  35.1463  35.1659  35.6334  35.6334  36.1130
-    36.1130  36.3243  36.3718  37.4888
+    20.0100  22.2852  22.2852  22.5062
 
           k = 0.0000 0.3000 0.0000 ( 12377 PWs)   bands (ev):
 
@@ -1992,13 +1823,7 @@
     17.5650  17.5784  17.6048  17.9177  17.9275  17.9275  17.9452  17.9683
     18.0153  18.1677  18.1677  18.2177  18.2177  18.4059  18.4381  18.6141
     18.6278  18.6278  18.8660  18.9047  18.9449  19.0138  19.8099  19.8099
-    19.8606  22.4506  22.4506  22.6351  23.6614  23.8721  24.2635  24.6184
-    24.6225  24.7231  24.7231  25.0012  25.0012  25.1367  27.4755  27.9029
-    27.9029  28.0734  28.0734  28.3967  28.4238  29.3504  29.4301  29.4301
-    30.3540  30.3867  30.4220  30.5926  31.4637  32.1928  32.1928  32.2716
-    32.2861  32.4708  33.1064  33.1064  33.3192  33.3192  34.1937  34.6359
-    34.6505  34.8457  34.8457  34.8905  35.0357  35.5928  35.5928  36.0085
-    36.0086  36.3703  36.4156  37.3856
+    19.8606  22.4506  22.4506  22.6351
 
           k = 0.0000 0.2750 0.0000 ( 12377 PWs)   bands (ev):
 
@@ -2015,15 +1840,9 @@
     15.5947  15.5947  15.9240  15.9240  16.1226  16.1226  16.3669  16.3669
     16.6447  16.6670  16.6827  16.6847  16.8418  16.8748  16.9428  16.9429
     17.5079  17.5771  17.6062  17.8391  17.8672  17.9137  17.9137  17.9482
-    18.0015  18.1593  18.1593  18.1930  18.1931  18.4198  18.4397  18.6167
+    18.0015  18.1593  18.1593  18.1931  18.1931  18.4198  18.4397  18.6167
     18.6429  18.6429  18.8812  18.8937  18.9746  18.9907  19.6690  19.6690
-    19.7245  22.6107  22.6107  22.7535  23.6462  23.8612  24.2996  24.4632
-    24.4674  24.5814  24.5814  24.8928  24.8928  25.3477  27.2717  28.1357
-    28.1357  28.3236  28.3236  28.6506  28.6775  29.1179  29.2113  29.2113
-    30.3608  30.3927  30.4172  30.6028  31.6798  32.1463  32.1463  32.2427
-    32.2713  32.2998  33.1467  33.1467  33.5605  33.5605  34.5225  34.5456
-    34.5456  34.6741  34.6897  34.9155  35.0813  35.5544  35.5544  35.8521
-    35.8521  36.4210  36.4640  37.3451
+    19.7245  22.6107  22.6107  22.7535
 
           k = 0.0000 0.2500 0.0000 ( 12345 PWs)   bands (ev):
 
@@ -2042,13 +1861,7 @@
     17.4521  17.5758  17.6076  17.7583  17.7876  17.8994  17.8994  17.9243
     17.9880  18.1207  18.1207  18.1960  18.1960  18.3997  18.4709  18.6189
     18.6572  18.6572  18.8567  18.9188  18.9666  19.0021  19.5340  19.5340
-    19.6028  22.7641  22.7641  22.8628  23.6339  23.8513  24.3187  24.3228
-    24.3369  24.4504  24.4504  24.7974  24.7974  25.5616  27.0869  28.3724
-    28.3724  28.5744  28.5744  28.8989  28.9031  28.9297  28.9994  28.9995
-    30.3678  30.3989  30.4128  30.6129  31.8811  32.0800  32.1031  32.1031
-    32.2503  32.2523  33.1791  33.1791  33.7978  33.7978  34.2469  34.2469
-    34.7156  34.7335  34.8073  34.8466  35.2869  35.5176  35.5176  35.6586
-    35.6586  36.4759  36.5163  37.3555
+    19.6028  22.7641  22.7641  22.8628
 
           k = 0.0000 0.2250 0.0000 ( 12357 PWs)   bands (ev):
 
@@ -2067,13 +1880,7 @@
     17.3981  17.5747  17.6085  17.6762  17.7070  17.8831  17.8831  17.8966
     17.9754  18.0763  18.0763  18.2028  18.2028  18.3782  18.4995  18.6206
     18.6703  18.6703  18.8313  18.9409  18.9418  19.0269  19.4055  19.4055
-    19.4961  22.9080  22.9080  22.9639  23.6242  23.8423  24.1857  24.1896
-    24.3306  24.3306  24.3748  24.7164  24.7164  25.7659  26.9310  28.6122
-    28.6122  28.6941  28.7935  28.7935  28.8269  28.8269  29.1519  29.1783
-    30.3747  30.4050  30.4088  30.6227  31.8793  32.0635  32.0635  32.0654
-    32.2277  32.2285  33.2020  33.2020  33.9493  33.9493  34.0304  34.0304
-    34.6961  34.7758  34.7827  35.1636  35.4319  35.4319  35.4960  35.4960
-    35.5063  36.5342  36.5717  37.2703
+    19.4961  22.9080  22.9080  22.9639
 
           k = 0.0000 0.2000 0.0000 ( 12349 PWs)   bands (ev):
 
@@ -2092,13 +1899,7 @@
     17.3466  17.5736  17.5937  17.6096  17.6261  17.8630  17.8630  17.8652
     17.9636  18.0329  18.0329  18.2094  18.2094  18.3555  18.5253  18.6219
     18.6822  18.6822  18.8061  18.9171  18.9600  19.0493  19.2847  19.2847
-    19.4044  23.0401  23.0401  23.0577  23.6166  23.8344  24.0650  24.0687
-    24.2223  24.2223  24.4127  24.6513  24.6513  25.9361  26.8264  28.5050
-    28.6010  28.6010  28.8548  28.8548  29.0729  29.0729  29.3950  29.4211
-    30.3815  30.4052  30.4110  30.6320  31.6710  32.0276  32.0276  32.1898
-    32.1994  32.2441  33.2133  33.2133  33.6563  33.6563  34.2539  34.2539
-    34.6085  34.8287  34.8379  35.2162  35.2162  35.4608  35.4608  35.4706
-    35.7361  36.5949  36.6292  37.1292
+    19.4044  23.0401  23.0401  23.0577
 
           k = 0.0000 0.1750 0.0000 ( 12353 PWs)   bands (ev):
 
@@ -2117,13 +1918,7 @@
     17.2980  17.5120  17.5459  17.5726  17.6106  17.8307  17.8358  17.8358
     17.9528  17.9946  17.9946  18.2152  18.2152  18.3326  18.5483  18.6226
     18.6925  18.6925  18.7814  18.8930  18.9758  19.0690  19.1727  19.1727
-    19.3278  23.1447  23.1572  23.1572  23.6106  23.8274  23.9569  23.9605
-    24.1258  24.1258  24.4500  24.6034  24.6034  26.0299  26.8129  28.3327
-    28.4186  28.4186  29.0985  29.0985  29.3162  29.3162  29.6298  29.6556
-    30.3879  30.4020  30.4166  30.6407  31.4588  31.9955  31.9955  32.1632
-    32.1643  32.3882  33.2096  33.2096  33.3678  33.3678  34.4681  34.4681
-    34.5282  34.8906  34.8993  35.0018  35.0018  35.4338  35.4338  35.7638
-    35.9685  36.6565  36.6877  37.0162
+    19.3278  23.1447  23.1572  23.1572
 
           k = 0.0000 0.1500 0.0000 ( 12349 PWs)   bands (ev):
 
@@ -2142,13 +1937,7 @@
     17.2529  17.4326  17.4675  17.5717  17.6114  17.7937  17.7989  17.7990
     17.9430  17.9650  17.9650  18.2202  18.2202  18.3101  18.5684  18.6233
     18.7009  18.7009  18.7581  18.8703  18.9881  19.0712  19.0712  19.0860
-    19.2656  23.2246  23.2568  23.2568  23.6061  23.8213  23.8623  23.8656
-    24.0416  24.0416  24.4857  24.5736  24.5736  26.0253  26.9096  28.1788
-    28.2500  28.2501  29.3422  29.3422  29.5518  29.5518  29.8532  29.8785
-    30.3938  30.3995  30.4218  30.6487  31.2464  31.9674  31.9674  32.1232
-    32.1251  32.5193  33.0804  33.0804  33.1935  33.1935  34.4580  34.6691
-    34.6691  34.8040  34.8041  34.9593  34.9670  35.4105  35.4105  36.0387
-    36.1825  36.7175  36.7454  36.9527
+    19.2656  23.2246  23.2568  23.2568
 
           k = 0.0000 0.1250 0.0000 ( 12341 PWs)   bands (ev):
 
@@ -2167,13 +1956,7 @@
     17.2113  17.3576  17.3926  17.5710  17.6120  17.7532  17.7532  17.7550
     17.9342  17.9447  17.9447  18.2245  18.2245  18.2893  18.5854  18.6238
     18.7066  18.7066  18.7367  18.8496  18.9819  18.9819  18.9968  19.1005
-    19.2173  23.2968  23.3368  23.3368  23.6027  23.7814  23.7846  23.8162
-    23.9699  23.9699  24.5188  24.5611  24.5611  25.9608  27.0743  28.0448
-    28.0982  28.0982  29.5832  29.5832  29.7754  29.7754  30.0611  30.0860
-    30.3977  30.3990  30.4265  30.6557  31.0390  31.9434  31.9434  32.0765
-    32.0811  32.6317  32.8067  32.8067  33.1535  33.1535  34.3982  34.6305
-    34.6305  34.8548  34.8548  35.0338  35.0406  35.3906  35.3906  36.2897
-    36.3298  36.7760  36.8005  36.9517
+    19.2173  23.2968  23.3368  23.3368
 
           k = 0.0000 0.1000 0.0000 ( 12329 PWs)   bands (ev):
 
@@ -2192,13 +1975,7 @@
     17.1850  17.2901  17.3230  17.5704  17.6125  17.7028  17.7028  17.7158
     17.9270  17.9314  17.9314  18.2279  18.2279  18.2706  18.5994  18.6241
     18.7086  18.7086  18.7180  18.8314  18.9080  18.9080  19.0017  19.1124
-    19.1819  23.3601  23.3970  23.3970  23.6005  23.7147  23.7177  23.8121
-    23.9108  23.9108  24.5481  24.5633  24.5633  25.8792  27.2591  27.9321
-    27.9665  27.9665  29.8175  29.8175  29.9809  29.9809  30.2477  30.2728
-    30.3980  30.4035  30.4304  30.6619  30.8440  31.9237  31.9237  32.0258
-    32.0329  32.5445  32.5445  32.7247  33.0967  33.0967  34.3490  34.4904
-    34.4904  35.0179  35.0179  35.1127  35.1186  35.3743  35.3743  36.3745
-    36.5105  36.7564  36.7588  36.8294
+    19.1819  23.3601  23.3971  23.3972
 
           k = 0.0000 0.0750 0.0000 ( 12341 PWs)   bands (ev):
 
@@ -2217,13 +1994,7 @@
     17.2027  17.2345  17.2614  17.5699  17.6130  17.6531  17.6531  17.6779
     17.9211  17.9230  17.9230  18.2304  18.2304  18.2550  18.6103  18.6242
     18.7027  18.7053  18.7053  18.8166  18.8526  18.8526  19.0033  19.1217
-    19.1579  23.4126  23.4392  23.4392  23.5987  23.6625  23.6654  23.8089
-    23.8646  23.8647  24.5726  24.5750  24.5750  25.8028  27.4345  27.8424
-    27.8584  27.8584  30.0375  30.0375  30.1602  30.1602  30.3768  30.4071
-    30.4296  30.4297  30.4336  30.6671  30.6736  31.9082  31.9082  31.9743
-    31.9838  32.3023  32.3023  32.7978  33.0285  33.0285  34.3105  34.3853
-    34.3853  35.1543  35.1543  35.1925  35.1977  35.3615  35.3615  36.3594
-    36.5814  36.5831  36.6936  36.8752
+    19.1579  23.4126  23.4393  23.4393
 
           k = 0.0000 0.0500 0.0000 ( 12353 PWs)   bands (ev):
 
@@ -2242,13 +2013,7 @@
     17.2114  17.2156  17.2156  17.5696  17.6101  17.6101  17.6134  17.6453
     17.9168  17.9177  17.9177  18.2322  18.2322  18.2432  18.6181  18.6243
     18.6912  18.6964  18.6964  18.8056  18.8179  18.8179  19.0026  19.1282
-    19.1432  23.4523  23.4662  23.4662  23.5974  23.6251  23.6279  23.8065
-    23.8315  23.8315  24.5899  24.5899  24.5910  25.7424  27.5797  27.7772
-    27.7777  27.7777  30.2292  30.2292  30.3029  30.3029  30.3875  30.4098
-    30.4359  30.4936  30.5448  30.5950  30.6719  31.8970  31.8970  31.9277
-    31.9392  32.0941  32.0941  32.8505  32.9614  32.9614  34.2829  34.3143
-    34.3143  35.2578  35.2578  35.2662  35.2709  35.3524  35.3524  36.3314
-    36.4369  36.4379  36.8312  36.9106
+    19.1433  23.4523  23.4663  23.4663
 
           k = 0.0000 0.0250 0.0000 ( 12317 PWs)   bands (ev):
 
@@ -2267,13 +2032,7 @@
     17.2166  17.2234  17.2234  17.5697  17.5803  17.5803  17.6136  17.6222
     17.9143  17.9147  17.9147  18.2332  18.2332  18.2360  18.6228  18.6243
     18.6842  18.6863  18.6863  18.7988  18.8012  18.8012  19.0013  19.1322
-    19.1357  23.4772  23.4810  23.4810  23.5965  23.6027  23.6058  23.8052
-    23.8116  23.8116  24.6019  24.6019  24.6025  25.7040  27.6766  27.7278
-    27.7278  27.7376  30.3655  30.3655  30.3882  30.3990  30.3990  30.4114
-    30.4194  30.4373  30.6227  30.6582  30.6785  31.8897  31.8897  31.8941
-    31.9069  31.9453  31.9453  32.8823  32.9115  32.9115  34.2663  34.2739
-    34.2739  35.3216  35.3226  35.3226  35.3260  35.3470  35.3470  36.3099
-    36.3379  36.3384  36.9154  36.9331
+    19.1357  23.4772  23.4810  23.4810
 
           k = 0.0000 0.0000 0.0000 ( 12293 PWs)   bands (ev):
 
@@ -2292,13 +2051,7 @@
     17.2260  17.2260  17.2260  17.5697  17.5697  17.5697  17.6136  17.6137
     17.9138  17.9138  17.9138  18.2335  18.2335  18.2335  18.6243  18.6243
     18.6819  18.6819  18.6819  18.7965  18.7965  18.7965  19.0007  19.1335
-    19.1335  23.4856  23.4856  23.4856  23.5954  23.5954  23.5994  23.8050
-    23.8050  23.8050  24.6065  24.6065  24.6065  25.6908  27.7108  27.7108
-    27.7108  27.7243  30.3882  30.3882  30.4119  30.4119  30.4119  30.4378
-    30.4378  30.4378  30.6455  30.6854  30.6854  31.8816  31.8816  31.8816
-    31.8950  31.8950  31.8950  32.8930  32.8930  32.8930  34.2608  34.2608
-    34.2608  35.3428  35.3428  35.3428  35.3471  35.3471  35.3471  36.3020
-    36.3020  36.3025  36.9408  36.9408
+    19.1335  23.4857  23.4858  23.4859
 
           k = 0.0000 0.0250 0.0250 ( 12331 PWs)   bands (ev):
 
@@ -2317,13 +2070,7 @@
     17.2138  17.2143  17.2208  17.5801  17.5804  17.5914  17.6178  17.6264
     17.9150  17.9155  17.9156  18.2329  18.2356  18.2358  18.6220  18.6235
     18.6877  18.6894  18.6912  18.8032  18.8036  18.8053  19.0019  19.1327
-    19.1361  23.4577  23.4761  23.4879  23.6029  23.6050  23.6111  23.8118
-    23.8121  23.8193  24.5854  24.5968  24.6112  25.7172  27.6690  27.7181
-    27.7272  27.7680  30.3233  30.3494  30.3629  30.3664  30.3925  30.4045
-    30.4053  30.4346  30.6055  30.6492  30.6621  31.8649  31.9361  31.9401
-    31.9532  31.9537  31.9553  32.9003  32.9015  32.9304  34.2794  34.2798
-    34.2866  35.2876  35.3006  35.3037  35.3221  35.3264  35.3658  36.3451
-    36.3461  36.3716  36.9052  36.9133
+    19.1361  23.4577  23.4762  23.4880
 
           k = 0.0000 0.0500 0.0500 ( 12339 PWs)   bands (ev):
 
@@ -2342,13 +2089,7 @@
     17.2051  17.2255  17.2364  17.6075  17.6081  17.6284  17.6566  17.6606
     17.9200  17.9208  17.9219  18.2309  18.2417  18.2424  18.6151  18.6211
     18.7013  18.7099  18.7185  18.8266  18.8268  18.8304  19.0059  19.1314
-    19.1449  23.3792  23.4436  23.4945  23.6260  23.6285  23.6406  23.8326
-    23.8339  23.8731  24.5322  24.5648  24.6257  25.7940  27.5521  27.7412
-    27.7566  27.9125  30.0784  30.1038  30.2263  30.2288  30.2733  30.3310
-    30.4505  30.4520  30.5672  30.6242  30.6242  31.7978  32.0664  32.0930
-    32.0955  32.1039  32.1080  32.9176  32.9216  33.0353  34.3381  34.3398
-    34.3614  35.1519  35.1803  35.1893  35.2579  35.2619  35.4278  36.4612
-    36.4649  36.5435  36.8116  36.8223
+    19.1449  23.3793  23.4437  23.4945
 
           k = 0.0000 0.0750 0.0750 ( 12337 PWs)   bands (ev):
 
@@ -2367,13 +2108,7 @@
     17.2019  17.2880  17.2988  17.6421  17.6438  17.6444  17.7091  17.7615
     17.9284  17.9288  17.9335  18.2272  18.2515  18.2531  18.6042  18.6171
     18.7141  18.7373  18.7615  18.8684  18.8688  18.8730  19.0121  19.1333
-    19.1613  23.2623  23.3780  23.5049  23.6628  23.6647  23.6682  23.8677
-    23.8703  23.9859  24.4716  24.5063  24.6497  25.9138  27.3799  27.7835
-    27.8046  28.1369  29.7403  29.7658  30.0354  30.0372  30.0992  30.2178
-    30.2580  30.5078  30.5462  30.5979  30.8040  31.6896  32.2364  32.2452
-    32.2640  32.3122  32.3241  32.9319  32.9379  33.1909  34.4426  34.4456
-    34.4799  34.9846  35.0055  35.0216  35.1444  35.1479  35.5303  36.6296
-    36.6361  36.6902  36.7002  36.7453
+    19.1613  23.2624  23.3781  23.5050
 
           k = 0.0000 0.1000 0.1000 ( 12333 PWs)   bands (ev):
 
@@ -2392,13 +2127,7 @@
     17.2767  17.3627  17.3647  17.6560  17.6811  17.6818  17.7658  17.8999
     17.9378  17.9425  17.9514  18.2219  18.2648  18.2676  18.5898  18.6114
     18.7223  18.7671  18.8163  18.9122  18.9310  18.9415  19.0183  19.1478
-    19.1884  23.1186  23.2687  23.5181  23.6734  23.7189  23.7222  23.9169
-    23.9213  24.1588  24.4228  24.4299  24.6836  26.0638  27.1728  27.8506
-    27.8716  28.4235  29.3562  29.3820  29.8169  29.8190  29.8866  30.0286
-    30.0706  30.4902  30.4937  30.6564  31.0658  31.5461  32.3757  32.4022
-    32.4268  32.5647  32.5764  32.9281  32.9331  33.3795  34.5888  34.5894
-    34.6347  34.7991  34.8026  34.8253  34.9773  34.9797  35.6719  36.5435
-    36.5706  36.5827  36.8327  36.8420
+    19.1884  23.1186  23.2687  23.5181
 
           k = 0.0000 0.1250 0.1250 ( 12361 PWs)   bands (ev):
 
@@ -2417,13 +2146,7 @@
     17.3559  17.4319  17.4444  17.6682  17.7139  17.7169  17.8267  17.9480
     17.9621  17.9766  18.0641  18.2149  18.2812  18.2855  18.5727  18.6043
     18.7267  18.7984  18.8775  18.9518  19.0092  19.0210  19.0266  19.1884
-    19.2305  22.9557  23.1133  23.5324  23.6750  23.7885  23.7921  23.9804
-    23.9869  24.3046  24.3974  24.4221  24.7272  26.2287  26.9473  27.9492
-    27.9579  28.7578  28.9492  28.9752  29.5852  29.5883  29.6495  29.7830
-    29.8964  30.4205  30.4304  30.7696  31.3666  31.3736  32.4792  32.5062
-    32.6218  32.8387  32.8505  32.9007  32.9017  33.5864  34.5351  34.5680
-    34.6419  34.7518  34.7591  34.7842  34.7959  34.8244  35.8502  36.2951
-    36.4711  36.4818  37.0217  37.0360
+    19.2305  22.9557  23.1134  23.5324
 
           k = 0.0000 0.1500 0.1500 ( 12356 PWs)   bands (ev):
 
@@ -2442,13 +2165,7 @@
     17.4354  17.5010  17.5291  17.6780  17.7408  17.7471  17.8899  17.9591
     17.9889  18.0098  18.2062  18.2476  18.2998  18.3060  18.5540  18.5963
     18.7289  18.8324  18.9395  18.9761  19.0264  19.0979  19.1221  19.2614
-    19.2930  22.7780  22.9201  23.5455  23.6721  23.8734  23.8774  24.0584
-    24.0670  24.1959  24.4487  24.6574  24.7808  26.3941  26.7158  28.0633
-    28.0863  28.5312  28.5572  29.1292  29.3470  29.3528  29.3990  29.5292
-    29.7016  30.3378  30.3500  30.8997  31.1792  31.6947  32.5331  32.5508
-    32.8146  32.8645  32.8774  33.1258  33.1380  33.7993  34.2989  34.3296
-    34.4806  34.4944  34.4960  34.9677  34.9764  35.0262  36.0215  36.0626
-    36.3968  36.4074  37.0689  37.0882
+    19.2930  22.7780  22.9201  23.5455
 
           k = 0.0000 0.1750 0.1750 ( 12356 PWs)   bands (ev):
 
@@ -2467,13 +2184,7 @@
     17.5113  17.5729  17.6135  17.6857  17.7618  17.7716  17.9533  17.9711
     18.0237  18.0506  18.1957  18.3192  18.3267  18.4444  18.5347  18.5896
     18.7296  18.8702  18.9756  18.9990  19.0511  19.1921  19.2229  19.3612
-    19.3795  22.5872  22.7013  23.5541  23.6665  23.9731  23.9773  24.0771
-    24.1507  24.1616  24.5033  24.8445  24.9598  26.4881  26.5491  28.1091
-    28.1350  28.1878  28.2671  29.1036  29.1167  29.1445  29.2716  29.4918
-    29.5307  30.2420  30.2557  30.9689  31.0378  32.0428  32.4855  32.4913
-    32.8675  32.9047  33.0173  33.4161  33.4296  34.0042  34.0712  34.0997
-    34.2090  34.2097  34.3257  35.1410  35.1465  35.2477  35.7468  36.3056
-    36.3450  36.3559  37.1048  37.1240
+    19.3795  22.5872  22.7013  23.5541
 
           k = 0.0000 0.2000 0.2000 ( 12340 PWs)   bands (ev):
 
@@ -2492,13 +2203,7 @@
     17.5817  17.6467  17.6912  17.6945  17.7780  17.7909  17.9844  18.0159
     18.0661  18.0970  18.1842  18.3375  18.3469  18.5158  18.5642  18.6701
     18.7292  18.9121  18.9633  19.0566  19.0908  19.2878  19.3250  19.4816
-    19.4903  22.3838  22.4673  23.5534  23.6589  23.9604  24.0871  24.0933
-    24.2575  24.2705  24.5786  24.9182  25.2920  26.2727  26.6876  27.6882
-    27.7135  28.3311  28.4925  28.8518  28.8824  28.8980  29.0132  29.2714
-    29.9561  30.1326  30.1476  30.7491  31.1790  32.3355  32.3398  32.4064
-    32.9345  32.9782  33.2130  33.6500  33.6672  33.8710  33.8958  33.9646
-    33.9713  34.1783  34.1789  35.2865  35.2886  35.4801  35.5013  36.3106
-    36.3219  36.5755  37.1808  37.1973
+    19.4903  22.3838  22.4673  23.5534
 
           k = 0.0000 0.2250 0.2250 ( 12334 PWs)   bands (ev):
 
@@ -2517,13 +2222,7 @@
     17.6470  17.6953  17.7199  17.7699  17.7906  17.8058  17.9996  18.0771
     18.1148  18.1397  18.1789  18.3525  18.3640  18.4983  18.5572  18.7276
     18.8851  18.9495  18.9588  19.1156  19.1412  19.3817  19.4251  19.6192
-    19.6234  22.1687  22.2263  23.5379  23.6497  23.8552  24.2139  24.2206
-    24.3783  24.3934  24.6689  25.0023  25.6482  26.0784  26.8092  27.2724
-    27.2970  28.4921  28.5933  28.6515  28.6628  28.7559  28.7595  29.0436
-    30.0082  30.0248  30.4024  30.5247  31.3200  32.1292  32.1356  32.7809
-    33.0227  33.0682  33.4093  33.4973  33.5035  33.7060  33.7263  34.0400
-    34.1186  34.1214  34.2663  35.3418  35.3986  35.3997  35.7187  36.2889
-    36.3008  36.8683  37.2899  37.3013
+    19.6234  22.1687  22.2263  23.5380
 
           k = 0.0000 0.2500 0.2500 ( 12328 PWs)   bands (ev):
 
@@ -2542,13 +2241,7 @@
     17.6986  17.7088  17.7897  17.8006  17.8174  17.8382  18.0173  18.1369
     18.1399  18.1677  18.2178  18.3619  18.3759  18.4835  18.5446  18.7250
     18.9388  19.0108  19.1070  19.1833  19.2011  19.4715  19.5208  19.7729
-    19.7765  21.9426  21.9836  23.5005  23.6390  23.7633  24.3507  24.3583
-    24.5126  24.5296  24.7703  25.0967  25.9137  26.0231  26.8650  26.8901
-    26.9185  28.3348  28.4253  28.4326  28.5014  28.6736  28.8115  29.0614
-    29.8665  29.8850  30.3009  30.8668  31.4587  31.8963  31.9046  33.1126
-    33.1597  33.1660  33.1930  33.1950  33.5683  33.5943  33.6163  33.9089
-    34.1993  34.4239  34.4309  35.3390  35.4792  35.4832  35.9599  36.2766
-    36.2891  36.7951  37.1795  37.4210
+    19.7765  21.9426  21.9836  23.5005
 
           k = 0.0000 0.2750 0.2750 ( 12354 PWs)   bands (ev):
 
@@ -2567,13 +2260,7 @@
     17.7020  17.7676  17.8086  17.8266  17.8545  17.8988  18.0381  18.1214
     18.1953  18.2222  18.2747  18.3642  18.3809  18.4722  18.5301  18.7210
     18.9340  19.0686  19.2319  19.2684  19.3587  19.5552  19.6101  19.9425
-    19.9482  21.7080  21.7432  23.4346  23.6268  23.6869  24.4921  24.5006
-    24.6595  24.6781  24.8803  25.2014  25.7867  26.4066  26.4822  26.4996
-    27.0159  28.0801  28.2041  28.2115  28.2508  28.5772  28.8697  29.3896
-    29.7049  29.7259  30.0826  31.3475  31.5937  31.6581  31.6673  32.8817
-    32.8819  33.1948  33.2368  33.4847  33.5063  33.5542  33.7852  33.8111
-    33.9960  34.7482  34.7554  35.4791  35.5358  35.5425  36.2006  36.2718
-    36.2849  36.2899  37.5038  37.5123
+    19.9482  21.7080  21.7432  23.4347
 
           k = 0.0000 0.3000 0.3000 ( 12336 PWs)   bands (ev):
 
@@ -2592,13 +2279,7 @@
     17.7064  17.8155  17.8240  17.8343  17.9140  17.9517  18.0622  18.0984
     18.2521  18.2768  18.3340  18.3595  18.3791  18.4643  18.5140  18.7157
     18.9383  19.1329  19.3011  19.3399  19.5978  19.6319  19.6919  20.1282
-    20.1375  21.4670  21.5078  23.3353  23.6096  23.6297  24.6254  24.6345
-    24.8182  24.8377  24.9977  25.3166  25.7032  26.1173  26.1393  26.8089
-    27.1097  27.8316  27.9886  27.9963  28.0052  28.3426  29.0821  29.5210
-    29.5424  29.7372  29.8760  31.4311  31.4396  31.7258  31.8428  32.5787
-    32.5805  33.2339  33.2628  33.4601  33.4914  33.6687  33.7236  33.9416
-    34.0169  35.0786  35.0857  35.5737  35.5826  35.6942  35.7904  36.2739
-    36.2881  36.4384  37.2525  37.6978
+    20.1375  21.4670  21.5078  23.3353
 
           k = 0.0000 0.3250 0.3250 ( 12328 PWs)   bands (ev):
 
@@ -2617,13 +2298,7 @@
     17.7125  17.8212  17.8405  17.8781  17.9684  17.9977  18.0725  18.0890
     18.3061  18.3299  18.3496  18.3706  18.3924  18.4588  18.4964  18.7088
     18.9548  19.2043  19.3673  19.4115  19.7002  19.7650  19.8441  20.3296
-    20.3431  21.2227  21.2793  23.2010  23.5729  23.6054  24.7185  24.7263
-    24.9870  25.0065  25.1216  25.4420  25.6650  25.8240  25.8420  27.1993
-    27.2056  27.5902  27.7653  27.7786  27.7872  28.1089  29.3095  29.3141
-    29.3391  29.6871  30.0900  31.2270  31.2342  31.8563  32.2871  32.2965
-    32.3574  33.2127  33.2301  33.4224  33.5094  33.5500  33.5595  34.2193
-    34.3331  35.3001  35.4089  35.4155  35.5973  35.6097  35.9450  36.2860
-    36.3016  36.6704  36.9211  37.8314
+    20.3431  21.2227  21.2793  23.2010
 
           k = 0.0000 0.3500 0.3500 ( 12330 PWs)   bands (ev):
 
@@ -2642,13 +2317,7 @@
     17.7210  17.8261  17.8458  17.9298  18.0181  18.0378  18.0440  18.1174
     18.3360  18.3563  18.3565  18.3806  18.4481  18.4546  18.4768  18.7002
     18.9874  19.2835  19.4297  19.4795  19.7599  19.8289  20.0951  20.5450
-    20.5627  20.9780  21.0593  23.0343  23.5394  23.5904  24.7021  24.7041
-    25.1644  25.1814  25.2532  25.5775  25.6663  25.6680  25.6811  27.2964
-    27.3571  27.5322  27.5741  27.5788  27.5840  27.8776  29.0866  29.1145
-    29.5333  29.5506  30.4334  31.0525  31.0582  31.9908  32.0293  32.0355
-    32.8737  33.1091  33.1703  33.1828  33.4570  33.5887  33.6329  34.4309
-    34.7070  34.8299  35.6098  35.6241  35.7254  35.7313  36.2136  36.3195
-    36.3386  36.5374  36.8951  37.9575
+    20.5627  20.9780  21.0593  23.0343
 
           k = 0.0000 0.3750 0.3750 ( 12344 PWs)   bands (ev):
 
@@ -2667,13 +2336,7 @@
     17.7329  17.8300  17.8499  17.9791  18.0135  18.0634  18.0729  18.1449
     18.3204  18.3373  18.4028  18.4272  18.4513  18.4556  18.4989  18.6899
     19.0397  19.3711  19.4859  19.5407  19.8104  19.8831  20.3496  20.7333
-    20.7737  20.7926  20.8490  22.8404  23.5162  23.5758  24.5267  24.5312
-    25.3481  25.3539  25.3988  25.6862  25.6908  25.7178  25.7231  27.1328
-    27.3064  27.3747  27.3865  27.3943  27.6498  27.9056  28.8444  28.8749
-    29.4430  29.8043  30.7427  30.9096  30.9146  31.7951  31.8030  32.1408
-    32.7910  33.1289  33.1387  33.3622  33.4060  33.6712  33.7165  34.3906
-    34.6439  35.0569  35.6142  35.6303  35.9832  35.9892  36.1185  36.4180
-    36.4268  36.5077  37.1113  38.0723
+    20.7737  20.7926  20.8490  22.8404
 
           k = 0.0000 0.4000 0.4000 ( 12376 PWs)   bands (ev):
 
@@ -2692,13 +2355,7 @@
     17.7484  17.8332  17.8533  17.9814  18.0258  18.1042  18.1048  18.1691
     18.3033  18.3143  18.4329  18.4447  18.4484  18.4681  18.5431  18.6776
     19.1146  19.4679  19.5342  19.5930  19.8516  19.9274  20.4989  20.6066
-    20.6493  21.0019  21.0267  22.6253  23.5022  23.5611  24.2654  24.2724
-    25.5101  25.5356  25.5700  25.7821  25.8216  25.8228  25.8785  26.9177
-    27.0890  27.1802  27.1943  27.4262  27.4972  28.1282  28.5973  28.6304
-    29.4683  30.0693  30.7975  30.7994  30.9812  31.5944  31.6039  32.3254
-    32.4719  33.0941  33.1016  33.2758  33.7472  33.7930  33.9486  34.0021
-    34.8571  35.3602  35.6131  35.6295  35.6790  36.1133  36.1217  36.6496
-    36.6587  36.7958  37.3183  37.9777
+    20.6493  21.0019  21.0267  22.6253
 
           k = 0.0000 0.4250 0.4250 ( 12364 PWs)   bands (ev):
 
@@ -2717,13 +2374,7 @@
     17.7681  17.8357  17.8559  17.9484  18.0701  18.1321  18.1418  18.1886
     18.2855  18.2882  18.4096  18.4462  18.4819  18.5017  18.5794  18.6637
     19.2140  19.5730  19.5746  19.6348  19.8836  19.9620  20.2708  20.4612
-    20.8654  21.2263  21.2548  22.3946  23.4959  23.5466  23.9919  23.9985
-    25.6611  25.7235  25.7527  25.8880  25.9846  25.9894  26.0433  26.7119
-    26.8808  26.9911  27.0081  27.2079  27.6058  28.2027  28.3592  28.3965
-    29.6474  30.3446  30.7139  30.7153  31.0964  31.4322  31.4431  32.1542
-    32.5600  33.0669  33.0716  33.1996  33.6965  33.8117  33.8580  34.5003
-    35.0674  35.2264  35.5802  35.6142  35.6277  36.1587  36.1691  36.9704
-    36.9757  37.0848  37.5161  37.9201
+    20.8654  21.2263  21.2548  22.3946
 
           k = 0.0000 0.4500 0.4500 ( 12356 PWs)   bands (ev):
 
@@ -2741,14 +2392,8 @@
     16.1355  16.1376  16.1604  16.2641  16.3683  16.4716  16.4760  16.5348
     17.7913  17.8375  17.8578  17.9151  18.1118  18.1565  18.1730  18.2031
     18.2597  18.2674  18.3874  18.4445  18.5135  18.5268  18.6063  18.6486
-    19.3378  19.6014  19.6650  19.6913  19.9065  19.9865  20.0542  20.2854
-    21.1247  21.4269  21.4589  22.1530  23.4959  23.5327  23.7487  23.7533
-    25.8165  25.9056  25.9313  26.0136  26.1466  26.1532  26.2171  26.5156
-    26.6829  26.8106  26.8310  26.9956  27.7197  28.1484  28.1502  28.2063
-    29.9415  30.6289  30.6561  30.6571  31.0622  31.3127  31.3248  31.8395
-    32.8163  33.0475  33.0486  33.1369  33.5314  33.8607  33.9071  34.7747
-    35.0597  35.2693  35.6009  35.6232  35.7040  36.1766  36.1879  37.2105
-    37.3222  37.3367  37.5729  37.7050
+    19.3378  19.6014  19.6650  19.6914  19.9065  19.9865  20.0542  20.2854
+    21.1247  21.4269  21.4589  22.1530
 
           k = 0.0000 0.4750 0.4750 ( 12372 PWs)   bands (ev):
 
@@ -2767,13 +2412,7 @@
     17.8174  17.8387  17.8589  17.8828  18.1503  18.1752  18.1932  18.2133
     18.2312  18.2505  18.3699  18.4434  18.5372  18.5423  18.6229  18.6349
     19.4835  19.6186  19.6819  19.8171  19.8538  19.9206  20.0012  20.1234
-    21.3826  21.5739  21.6082  21.9054  23.5007  23.5198  23.5740  23.5762
-    25.9784  26.0655  26.0873  26.1569  26.2705  26.2774  26.3288  26.3993
-    26.4968  26.6528  26.6773  26.7901  27.8365  27.9996  28.0223  28.0918
-    30.2808  30.6223  30.6230  30.8878  30.9207  31.2395  31.2523  31.5293
-    32.9769  33.0347  33.0359  33.0948  33.6097  33.8915  33.9379  34.3344
-    35.4532  35.5975  35.6195  35.6247  35.7028  36.1843  36.1961  36.7536
-    37.6861  37.6899  37.7836  37.8864
+    21.3826  21.5739  21.6082  21.9054
 
           k = 0.0000 0.5000 0.5000 ( 12408 PWs)   bands (ev):
 
@@ -2792,20 +2431,14 @@
     17.8366  17.8409  17.8592  17.8592  18.1828  18.1828  18.1843  18.2187
     18.2187  18.2413  18.3628  18.4430  18.5464  18.5479  18.6284  18.6284
     19.6244  19.6244  19.6573  19.7247  19.9109  19.9364  20.0061  20.0061
-    21.6167  21.6295  21.6295  21.7102  23.5058  23.5099  23.5099  23.5110
-    26.1411  26.1436  26.1436  26.1766  26.2889  26.3250  26.3250  26.3436
-    26.5654  26.5889  26.6030  26.6030  27.9413  27.9432  27.9432  28.0157
-    30.6074  30.6111  30.6111  30.6162  31.1852  31.2278  31.2278  31.2456
-    33.0039  33.0320  33.0320  33.0815  33.9020  33.9020  33.9373  33.9593
-    35.5764  35.6157  35.6182  35.6182  36.1864  36.1864  36.1896  36.2071
-    38.0269  38.0400  38.0401  38.0648
+    21.6167  21.6295  21.6295  21.7102
 
           k = 0.0375 0.5000 0.4875 ( 12368 PWs)   bands (ev):
 
    -69.5961 -69.5961 -69.5959 -69.5959 -69.5902 -69.5902 -69.5900 -69.5900
    -47.3735 -47.3735 -47.3735 -46.9675 -35.7154 -35.7154 -35.7152 -35.7151
    -35.6852 -35.6852 -35.6839 -35.6838 -35.6818 -35.6817 -35.6805 -35.6804
-   -35.6782 -35.6782 -35.6770 -35.6768 -35.6756 -35.6755 -35.6743 -35.6743
+   -35.6782 -35.6781 -35.6770 -35.6768 -35.6756 -35.6755 -35.6743 -35.6743
    -35.6439 -35.6439 -35.6436 -35.6436 -21.2183 -21.2142 -21.2126 -21.2107
    -21.2092 -21.2092 -21.2083 -21.2083 -21.2051 -20.8195 -20.8195 -20.8193
      9.7704   9.8135   9.8750   9.9087  12.6762  12.6878  12.7147  12.7767
@@ -2817,13 +2450,7 @@
     17.8379  17.8403  17.8636  17.8638  18.1704  18.1798  18.1893  18.2229
     18.2241  18.2479  18.3539  18.4476  18.5464  18.5554  18.6285  18.6287
     19.5509  19.5650  19.6343  19.6736  19.9803  19.9915  20.0819  20.0831
-    21.5640  21.6008  21.6942  21.7500  23.5056  23.5070  23.5107  23.5141
-    26.0370  26.0719  26.1159  26.1230  26.1510  26.1586  26.2046  26.2382
-    26.6998  26.7178  26.7977  26.8115  27.9500  27.9697  28.0091  28.0629
-    30.5087  30.5135  30.6336  30.6450  31.0939  31.1208  31.2141  31.2401
-    33.1120  33.1416  33.1497  33.1976  33.8050  33.8140  33.9977  34.0110
-    35.4962  35.5219  35.5748  35.5881  36.0829  36.0910  36.3646  36.3736
-    37.8567  37.9074  37.9699  37.9759
+    21.5640  21.6008  21.6942  21.7500
 
           k = 0.0750 0.5000 0.4750 ( 12364 PWs)   bands (ev):
 
@@ -2842,13 +2469,7 @@
     17.8414  17.8425  17.8746  17.8754  18.1528  18.1710  18.1878  18.2350
     18.2380  18.2659  18.3311  18.4607  18.5467  18.5739  18.6282  18.6288
     19.4275  19.4451  19.5766  19.6054  20.0895  20.0977  20.2635  20.2637
-    21.5188  21.5614  21.7750  21.8221  23.5042  23.5057  23.5126  23.5174
-    25.7566  25.7948  25.9467  25.9481  25.9940  26.0037  26.1449  26.1795
-    26.9037  26.9242  27.0863  27.1005  28.0256  28.0509  28.1440  28.1900
-    30.3752  30.3831  30.4654  30.4912  31.0577  31.0728  31.1097  31.1293
-    33.3747  33.4062  33.4625  33.5062  33.6654  33.6746  34.0418  34.0539
-    35.2893  35.3128  35.4395  35.4545  36.0493  36.0565  36.6013  36.6100
-    37.6186  37.6617  37.8196  37.8240
+    21.5188  21.5614  21.7750  21.8221
 
           k = 0.1125 0.5000 0.4625 ( 12356 PWs)   bands (ev):
 
@@ -2867,13 +2488,7 @@
     17.8476  17.8524  17.8893  17.8925  18.1333  18.1574  18.1804  18.2523
     18.2597  18.2926  18.3032  18.4812  18.5480  18.5969  18.6279  18.6282
     19.3093  19.3259  19.5127  19.5407  20.2196  20.2303  20.4870  20.4872
-    21.4879  21.5321  21.8637  21.9046  23.5024  23.5066  23.5148  23.5203
-    25.4448  25.4815  25.7281  25.7315  25.8417  25.8538  26.0739  26.1094
-    27.1074  27.1314  27.3729  27.3850  28.1536  28.1796  28.3278  28.3700
-    30.1525  30.1779  30.2109  30.2301  30.9777  30.9966  31.1283  31.1322
-    33.4919  33.5076  33.7305  33.7651  33.8678  33.9090  34.0866  34.0944
-    34.9985  35.0224  35.2332  35.2472  36.0773  36.0831  36.8608  36.8680
-    37.3461  37.3803  37.6357  37.6406
+    21.4879  21.5321  21.8637  21.9046
 
           k = 0.1500 0.5000 0.4500 ( 12346 PWs)   bands (ev):
 
@@ -2892,13 +2507,7 @@
     17.8599  17.8676  17.9071  17.9132  18.1132  18.1403  18.1674  18.2505
     18.2890  18.2984  18.3266  18.5075  18.5506  18.6161  18.6263  18.6313
     19.2072  19.2218  19.4517  19.4811  20.3695  20.3840  20.7339  20.7348
-    21.4714  21.5154  21.9576  21.9924  23.5014  23.5078  23.5173  23.5223
-    25.1384  25.1746  25.5076  25.5120  25.6694  25.6845  25.9739  26.0109
-    27.3047  27.3321  27.6485  27.6585  28.3138  28.3390  28.5336  28.5729
-    29.8143  29.8424  30.0114  30.0343  30.9016  30.9137  31.2171  31.2204
-    33.3374  33.3548  34.0293  34.0325  34.1197  34.1567  34.4120  34.4482
-    34.6640  34.6870  34.9812  34.9932  36.1517  36.1560  36.8474  36.8623
-    37.3396  37.3454  37.4170  37.4271
+    21.4714  21.5154  21.9576  21.9924
 
           k = 0.1875 0.5000 0.4375 ( 12322 PWs)   bands (ev):
 
@@ -2917,13 +2526,7 @@
     17.8776  17.8867  17.9274  17.9354  18.0936  18.1210  18.1499  18.2194
     18.3253  18.3290  18.3667  18.5378  18.5540  18.6185  18.6228  18.6491
     19.1236  19.1360  19.3957  19.4269  20.5380  20.5568  20.9971  20.9998
-    21.4692  21.5121  22.0536  22.0824  23.4995  23.5076  23.5193  23.5227
-    24.8489  24.8845  25.2944  25.3001  25.4763  25.4951  25.8506  25.8891
-    27.4959  27.5260  27.9120  27.9208  28.4804  28.5050  28.7314  28.7671
-    29.5022  29.5289  29.7905  29.8175  30.9052  30.9136  31.3073  31.3105
-    33.2013  33.2204  34.0183  34.0187  34.3158  34.3398  34.5349  34.5700
-    34.7011  34.7107  34.9208  34.9567  36.2562  36.2586  36.4997  36.5168
-    37.1613  37.1769  37.6159  37.6428
+    21.4692  21.5121  22.0536  22.0824
 
           k = 0.2250 0.5000 0.4250 ( 12330 PWs)   bands (ev):
 
@@ -2942,13 +2545,7 @@
     17.8981  17.9075  17.9489  17.9564  18.0751  18.1008  18.1296  18.1853
     18.3671  18.3689  18.4111  18.5573  18.5695  18.6164  18.6181  18.6687
     19.0582  19.0686  19.3448  19.3776  20.7241  20.7473  21.2714  21.2755
-    21.4804  21.5217  22.1489  22.1715  23.4908  23.5030  23.5161  23.5202
-    24.5893  24.6242  25.0931  25.1004  25.2629  25.2861  25.7084  25.7478
-    27.6829  27.7148  28.1630  28.1715  28.6096  28.6350  28.8944  28.9252
-    29.2638  29.2877  29.5668  29.5957  30.9973  31.0048  31.3924  31.3953
-    33.1016  33.1222  33.8502  33.8796  34.1109  34.1139  34.4056  34.4126
-    34.9639  34.9976  35.4380  35.4749  36.1116  36.1249  36.3700  36.3705
-    36.8864  36.9074  37.5157  37.5512
+    21.4804  21.5217  22.1489  22.1715
 
           k = 0.2625 0.5000 0.4125 ( 12324 PWs)   bands (ev):
 
@@ -2967,13 +2564,7 @@
     17.9190  17.9278  17.9706  17.9745  18.0586  18.0808  18.1089  18.1534
     18.4120  18.4122  18.4570  18.5598  18.5933  18.6126  18.6220  18.6854
     19.0099  19.0192  19.2984  19.3324  20.9265  20.9541  21.5039  21.5318
-    21.5493  21.5656  22.2405  22.2572  23.4627  23.4844  23.5030  23.5126
-    24.3802  24.4139  24.9082  24.9173  25.0302  25.0584  25.5505  25.5905
-    27.8669  27.8995  28.3978  28.4074  28.6236  28.6507  29.0070  29.0325
-    29.1718  29.1932  29.3580  29.3862  31.1713  31.1788  31.4746  31.4770
-    33.0477  33.0692  33.5197  33.5590  34.0771  34.0839  34.1075  34.1107
-    35.3973  35.4297  35.6790  35.6920  35.9919  36.0252  36.4192  36.4306
-    36.6615  36.6789  37.4534  37.4850
+    21.5493  21.5656  22.2405  22.2572
 
           k = 0.3000 0.5000 0.4000 ( 12340 PWs)   bands (ev):
 
@@ -2992,13 +2583,7 @@
     17.9375  17.9457  17.9884  17.9914  18.0447  18.0618  18.0899  18.1258
     18.4547  18.4570  18.4992  18.5623  18.5967  18.6067  18.6471  18.6984
     18.9771  18.9873  19.2558  19.2905  21.1428  21.1748  21.5384  21.5714
-    21.8171  21.8261  22.3259  22.3373  23.4000  23.4285  23.4847  23.4973
-    24.2472  24.2787  24.7447  24.7536  24.7817  24.8174  25.3806  25.4208
-    28.0475  28.0796  28.5274  28.5537  28.6080  28.6212  29.0540  29.0794
-    29.1844  29.2147  29.2219  29.2344  31.4012  31.4076  31.5633  31.5649
-    33.0379  33.0599  33.1982  33.2432  33.8112  33.8136  34.0772  34.0843
-    35.3108  35.3157  35.8287  35.8615  36.2213  36.2491  36.4714  36.5067
-    36.6629  36.6710  37.4426  37.4697
+    21.8171  21.8261  22.3259  22.3373
 
           k = 0.3375 0.5000 0.3875 ( 12346 PWs)   bands (ev):
 
@@ -3017,13 +2602,7 @@
     17.9518  17.9595  17.9982  18.0106  18.0338  18.0445  18.0744  18.1042
     18.4911  18.4987  18.5280  18.5709  18.5968  18.6007  18.6745  18.7080
     18.9590  18.9725  19.2162  19.2509  21.3676  21.4052  21.5841  21.6121
-    22.0474  22.0571  22.4015  22.4086  23.3129  23.3459  23.4572  23.4708
-    24.1974  24.2256  24.5303  24.5608  24.6077  24.6298  25.2034  25.2435
-    28.2202  28.2488  28.4286  28.4573  28.7728  28.7919  28.9660  28.9949
-    29.1672  29.1795  29.2767  29.2952  31.6326  31.6391  31.6696  31.6728
-    32.9432  32.9945  33.0546  33.0772  33.5469  33.5485  34.0707  34.0755
-    34.9689  34.9692  35.9470  35.9778  36.2503  36.2867  36.7152  36.7218
-    36.9018  36.9380  37.4942  37.5169
+    22.0474  22.0571  22.4015  22.4086
 
           k = 0.3750 0.5000 0.3750 ( 12360 PWs)   bands (ev):
 
@@ -3042,13 +2621,7 @@
     17.9613  17.9681  18.0041  18.0241  18.0265  18.0323  18.0641  18.0900
     18.5149  18.5325  18.5357  18.5886  18.5979  18.6028  18.6943  18.7166
     18.9548  18.9741  19.1790  19.2129  21.5707  21.6195  21.6639  21.6801
-    22.1862  22.1977  22.4622  22.4668  23.2573  23.2917  23.4169  23.4305
-    24.1746  24.1984  24.3363  24.3745  24.5007  24.5233  25.0263  25.0662
-    28.3288  28.3460  28.4272  28.4658  28.7936  28.8308  28.9244  28.9368
-    29.2022  29.2129  29.3054  29.3239  31.7727  31.7878  31.7916  31.8068
-    32.8336  32.8890  33.0413  33.0662  33.3743  33.3768  34.0082  34.0107
-    34.7277  34.7305  35.6864  35.7185  36.5839  36.6356  36.8057  36.8122
-    37.1615  37.1994  37.6000  37.6200
+    22.1862  22.1977  22.4622  22.4668
 
           k = 0.4125 0.5000 0.3625 ( 12352 PWs)   bands (ev):
 
@@ -3067,13 +2640,7 @@
     17.9665  17.9715  18.0060  18.0131  18.0238  18.0431  18.0595  18.0837
     18.5231  18.5297  18.5593  18.5854  18.6157  18.6158  18.7007  18.7272
     18.9644  18.9914  19.1443  19.1757  21.6581  21.6927  21.8608  21.8887
-    22.1775  22.1928  22.4979  22.5037  23.2737  23.3034  23.3665  23.3782
-    24.0560  24.0854  24.3506  24.3802  24.4215  24.4490  24.8618  24.9014
-    28.3364  28.3564  28.5660  28.5997  28.6931  28.7289  28.9541  28.9666
-    29.2354  29.2509  29.2963  29.3140  31.8096  31.8099  31.8796  31.8840
-    32.9237  32.9649  32.9745  32.9914  33.3570  33.3591  33.8219  33.8264
-    34.6808  34.6811  35.4572  35.4883  36.6415  36.6805  37.1205  37.1494
-    37.1555  37.1585  37.7374  37.7528
+    22.1775  22.1928  22.4979  22.5037
 
           k = 0.4500 0.5000 0.3500 ( 12346 PWs)   bands (ev):
 
@@ -3092,13 +2659,7 @@
     17.9686  17.9710  18.0004  18.0042  18.0257  18.0541  18.0595  18.0842
     18.5199  18.5214  18.5654  18.5857  18.6290  18.6299  18.6979  18.7350
     18.9868  19.0235  19.1130  19.1387  21.7122  21.7403  22.0435  22.0588
-    22.0746  22.1088  22.4784  22.4908  23.2913  23.3080  23.3200  23.3252
-    24.0407  24.0723  24.3564  24.3807  24.4537  24.4844  24.7315  24.7713
-    28.3842  28.4057  28.6067  28.6411  28.6931  28.7229  28.9327  28.9442
-    29.2335  29.2613  29.2665  29.2791  31.7633  31.7657  31.8807  31.8873
-    32.9761  32.9966  33.1292  33.1649  33.3966  33.4019  33.5578  33.5675
-    34.8028  34.8111  35.2781  35.3058  36.6192  36.6552  36.9170  36.9532
-    37.5366  37.5478  37.8817  37.8926
+    22.0746  22.1088  22.4784  22.4909
 
           k = 0.4875 0.5000 0.3375 ( 12340 PWs)   bands (ev):
 
@@ -3116,14 +2677,8 @@
     16.0534  16.0571  16.0696  16.0732  16.2493  16.2531  16.2627  16.2665
     17.9683  17.9685  17.9898  17.9998  18.0308  18.0622  18.0626  18.0894
     18.5101  18.5102  18.5550  18.5899  18.6359  18.6360  18.6899  18.7362
-    19.0151  19.0694  19.0922  19.1016  21.7580  21.7798  21.8458  21.8693
-    22.2508  22.2788  22.3621  22.3852  23.2770  23.2830  23.2949  23.2950
-    24.1904  24.2191  24.2868  24.3175  24.5971  24.6143  24.6629  24.7111
-    28.4844  28.5014  28.5443  28.5843  28.7695  28.7961  28.8433  28.8540
-    29.2013  29.2383  29.2386  29.2468  31.7309  31.7358  31.7769  31.7807
-    33.1382  33.1503  33.2990  33.3171  33.3401  33.3679  33.4214  33.4305
-    35.0457  35.0638  35.1702  35.1910  36.5820  36.6167  36.6658  36.7027
-    37.8664  37.8899  37.9922  38.0029
+    19.0151  19.0694  19.0922  19.1016  21.7580  21.7799  21.8459  21.8693
+    22.2508  22.2788  22.3621  22.3852
 
           k = 0.5250 0.5000 0.3250 ( 12340 PWs)   bands (ev):
 
@@ -3142,13 +2697,7 @@
     17.9633  17.9644  17.9846  17.9949  18.0370  18.0665  18.0681  18.0985
     18.4955  18.4957  18.5402  18.5870  18.6333  18.6338  18.6782  18.7302
     19.0193  19.0627  19.1119  19.1301  21.6194  21.6430  21.7951  21.8151
-    22.1389  22.1697  22.3587  22.3804  23.2941  23.3016  23.3135  23.3146
-    24.2160  24.2463  24.4028  24.4293  24.6608  24.6841  24.7931  24.8350
-    28.5049  28.5250  28.6318  28.6512  28.6691  28.6793  28.7885  28.7989
-    29.1844  29.2202  29.2209  29.2296  31.6256  31.6295  31.7181  31.7224
-    33.0952  33.1113  33.3821  33.4053  33.4162  33.4256  33.5339  33.5434
-    35.1428  35.1581  35.3862  35.4098  36.3887  36.4236  36.5494  36.5859
-    37.7223  37.7303  37.8886  37.9030
+    22.1389  22.1697  22.3587  22.3804
 
           k = 0.5625 0.5000 0.3125 ( 12332 PWs)   bands (ev):
 
@@ -3167,13 +2716,7 @@
     17.9523  17.9572  17.9862  17.9911  18.0419  18.0664  18.0770  18.1109
     18.4769  18.4779  18.5223  18.5769  18.6201  18.6238  18.6639  18.7173
     18.9994  19.0247  19.1735  19.2035  21.3829  21.4106  21.8162  21.8274
-    21.8530  21.8901  22.3760  22.3909  23.3470  23.3654  23.3812  23.3885
-    24.1906  24.2227  24.5906  24.6085  24.7061  24.7361  25.0590  25.0985
-    28.3674  28.3917  28.5120  28.5424  28.7016  28.7196  28.8544  28.8815
-    29.1824  29.2129  29.2137  29.2233  31.4907  31.4948  31.6733  31.6776
-    33.0025  33.0235  33.3079  33.3451  33.6822  33.6874  33.7303  33.7404
-    35.1980  35.2066  35.7898  35.8177  36.1111  36.1460  36.5103  36.5463
-    37.1916  37.1963  37.6718  37.6931
+    21.8530  21.8901  22.3760  22.3910
 
           k = 0.6000 0.5000 0.3000 ( 12340 PWs)   bands (ev):
 
@@ -3192,13 +2735,7 @@
     17.9375  17.9457  17.9884  17.9914  18.0447  18.0618  18.0898  18.1258
     18.4547  18.4570  18.4992  18.5623  18.5967  18.6067  18.6471  18.6984
     18.9771  18.9873  19.2558  19.2905  21.1428  21.1748  21.5384  21.5714
-    21.8171  21.8261  22.3259  22.3373  23.4000  23.4285  23.4847  23.4973
-    24.2472  24.2787  24.7447  24.7536  24.7817  24.8174  25.3806  25.4208
-    28.0475  28.0796  28.5274  28.5537  28.6080  28.6212  29.0540  29.0794
-    29.1844  29.2147  29.2219  29.2344  31.4012  31.4076  31.5633  31.5649
-    33.0379  33.0599  33.1982  33.2432  33.8112  33.8136  34.0772  34.0843
-    35.3108  35.3157  35.8287  35.8615  36.2213  36.2491  36.4714  36.5067
-    36.6629  36.6710  37.4426  37.4697
+    21.8171  21.8261  22.3259  22.3373
 
           k = 0.6375 0.5000 0.2875 ( 12332 PWs)   bands (ev):
 
@@ -3217,13 +2754,7 @@
     17.9197  17.9299  17.9847  17.9984  18.0468  18.0533  18.1055  18.1421
     18.4292  18.4342  18.4686  18.5465  18.5652  18.5836  18.6266  18.6755
     18.9521  18.9580  19.3538  19.3910  20.9024  20.9402  21.2174  21.2484
-    21.7934  21.7952  22.2386  22.2493  23.4324  23.4675  23.6124  23.6276
-    24.3879  24.4170  24.8778  24.8804  24.8804  24.9205  25.7312  25.7721
-    27.6904  27.7267  28.4890  28.5000  28.5779  28.6036  29.0194  29.0292
-    29.2342  29.2555  29.4234  29.4566  31.3619  31.3739  31.3981  31.4033
-    33.0790  33.1293  33.1713  33.1911  33.9294  33.9305  34.4370  34.4418
-    35.4526  35.4559  35.5513  35.5821  36.1198  36.1298  36.4280  36.4635
-    36.6213  36.6406  37.2844  37.3252
+    21.7934  21.7952  22.2386  22.2493
 
           k = 0.6750 0.5000 0.2750 ( 12334 PWs)   bands (ev):
 
@@ -3242,13 +2773,7 @@
     17.8986  17.9102  17.9777  18.0056  18.0418  18.0498  18.1227  18.1590
     18.4005  18.4090  18.4307  18.5288  18.5316  18.5566  18.6008  18.6520
     18.9204  18.9432  19.4663  19.5048  20.6624  20.7082  20.9045  20.9302
-    21.7386  21.7439  22.1347  22.1463  23.4589  23.4990  23.7551  23.7720
-    24.5779  24.6032  24.9944  25.0048  25.0048  25.0363  26.0945  26.1358
-    27.3154  27.3547  28.3570  28.3681  28.6605  28.6848  28.8793  28.8817
-    29.2589  29.2812  29.7525  29.7888  31.2082  31.2120  31.3741  31.3834
-    32.9743  33.0301  33.3431  33.3611  34.0467  34.0473  34.7991  34.8023
-    35.2795  35.3009  35.5929  35.5970  35.6320  35.6528  36.3706  36.4054
-    36.6471  36.6596  37.4889  37.5392
+    21.7386  21.7439  22.1347  22.1463
 
           k = 0.7125 0.5000 0.2625 ( 12324 PWs)   bands (ev):
 
@@ -3267,13 +2792,7 @@
     17.8740  17.8865  17.9675  18.0112  18.0294  18.0535  18.1399  18.1755
     18.3680  18.3739  18.3951  18.4919  18.5179  18.5290  18.5702  18.6303
     18.8929  18.9323  19.5922  19.6311  20.4205  20.4767  20.6116  20.6294
-    21.6589  21.6712  22.0256  22.0390  23.4980  23.5418  23.9075  23.9255
-    24.7778  24.7984  25.1263  25.1298  25.1314  25.1694  26.4597  26.5013
-    26.9339  26.9754  28.2119  28.2235  28.7061  28.7079  28.7755  28.7975
-    29.2833  29.3080  30.1204  30.1585  31.0264  31.0338  31.3950  31.4069
-    32.9058  32.9650  33.4967  33.5093  34.1630  34.1641  35.0109  35.0169
-    35.1548  35.1561  35.2002  35.2288  35.7025  35.7162  36.2802  36.3139
-    36.4436  36.4603  37.4556  37.4811
+    21.6589  21.6712  22.0256  22.0390
 
           k = 0.7500 0.5000 0.2500 ( 12338 PWs)   bands (ev):
 
@@ -3292,13 +2811,7 @@
     17.8457  17.8588  17.9559  18.0087  18.0230  18.0565  18.1554  18.1903
     18.3249  18.3311  18.3679  18.4583  18.5048  18.5056  18.5384  18.6106
     18.8698  18.9241  19.7305  19.7687  20.1741  20.2383  20.3495  20.3614
-    21.5619  21.5805  21.9177  21.9333  23.5570  23.6037  24.0653  24.0840
-    24.9569  24.9745  25.2485  25.2505  25.2947  25.3316  26.5536  26.5978
-    26.8155  26.8558  28.0502  28.0619  28.5360  28.5416  28.9108  28.9329
-    29.3102  29.3375  30.5140  30.5531  30.8695  30.8793  31.4089  31.4233
-    32.8922  32.9530  33.5693  33.5706  34.2147  34.2231  34.7468  34.7509
-    34.9227  34.9529  35.4887  35.4913  35.7474  35.7676  36.1400  36.1715
-    36.2319  36.2526  37.2843  37.3179
+    21.5619  21.5805  21.9177  21.9333
 
           k = 0.7500 0.4937 0.2562 ( 12326 PWs)   bands (ev):
 
@@ -3308,7 +2821,7 @@
    -35.6789 -35.6788 -35.6751 -35.6736 -35.6566 -35.6565 -35.6561 -35.6560
    -35.6523 -35.6521 -35.6517 -35.6515 -21.2195 -21.2129 -21.2127 -21.2121
    -21.2107 -21.2098 -21.2069 -21.2063 -21.2048 -20.8194 -20.8194 -20.8193
-     9.3349   9.4004  10.6989  10.7367  11.8961  11.9295  12.6885  12.7372
+     9.3349   9.4005  10.6989  10.7367  11.8961  11.9295  12.6885  12.7372
     13.2078  13.2379  13.5914  13.6436  13.8822  13.9333  14.0530  14.0951
     14.4540  14.4559  14.5876  14.6244  14.7433  14.7613  14.9711  14.9906
     15.0163  15.0557  15.0616  15.0865  15.2964  15.3576  15.5952  15.6210
@@ -3316,14 +2829,8 @@
     16.1993  16.2110  16.2171  16.2311  16.3882  16.3901  16.6151  16.6218
     17.8493  17.8627  17.9571  18.0092  18.0235  18.0565  18.1536  18.1886
     18.3296  18.3375  18.3710  18.4623  18.5060  18.5084  18.5423  18.6130
-    18.8727  18.9251  19.7008  19.7629  20.2043  20.2677  20.3810  20.3934
-    21.5412  21.6253  21.8822  21.9951  23.5491  23.5955  24.0438  24.0626
-    24.8996  24.9893  25.2345  25.2387  25.2513  25.3333  26.5953  26.6503
-    26.7724  26.8126  28.0644  28.0783  28.5596  28.5688  28.8579  28.9511
-    29.2813  29.3577  30.4642  30.5032  30.8264  30.9588  31.4075  31.4217
-    32.8919  32.9526  33.5502  33.5835  34.2054  34.2322  34.7423  34.8101
-    34.9491  34.9807  35.4310  35.4456  35.7567  35.7795  36.1583  36.1894
-    36.2379  36.2990  37.3055  37.3378
+    18.8727  18.9251  19.7008  19.7629  20.2044  20.2677  20.3810  20.3934
+    21.5412  21.6253  21.8822  21.9951
 
           k = 0.7500 0.4875 0.2625 ( 12327 PWs)   bands (ev):
 
@@ -3342,13 +2849,7 @@
     17.8524  17.8670  17.9578  18.0085  18.0247  18.0569  18.1517  18.1868
     18.3326  18.3452  18.3738  18.4666  18.5069  18.5116  18.5464  18.6152
     18.8758  18.9261  19.6625  19.7663  20.2330  20.2950  20.4138  20.4276
-    21.5118  21.6766  21.8396  22.0642  23.5426  23.5887  24.0184  24.0394
-    24.8332  25.0095  25.1979  25.2213  25.2356  25.3491  26.6309  26.7091
-    26.7297  26.7687  28.0601  28.0910  28.5863  28.6144  28.7975  28.9776
-    29.2420  29.3875  30.4150  30.4539  30.7806  31.0444  31.4039  31.4200
-    32.8955  32.9560  33.5218  33.5953  34.1756  34.2464  34.7341  34.8757
-    34.9848  35.0170  35.3463  35.3931  35.7702  35.8154  36.1725  36.2031
-    36.2387  36.3602  37.3292  37.3603
+    21.5118  21.6766  21.8396  22.0642
 
           k = 0.7500 0.4812 0.2687 ( 12329 PWs)   bands (ev):
 
@@ -3358,7 +2859,7 @@
    -35.6778 -35.6775 -35.6766 -35.6722 -35.6578 -35.6574 -35.6562 -35.6557
    -35.6535 -35.6531 -35.6520 -35.6516 -21.2196 -21.2128 -21.2127 -21.2120
    -21.2107 -21.2099 -21.2068 -21.2063 -21.2048 -20.8194 -20.8194 -20.8193
-     9.3159   9.4767  10.6833  10.7229  11.8799  11.9145  12.6361  12.7566
+     9.3159   9.4767  10.6833  10.7229  11.8799  11.9145  12.6362  12.7566
     13.2281  13.2588  13.5747  13.6327  13.8623  13.9377  14.0387  14.0809
     14.4695  14.4707  14.5917  14.6419  14.7494  14.7738  14.9587  14.9982
     15.0097  15.0473  15.0604  15.1038  15.2915  15.3524  15.5785  15.6256
@@ -3367,13 +2868,7 @@
     17.8551  17.8715  17.9579  18.0070  18.0263  18.0579  18.1496  18.1849
     18.3352  18.3527  18.3764  18.4710  18.5075  18.5149  18.5505  18.6174
     18.8794  18.9274  19.6234  19.7712  20.2596  20.3212  20.4475  20.4641
-    21.4812  21.7268  21.7969  22.1338  23.5376  23.5833  23.9877  24.0165
-    24.7650  25.0276  25.1455  25.2091  25.2400  25.3683  26.6618  26.6872
-    26.7241  26.7729  28.0410  28.1012  28.6162  28.6724  28.7386  29.0042
-    29.2014  29.4174  30.3667  30.4055  30.7369  31.1309  31.3965  31.4200
-    32.9025  32.9634  33.4859  33.6058  34.1347  34.2624  34.7250  34.9323
-    35.0223  35.0752  35.2496  35.3364  35.7841  35.8627  36.1812  36.2141
-    36.2413  36.4278  37.3549  37.3848
+    21.4812  21.7268  21.7969  22.1338
 
           k = 0.7500 0.4750 0.2750 ( 12328 PWs)   bands (ev):
 
@@ -3392,13 +2887,7 @@
     17.8576  17.8762  17.9576  18.0051  18.0280  18.0595  18.1474  18.1829
     18.3378  18.3594  18.3792  18.4754  18.5079  18.5184  18.5547  18.6195
     18.8832  18.9288  19.5847  19.7762  20.2836  20.3475  20.4817  20.5025
-    21.4498  21.7541  21.7755  22.2036  23.5341  23.5793  23.9522  23.9943
-    24.6956  25.0434  25.0949  25.1981  25.2512  25.3902  26.6365  26.6790
-    26.7020  26.8363  28.0126  28.1086  28.6486  28.6805  28.7395  29.0307
-    29.1599  29.4467  30.3192  30.3583  30.6955  31.2179  31.3853  31.4223
-    32.9126  32.9749  33.4436  33.6148  34.0877  34.2797  34.7158  34.9778
-    35.0538  35.1450  35.1612  35.2778  35.7981  35.9139  36.1839  36.2239
-    36.2466  36.4999  37.3819  37.4105
+    21.4498  21.7541  21.7755  22.2036
 
           k = 0.7500 0.4687 0.2812 ( 12327 PWs)   bands (ev):
 
@@ -3417,13 +2906,7 @@
     17.8600  17.8809  17.9567  18.0031  18.0295  18.0615  18.1451  18.1808
     18.3405  18.3649  18.3824  18.4798  18.5082  18.5219  18.5588  18.6216
     18.8873  18.9307  19.5467  19.7812  20.3045  20.3749  20.5163  20.5420
-    21.4176  21.7113  21.8225  22.2735  23.5319  23.5765  23.9132  23.9725
-    24.6256  25.0441  25.0589  25.1881  25.2684  25.4146  26.5919  26.6336
-    26.7358  26.9004  27.9783  28.1133  28.6245  28.6848  28.8089  29.0573
-    29.1176  29.4752  30.2725  30.3125  30.6565  31.3046  31.3711  31.4266
-    32.9252  32.9906  33.3963  33.6226  34.0375  34.2981  34.7065  35.0162
-    35.0416  35.0822  35.2166  35.2602  35.8117  35.9655  36.1822  36.2324
-    36.2549  36.5752  37.4094  37.4363
+    21.4176  21.7113  21.8225  22.2735
 
           k = 0.7500 0.4625 0.2875 ( 12335 PWs)   bands (ev):
 
@@ -3441,14 +2924,8 @@
     16.1282  16.1586  16.2290  16.2668  16.3700  16.3879  16.5751  16.5968
     17.8623  17.8857  17.9553  18.0010  18.0308  18.0640  18.1428  18.1787
     18.3432  18.3689  18.3864  18.4841  18.5083  18.5257  18.5628  18.6235
-    18.8915  18.9331  19.5096  19.7860  20.3223  20.4036  20.5513  20.5818
-    21.3847  21.6686  21.8675  22.3435  23.5311  23.5749  23.8719  23.9509
-    24.5552  24.9976  25.0694  25.1790  25.2907  25.4412  26.5464  26.5879
-    26.7708  26.9647  27.9402  28.1159  28.5716  28.7212  28.8799  29.0746
-    29.0842  29.5025  30.2266  30.2686  30.6199  31.3525  31.3915  31.4337
-    32.9400  33.0104  33.3455  33.6292  33.9859  34.3172  34.6976  34.9291
-    35.0586  35.1086  35.1576  35.3650  35.8244  36.0138  36.1793  36.2403
-    36.2653  36.6525  37.4362  37.4614
+    18.8915  18.9331  19.5097  19.7860  20.3223  20.4036  20.5513  20.5818
+    21.3847  21.6686  21.8675  22.3435
 
           k = 0.7500 0.4562 0.2937 ( 12337 PWs)   bands (ev):
 
@@ -3467,13 +2944,7 @@
     17.8646  17.8903  17.9534  17.9990  18.0319  18.0668  18.1405  18.1765
     18.3460  18.3715  18.3912  18.4880  18.5082  18.5296  18.5667  18.6254
     18.8955  18.9363  19.4736  19.7905  20.3376  20.4337  20.5868  20.6214
-    21.3512  21.6260  21.9104  22.4136  23.5315  23.5745  23.8294  23.9295
-    24.4850  24.9519  25.0790  25.1710  25.3174  25.4699  26.5006  26.5418
-    26.8065  27.0290  27.8997  28.1170  28.5207  28.7587  28.9506  29.0313
-    29.1112  29.5286  30.1814  30.2268  30.5859  31.3338  31.4387  31.4793
-    32.9566  33.0338  33.2928  33.6348  33.9340  34.3369  34.6889  34.8184
-    35.0915  35.1027  35.1346  35.4745  35.8360  36.0514  36.1830  36.2488
-    36.2768  36.7303  37.4603  37.4857
+    21.3512  21.6260  21.9104  22.4136
 
           k = 0.7500 0.4500 0.3000 ( 12335 PWs)   bands (ev):
 
@@ -3492,13 +2963,7 @@
     17.8670  17.8948  17.9511  17.9971  18.0328  18.0699  18.1381  18.1742
     18.3487  18.3732  18.3964  18.4917  18.5080  18.5336  18.5705  18.6272
     18.8992  18.9406  19.4385  19.7947  20.3507  20.4649  20.6227  20.6603
-    21.3172  21.5835  21.9510  22.4837  23.5328  23.5751  23.7864  23.9081
-    24.4153  24.9079  25.0869  25.1639  25.3480  25.5004  26.4545  26.4956
-    26.8428  27.0931  27.8575  28.1169  28.4719  28.7963  28.9870  29.0204
-    29.1386  29.5533  30.1369  30.1875  30.5545  31.3131  31.4503  31.5607
-    32.9750  33.0604  33.2400  33.6396  33.8826  34.3567  34.6806  34.7064
-    35.0386  35.1304  35.1632  35.5861  35.8464  36.0666  36.2051  36.2589
-    36.2885  36.8072  37.4785  37.5105
+    21.3172  21.5835  21.9510  22.4837
 
           k = 0.7500 0.4437 0.3062 ( 12334 PWs)   bands (ev):
 
@@ -3508,7 +2973,7 @@
    -35.6768 -35.6739 -35.6730 -35.6685 -35.6615 -35.6605 -35.6572 -35.6563
    -35.6558 -35.6551 -35.6526 -35.6515 -21.2198 -21.2127 -21.2126 -21.2120
    -21.2108 -21.2101 -21.2066 -21.2062 -21.2049 -20.8194 -20.8194 -20.8193
-     9.2630   9.7232  10.5710  10.6905  11.8435  11.9298  12.4637  12.8147
+     9.2631   9.7232  10.5710  10.6905  11.8435  11.9298  12.4637  12.8147
     13.2800  13.3183  13.5192  13.6105  13.7959  13.9593  14.0056  14.0464
     14.5089  14.5138  14.5926  14.6912  14.7815  14.8190  14.9153  14.9396
     15.0029  15.0579  15.0885  15.1666  15.2689  15.3450  15.5327  15.5815
@@ -3517,18 +2982,12 @@
     17.8695  17.8991  17.9484  17.9954  18.0336  18.0732  18.1359  18.1718
     18.3514  18.3742  18.4017  18.4949  18.5076  18.5378  18.5740  18.6290
     18.9023  18.9463  19.4045  19.7987  20.3621  20.4969  20.6589  20.6981
-    21.2827  21.5412  21.9892  22.5537  23.5349  23.5766  23.7439  23.8869
-    24.3465  24.8656  25.0933  25.1577  25.3818  25.5326  26.4081  26.4493
-    26.8799  27.1567  27.8142  28.1160  28.4253  28.8334  28.9437  29.0867
-    29.1663  29.5766  30.0929  30.1507  30.5257  31.2914  31.4636  31.6393
-    32.9950  33.0894  33.1892  33.6435  33.8320  34.3765  34.5939  34.6727
-    34.9813  35.1556  35.1984  35.6989  35.8556  36.0592  36.2446  36.2719
-    36.3003  36.8811  37.4881  37.5363
+    21.2827  21.5412  21.9892  22.5537
 
           k = 0.7500 0.4375 0.3125 ( 12334 PWs)   bands (ev):
 
    -69.5973 -69.5961 -69.5940 -69.5931 -69.5929 -69.5920 -69.5899 -69.5887
-   -47.3737 -47.3736 -47.3733 -46.9675 -35.7077 -35.7071 -35.7042 -35.7025
+   -47.3737 -47.3735 -47.3733 -46.9675 -35.7077 -35.7071 -35.7042 -35.7025
    -35.7012 -35.7007 -35.6983 -35.6965 -35.6899 -35.6873 -35.6865 -35.6822
    -35.6760 -35.6732 -35.6723 -35.6679 -35.6622 -35.6611 -35.6578 -35.6564
    -35.6563 -35.6551 -35.6528 -35.6515 -21.2199 -21.2127 -21.2126 -21.2120
@@ -3542,13 +3001,7 @@
     17.8719  17.9032  17.9453  17.9939  18.0342  18.0765  18.1337  18.1693
     18.3541  18.3749  18.4068  18.4977  18.5071  18.5421  18.5772  18.6307
     18.9048  18.9534  19.3715  19.8023  20.3720  20.5297  20.6954  20.7345
-    21.2476  21.4990  22.0247  22.6235  23.5371  23.5790  23.7025  23.8659
-    24.2794  24.8252  25.0983  25.1522  25.4183  25.5662  26.3616  26.4030
-    26.9175  27.2197  27.7703  28.1145  28.3808  28.8693  28.9011  29.1498
-    29.1943  29.5983  30.0498  30.1166  30.4995  31.2693  31.4797  31.7124
-    33.0166  33.1197  33.1433  33.6468  33.7826  34.3959  34.4812  34.6653
-    34.9257  35.1744  35.2385  35.8118  35.8641  36.0394  36.2767  36.2998
-    36.3150  36.9495  37.4881  37.5625
+    21.2476  21.4990  22.0247  22.6235
 
           k = 0.7500 0.4312 0.3187 ( 12337 PWs)   bands (ev):
 
@@ -3567,13 +3020,7 @@
     17.8746  17.9070  17.9420  17.9925  18.0346  18.0799  18.1316  18.1669
     18.3567  18.3752  18.4116  18.5000  18.5065  18.5464  18.5800  18.6323
     18.9066  18.9622  19.3396  19.8056  20.3807  20.5630  20.7320  20.7692
-    21.2123  21.4571  22.0573  22.6930  23.5388  23.5823  23.6630  23.8451
-    24.2144  24.7870  25.1022  25.1476  25.4571  25.6011  26.3148  26.3568
-    26.9559  27.2818  27.7258  28.1127  28.3383  28.8574  28.9055  29.2086
-    29.2229  29.6183  30.0078  30.0852  30.4760  31.2473  31.4988  31.7781
-    33.0399  33.1029  33.1526  33.6495  33.7344  34.3682  34.4151  34.6582
-    34.8723  35.1892  35.2807  35.8688  35.9274  36.0131  36.2926  36.3187
-    36.3593  37.0092  37.4779  37.5879
+    21.2123  21.4571  22.0573  22.6930
 
           k = 0.7500 0.4250 0.3250 ( 12339 PWs)   bands (ev):
 
@@ -3592,13 +3039,7 @@
     17.8773  17.9105  17.9384  17.9914  18.0350  18.0833  18.1297  18.1643
     18.3592  18.3754  18.4162  18.5016  18.5061  18.5507  18.5825  18.6339
     18.9079  18.9724  19.3089  19.8085  20.3882  20.5968  20.7684  20.8020
-    21.1767  21.4153  22.0869  22.7621  23.5387  23.5865  23.6263  23.8246
-    24.1526  24.7512  25.1052  25.1436  25.4979  25.6370  26.2679  26.3107
-    26.9948  27.3425  27.6812  28.1107  28.2976  28.8169  28.9382  29.2507
-    29.2634  29.6366  29.9669  30.0566  30.4550  31.2260  31.5212  31.8336
-    33.0641  33.0745  33.1843  33.6516  33.6876  34.2562  34.4330  34.6515
-    34.8216  35.2013  35.3239  35.8748  35.9830  36.0400  36.3073  36.3289
-    36.4150  37.0564  37.4572  37.6121
+    21.1767  21.4153  22.0869  22.7621
 
           k = 0.7500 0.4187 0.3312 ( 12337 PWs)   bands (ev):
 
@@ -3617,13 +3058,7 @@
     17.8801  17.9137  17.9348  17.9904  18.0353  18.0864  18.1281  18.1618
     18.3616  18.3755  18.4204  18.5024  18.5062  18.5548  18.5845  18.6353
     18.9087  18.9840  19.2792  19.8112  20.3947  20.6311  20.8040  20.8332
-    21.1408  21.3738  22.1133  22.8306  23.5354  23.5863  23.5984  23.8044
-    24.0949  24.7181  25.1074  25.1403  25.5401  25.6740  26.2208  26.2650
-    27.0344  27.4015  27.6364  28.1087  28.2588  28.7783  28.9689  29.2794
-    29.3118  29.6531  29.9277  30.0309  30.4366  31.2058  31.5470  31.8766
-    33.0576  33.0914  33.2156  33.6417  33.6539  34.1451  34.4500  34.6452
-    34.7743  35.2111  35.3676  35.8789  35.9505  36.1521  36.3220  36.3377
-    36.4720  37.0879  37.4257  37.6345
+    21.1408  21.3738  22.1133  22.8306
 
           k = 0.7500 0.4125 0.3375 ( 12341 PWs)   bands (ev):
 
@@ -3642,13 +3077,7 @@
     17.8831  17.9164  17.9311  17.9895  18.0356  18.0894  18.1267  18.1593
     18.3638  18.3754  18.4241  18.5021  18.5069  18.5587  18.5861  18.6366
     18.9092  18.9969  19.2508  19.8134  20.4002  20.6658  20.8373  20.8639
-    21.1049  21.3325  22.1365  22.8983  23.5272  23.5598  23.6022  23.7846
-    24.0428  24.6881  25.1089  25.1377  25.5835  25.7118  26.1736  26.2196
-    27.0745  27.4580  27.5917  28.1068  28.2216  28.7425  28.9967  29.3078
-    29.3541  29.6678  29.8904  30.0082  30.4208  31.1873  31.5763  31.9049
-    33.0572  33.1189  33.2453  33.5983  33.6550  34.0352  34.4657  34.6393
-    34.7310  35.2190  35.4116  35.8804  35.9176  36.2627  36.3365  36.3456
-    36.5291  37.1019  37.3839  37.6546
+    21.1049  21.3325  22.1365  22.8983
 
           k = 0.7500 0.4062 0.3437 ( 12337 PWs)   bands (ev):
 
@@ -3667,13 +3096,7 @@
     17.8861  17.9185  17.9277  17.9888  18.0358  18.0921  18.1256  18.1570
     18.3658  18.3753  18.4274  18.5015  18.5077  18.5624  18.5873  18.6379
     18.9096  19.0111  19.2235  19.8154  20.4048  20.7008  20.8654  20.8963
-    21.0692  21.2914  22.1562  22.9646  23.5124  23.5340  23.6112  23.7652
-    23.9976  24.6617  25.1100  25.1356  25.6278  25.7503  26.1264  26.1748
-    27.1152  27.5106  27.5479  28.1050  28.1863  28.7103  29.0213  29.3356
-    29.3897  29.6808  29.8555  29.9885  30.4075  31.1708  31.6088  31.9176
-    33.0735  33.1476  33.2727  33.5565  33.6560  33.9274  34.4798  34.6338
-    34.6924  35.2251  35.4556  35.8681  35.8959  36.3481  36.3522  36.3730
-    36.5855  37.0993  37.3324  37.6722
+    21.0692  21.2914  22.1562  22.9646
 
           k = 0.7500 0.4000 0.3500 ( 12334 PWs)   bands (ev):
 
@@ -3692,13 +3115,7 @@
     17.8892  17.9192  17.9252  17.9883  18.0359  18.0943  18.1249  18.1548
     18.3676  18.3751  18.4302  18.5008  18.5084  18.5656  18.5881  18.6389
     18.9098  19.0265  19.1974  19.8169  20.4085  20.7361  20.8873  20.9306
-    21.0344  21.2506  22.1725  23.0291  23.4908  23.5120  23.6220  23.7464
-    23.9606  24.6392  25.1107  25.1339  25.6725  25.7895  26.0796  26.1304
-    27.1564  27.5013  27.5617  28.1034  28.1535  28.6826  29.0422  29.3623
-    29.4177  29.6924  29.8237  29.9722  30.3966  31.1568  31.6443  31.9152
-    33.1058  33.1772  33.2967  33.5174  33.6567  33.8224  34.4921  34.6289
-    34.6593  35.2299  35.4995  35.8345  35.8935  36.3570  36.3620  36.4771
-    36.6403  37.0835  37.2726  37.6705
+    21.0344  21.2506  22.1725  23.0291
 
           k = 0.7500 0.3937 0.3562 ( 12332 PWs)   bands (ev):
 
@@ -3717,13 +3134,7 @@
     17.8923  17.9175  17.9249  17.9879  18.0361  18.0961  18.1245  18.1528
     18.3691  18.3748  18.4325  18.5001  18.5090  18.5683  18.5885  18.6397
     18.9099  19.0429  19.1727  19.8182  20.4114  20.7716  20.9032  20.9615
-    21.0053  21.2100  22.1853  23.0904  23.4631  23.4938  23.6340  23.7282
-    23.9325  24.6211  25.1111  25.1328  25.7168  25.8292  26.0337  26.0868
-    27.1981  27.4574  27.6043  28.1020  28.1241  28.6602  29.0589  29.3872
-    29.4377  29.7029  29.7954  29.9593  30.3882  31.1455  31.6824  31.8998
-    33.1509  33.2074  33.3164  33.4821  33.6562  33.7221  34.5023  34.6246
-    34.6325  35.2333  35.5433  35.7959  35.8943  36.3617  36.3719  36.5770
-    36.6923  37.0592  37.2063  37.6483
+    21.0053  21.2100  22.1853  23.0904
 
           k = 0.7500 0.3875 0.3625 ( 12329 PWs)   bands (ev):
 
@@ -3742,13 +3153,7 @@
     17.8953  17.9147  17.9255  17.9876  18.0361  18.0974  18.1243  18.1513
     18.3704  18.3744  18.4341  18.4995  18.5094  18.5704  18.5887  18.6404
     18.9099  19.0602  19.1495  19.8190  20.4135  20.8071  20.9126  20.9552
-    21.0161  21.1698  22.1944  23.1461  23.4312  23.4804  23.6472  23.7107
-    23.9133  24.6079  25.1114  25.1320  25.7593  25.8689  25.9903  26.0442
-    27.2402  27.4135  27.6386  28.0971  28.1038  28.6436  29.0711  29.4092
-    29.4493  29.7129  29.7714  29.9499  30.3822  31.1373  31.7223  31.8740
-    33.2014  33.2384  33.3310  33.4543  33.6215  33.6617  34.5100  34.6128
-    34.6213  35.2356  35.5868  35.7558  35.8952  36.3649  36.3795  36.6676
-    36.7391  37.0327  37.1369  37.6320
+    21.0161  21.1698  22.1944  23.1461
 
           k = 0.7500 0.3812 0.3687 ( 12335 PWs)   bands (ev):
 
@@ -3767,13 +3172,7 @@
     17.8977  17.9122  17.9260  17.9874  18.0362  18.0982  18.1243  18.1503
     18.3713  18.3740  18.4351  18.4991  18.5096  18.5717  18.5888  18.6407
     18.9100  19.0772  19.1288  19.8196  20.4147  20.8425  20.9060  20.9361
-    21.0517  21.1299  22.1998  23.1902  23.4010  23.4723  23.6611  23.6943
-    23.9021  24.5998  25.1115  25.1315  25.7956  25.9073  25.9536  26.0038
-    27.2827  27.3699  27.6613  28.0823  28.1015  28.6334  29.0786  29.4262
-    29.4530  29.7235  29.7519  29.9442  30.3786  31.1322  31.7630  31.8409
-    33.2403  33.2711  33.3400  33.4434  33.5386  33.6599  34.5148  34.6006
-    34.6191  35.2370  35.6298  35.7146  35.8957  36.3668  36.3842  36.7390
-    36.7751  37.0148  37.0714  37.6221
+    21.0517  21.1299  22.1998  23.1902
 
           k = 0.7500 0.3750 0.3750 ( 12334 PWs)   bands (ev):
 
@@ -3792,74 +3191,65 @@
     17.8988  17.9111  17.9262  17.9873  18.0362  18.0984  18.1243  18.1499
     18.3717  18.3738  18.4354  18.4990  18.5097  18.5722  18.5887  18.6408
     18.9100  19.0876  19.1174  19.8197  20.4151  20.8750  20.8790  20.9335
-    21.0873  21.0936  22.2016  23.2087  23.3869  23.4696  23.6718  23.6828
-    23.8985  24.5971  25.1115  25.1314  25.8125  25.9289  25.9402  25.9781
-    27.3205  27.3317  27.6693  28.0765  28.1012  28.6300  29.0811  29.4338
-    29.4525  29.7336  29.7387  29.9423  30.3774  31.1306  31.8007  31.8056
-    33.2535  33.2882  33.3433  33.4584  33.4852  33.6597  34.5164  34.5965
-    34.6184  35.2374  35.6700  35.6750  35.8959  36.3674  36.3858  36.7686
-    36.7899  37.0215  37.0281  37.6187
+    21.0873  21.0936  22.2016  23.2087
 
      Writing all to output data dir ./work/pwscf.save/
 
-     init_run     :      1.12s CPU      1.24s WALL (       1 calls)
-     electrons    :    351.02s CPU    362.15s WALL (       1 calls)
+     init_run     :      1.19s CPU      1.31s WALL (       1 calls)
+     electrons    :    242.37s CPU    249.63s WALL (       1 calls)
 
      Called by init_run:
      wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
-     wfcinit:atom :      0.12s CPU      0.14s WALL (     101 calls)
-     wfcinit:wfcr :     18.00s CPU     18.90s WALL (     101 calls)
-     potinit      :      0.46s CPU      0.50s WALL (       1 calls)
-     hinit0       :      0.40s CPU      0.40s WALL (       1 calls)
+     wfcinit:atom :      0.13s CPU      0.14s WALL (     101 calls)
+     wfcinit:wfcr :     14.97s CPU     15.66s WALL (     101 calls)
+     potinit      :      0.50s CPU      0.55s WALL (       1 calls)
+     hinit0       :      0.39s CPU      0.41s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :    351.01s CPU    362.13s WALL (       1 calls)
-     v_of_rho     :      0.02s CPU      0.03s WALL (       1 calls)
+     c_bands      :    242.36s CPU    249.62s WALL (       1 calls)
+     v_of_rho     :      0.03s CPU      0.04s WALL (       1 calls)
      v_h          :      0.00s CPU      0.00s WALL (       1 calls)
-     v_xc         :      0.02s CPU      0.03s WALL (       1 calls)
-     newd         :      0.19s CPU      0.26s WALL (       1 calls)
-     PAW_pot      :      0.15s CPU      0.15s WALL (       1 calls)
+     v_xc         :      0.03s CPU      0.04s WALL (       1 calls)
+     newd         :      0.22s CPU      0.26s WALL (       1 calls)
+     PAW_pot      :      0.20s CPU      0.20s WALL (       1 calls)
 
      Called by c_bands:
-     init_us_2    :      0.11s CPU      0.13s WALL (     101 calls)
-     init_us_2:cp :      0.11s CPU      0.13s WALL (     101 calls)
-     cegterg      :    331.39s CPU    340.85s WALL (     169 calls)
+     init_us_2    :      0.13s CPU      0.14s WALL (     101 calls)
+     init_us_2:cp :      0.13s CPU      0.14s WALL (     101 calls)
+     cegterg      :    225.05s CPU    231.00s WALL (     147 calls)
 
      Called by sum_band:
 
      Called by *egterg:
-     cdiaghg      :     71.26s CPU     72.09s WALL (    2478 calls)
-     cegterg:over :     44.27s CPU     44.78s WALL (    2377 calls)
-     cegterg:upda :     24.94s CPU     25.17s WALL (    2377 calls)
-     cegterg:last :     61.13s CPU     61.93s WALL (     961 calls)
-     cdiaghg:chol :      3.65s CPU      3.67s WALL (    2478 calls)
-     cdiaghg:inve :      0.88s CPU      0.88s WALL (    2478 calls)
-     cdiaghg:para :     14.94s CPU     15.34s WALL (    4956 calls)
-     h_psi        :    119.01s CPU    126.58s WALL (    2647 calls)
-     s_psi        :     15.30s CPU     15.54s WALL (    2647 calls)
-     g_psi        :      0.79s CPU      0.80s WALL (    2377 calls)
+     cdiaghg      :     40.61s CPU     40.66s WALL (    2091 calls)
+     cegterg:over :     28.89s CPU     29.28s WALL (    1990 calls)
+     cegterg:upda :      9.97s CPU     10.01s WALL (    1990 calls)
+     cegterg:last :     25.61s CPU     25.61s WALL (    1011 calls)
+     h_psi        :    103.66s CPU    109.52s WALL (    2238 calls)
+     s_psi        :     13.09s CPU     13.24s WALL (    2238 calls)
+     g_psi        :      0.60s CPU      0.60s WALL (    1990 calls)
 
      Called by h_psi:
-     h_psi:calbec :     22.36s CPU     23.21s WALL (    2647 calls)
-     vloc_psi     :     79.10s CPU     85.66s WALL (    2647 calls)
-     add_vuspsi   :     16.62s CPU     16.73s WALL (    2647 calls)
+     h_psi:calbec :     18.69s CPU     19.48s WALL (    2238 calls)
+     vloc_psi     :     70.25s CPU     75.23s WALL (    2238 calls)
+     add_vuspsi   :     13.99s CPU     14.06s WALL (    2238 calls)
 
      General routines
-     calbec       :     22.35s CPU     23.20s WALL (    2647 calls)
-     fft          :      0.27s CPU      0.27s WALL (      13 calls)
-     ffts         :      0.27s CPU      0.27s WALL (       1 calls)
-     fftw         :     73.31s CPU     79.38s WALL (  355466 calls)
-     interpolate  :      0.27s CPU      0.27s WALL (       1 calls)
+     calbec       :     18.68s CPU     19.47s WALL (    2238 calls)
+     fft          :      0.27s CPU      0.28s WALL (      13 calls)
+     ffts         :      0.26s CPU      0.27s WALL (       1 calls)
+     fftw         :     65.31s CPU     69.93s WALL (  284624 calls)
+     interpolate  :      0.26s CPU      0.27s WALL (       1 calls)
 
      Parallel routines
 
      PAW routines
-     PAW_pot      :      0.15s CPU      0.15s WALL (       1 calls)
+     PAW_pot      :      0.20s CPU      0.20s WALL (       1 calls)
 
-     PWSCF        :   5m54.59s CPU   6m29.82s WALL
+     PWSCF        :   4m 5.42s CPU   4m30.68s WALL
 
 
-   This run was terminated on:  20:17:52  21Sep2023            
+   This run was terminated on:  11:30:45  22Sep2023            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
