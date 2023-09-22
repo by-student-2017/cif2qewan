@@ -1,6 +1,6 @@
 Atom,PeudoPotential,nwan,orbitals
 H,pbe-rrkj_psl.0.1,0,s
-He,pbe-rrkj_psl.0.2.3,1,
+He,pbe-rrkj_psl.0.2.3,1,s
 Li,pbe-s-rrkj_psl.0.2.1,1,s
 Be,pbe-n-rrkj_psl.0.2,0,sp
 B,pbe-n-rrkj_psl.0.1,0,sp
@@ -55,7 +55,7 @@ I,pbe-n-rrkj_psl.0.2,1,p
 Xe,pbe-n-rrkj_psl.0.3.1,6,p
 Cs,pbe-spn-rrkj_psl.0.2.3,1,sp
 Ba,pbe-spn-rrkj_psl.0.2.3,4,s
-La,pbe-spfn-rrkj_psl.1.0.0,4,
+La,pbe-spfn-rrkj_psl.1.0.0,4,spd
 Ce,pbe-spdn-rrkj_psl.1.0.0,4,spd
 Pr,pbe-spdn-rrkj_psl.1.0.0,4,spd
 Nd,pbe-spdn-rrkj_psl.1.0.0,4,spd

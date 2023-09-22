@@ -1,5 +1,5 @@
 # cif2qewan
-cif2qewan.py is a simple python script to create quantum-ESPRESSO and wannier90 inputs from cif files.
+cif2qewan.py is a simple python script to create quantum-ESPRESSO (QE) and wannier90 inputs from cif files.
 
 
 ## Information ######################################
@@ -106,7 +106,7 @@ Here, the code checks the energy difference of DFT and wannier90 on the shifted 
 	% cat check_wannier/CONV
 
 wannier_conv.py calculates the energy differences and outputs the result in check_wannier/CONV.
-average diff means \delta defined by
+ "average diff" means $$ \delta $$ defined by
 
 $$ \delta^2 = \frac{1}{N} \sum_{n,k} (e_{n,k}^{DFT} - e_{n,k}^{Wannier})^2 $$
 
