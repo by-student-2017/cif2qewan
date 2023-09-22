@@ -90,14 +90,19 @@ echo "set dis_froz_max = EF + ${Expand_E} eV from nscf.out"
 echo "set dis_froz_min = EF ${Bottom_E_from_EF} eV from nscf.out"
 date
 ef=$(grep Fermi nscf.out | cut -c27-35)
+efu=$(bc -l <<< "$ef + ${Expand_E} + 10")
 ef1=$(bc -l <<< "$ef + ${Expand_E}")
 efb=$(bc -l <<< "$ef + ${Bottom_E_from_EF}")
+sed -i "s/dis_win_max .*/dis_win_max = $efu/g" pwscf.win
+sed -i "s/dis_win_min .*/dis_win_min = $efb/g" pwscf.win
 sed -i "s/dis_froz_max .*/dis_froz_max = $ef1/g" pwscf.win
 sed -i "s/dis_froz_min .*/dis_froz_min = $efb/g" pwscf.win
 echo "--------------------------------"
+grep -n "dis_win_max" pwscf.win
 grep -n "dis_froz_max" pwscf.win
 echo "Fermi energy: "$ef" [eV]"
 grep -n "dis_froz_min" pwscf.win
+grep -n "dis_win_min" pwscf.win
 echo "--------------------------------"
 echo "----------------------------------------------------------------"
 

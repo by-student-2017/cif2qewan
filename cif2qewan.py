@@ -348,6 +348,8 @@ class qe_wannier_in:
 
             fp.write("dis_num_iter = 200\n")
             fp.write("num_iter = 0\n\n")
+            fp.write("dis_win_max = -200\n")
+            fp.write("dis_win_min = -200\n\n")
             fp.write("dis_froz_max = -200\n")
             fp.write("dis_froz_min = -200\n\n")
 
