@@ -1,0 +1,6 @@
+Currently, "primitive cell" is not able to fit the Wannier function well. 
+Although the "conventional cell" fits the Wannier function well, 
+it should be noted that the band dispersion in the "primitive cell" often seen in papers cannot be drawn. 
+I think there is no problem with calculating DOS or other physical properties. 
+If calculation cannot be performed using "primitive cells", 
+the advantage of speeding up will be greatly reduced.
