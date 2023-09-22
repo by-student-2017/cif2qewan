@@ -43,6 +43,9 @@ The two lines immediately after "calculation command:" are from cif2cell, so don
 	% evince band_compare_narrow.eps
 
 
+- Tips for setting calculation conditions: It is recommended to adjust the value of "nwan" in the 3rd column and the trajectory of "orbitals" in the 4th column in "pp_kjpaw_psl100_PBE_user.csv". Adjusting the "number of Kohn-Sham states" of "SCF" and "NSCF" to be close values will shorten the calculation time, and in addition, it will be easier to fit the Wannier function.
+
+
 ## Usage (Step by Step) ######################################
   1. Enter the "cif2qewan" directory.
   
