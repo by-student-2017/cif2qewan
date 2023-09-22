@@ -33,8 +33,8 @@ def get_ef_from_scfout():
     if(ef == 0):
         with open(scfout) as fp:
             for line in fp.readlines():
-            if "Fermi" in line:
-                ef = float(line.split()[-2])
+                if "Fermi" in line:
+                    ef = float(line.split()[-2])
 
     return ef
 

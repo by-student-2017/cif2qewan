@@ -255,19 +255,19 @@ class qe_wannier_in:
             #print("Failed to import seek path.")
             if(self.band_path_type == "P"):
                 print("Simple kpath is used instead. Type P (SC), (ibrav = "+str(self.ibrav)+")")
-                self.tick_labels = ['R','gG','X','M','gG']
+                self.tick_labels = ['R','G','X','M','G']
                 self.tick_locs = [[0.5, 0.5, 0.5], [0.0, 0.0, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.0, 0.0, 0.0]]
             elif(self.band_path_type == "F"):
                 print("Simple kpath is used instead. Type F (FCC), (ibrav = "+str(self.ibrav)+")")
-                self.tick_labels = ['W','L','gG','X','W','K']
+                self.tick_labels = ['W','L','G','X','W','K']
                 self.tick_locs = [[0.5, 0.25, 0.75], [0.0, 0.5, 0.0], [0.0, 0.0, 0.0], [0.0, 0.5, 0.5], [0.75, 0.5, 0.25], [0.75, 0.375, 0.375]]
             elif(self.band_path_type == "I"):
                 print("Simple kpath is used instead. Type I (BCC), (ibrav = "+str(self.ibrav)+")")
-                self.tick_labels = ['gG','H','N','gG','P'] 
+                self.tick_labels = ['G','H','N','G','P'] 
                 self.tick_locs = [[0.0, 0.0, 0.0], [0.5,-0.5, 0.5], [0.0, 0.0, 0.5], [0.0, 0.0, 0.0], [0.25, 0.25, 0.25]]
             elif(self.band_path_type == "H"):
                 print("Simple kpath is used instead. Type H (HCP), (ibrav = "+str(self.ibrav)+")")
-                self.tick_labels = ['gG','M','K','gG','A'] 
+                self.tick_labels = ['G','M','K','G','A'] 
                 self.tick_locs = [[0.0, 0.0, 0.0], [0.5, 0.0, 0.0], [0.333, 0.333, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.5]]
             else:
                 print("Simple kpath is used instead. (ibrav = "+str(self.ibrav)+")")
