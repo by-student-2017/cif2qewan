@@ -35,6 +35,10 @@ echo "----------------------------------------------------------------"
 echo "cif2qewan calculation"
 echo "python3 $CIF2QEWAN_DIR/cif2qewan.py *.cif $TOML_FILE"
 date
+echo "----Note-------------------------------------"
+echo "The two lines immediately below [calculation command:] are "
+echo "the output of [cif2cell-informal_py3], so ignore them."
+echo "---------------------------------------------"
 python3 $CIF2QEWAN_DIR/cif2qewan.py *.cif $TOML_FILE
 echo "----------------------------------------------------------------"
 
