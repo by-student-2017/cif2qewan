@@ -1,6 +1,6 @@
 cif2cell_path = "cif2cell"
-pseudo_dir="./../../pseudo/psl100_PBEsol"
-pp_file_name = "./../../pp_psl_csv/pp_kjpaw_psl100_PBEsol_user.csv"
+pseudo_dir="./../../pseudo/psl100_PBE"
+pp_file_name = "./../../pp_psl_csv/pp_kjpaw_psl100_PBE_user.csv"
 scf_k_resolution=0.4   #  0.2:DOS, 0.3:SCF, 0.4:rough calculations
 degauss=0.01           #  0.0:default value
 conv_thr="0.0"         # "0.0" is auto (value of cif2cell-infromal_py3)
