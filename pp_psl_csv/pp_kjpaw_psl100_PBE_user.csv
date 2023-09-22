@@ -48,14 +48,14 @@ Pd,pbe-n-kjpaw_psl.1.0.0,0,sd
 Ag,pbe-dn-kjpaw_psl.1.0.0,0,sd
 Cd,pbe-dn-kjpaw_psl.1.0.0,5,sp
 In,pbe-dn-kjpaw_psl.1.0.0,5,sp
-Sn,pbe-dn-kjpaw_psl.1.0.0,5,sp
+Sn,pbe-dn-kjpaw_psl.1.0.0,6,p
 Sb,pbe-n-kjpaw_psl.1.0.0,0,sp
 Te,pbe-dn-kjpaw_psl.1.0.0,6,p
 I,pbe-n-kjpaw_psl.1.0.0,1,p
 Xe,pbe-n-kjpaw_psl.1.0.0,6,p
 Cs,pbe-spn-kjpaw_psl.1.0.0,1,sp
 Ba,pbe-spn-kjpaw_psl.1.0.0,4,s
-La,pbe-spfn-kjpaw_psl.1.0.0,4,d
+La,pbe-spfn-kjpaw_psl.1.0.0,4,
 Ce,pbe-spdn-kjpaw_psl.1.0.0,4,d
 Pr,pbe-spdn-kjpaw_psl.1.0.0,4,d
 Nd,pbe-spdn-kjpaw_psl.1.0.0,4,d
