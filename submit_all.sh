@@ -8,7 +8,7 @@ TOML_FILE=./../../cif2qewan.toml
 #----------------------------------------------------------------------
 # For dis_froz_max = EF + ${Expand_E} eV from nscf.out, Expand_E is about 1.0 to 3.0 [eV].
 Expand_E=1.0
-# For dis_froz_max = EF ${Bottom_E_from_EF} eV from nscf.out, Bottom_E_from_EF is about -12.0 [eV]
+# For dis_froz_min = EF ${Bottom_E_from_EF} eV from nscf.out, Bottom_E_from_EF is about -12.0 [eV]
 Bottom_E_from_EF=-12.0
 #----------------------------------------------------------------------
 # 0 is auto setting
@@ -87,13 +87,15 @@ echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
 echo "set dis_froz_max = EF + ${Expand_E} eV from nscf.out"
-echo "set dis_froz_max = EF ${Bottom_E_from_EF} eV from nscf.out"
+echo "set dis_froz_min = EF ${Bottom_E_from_EF} eV from nscf.out"
 date
 ef=$(grep Fermi nscf.out | cut -c27-35)
 ef1=$(bc -l <<< "$ef + ${Expand_E}")
 efb=$(bc -l <<< "$ef + ${Bottom_E_from_EF}")
 sed -i "s/dis_froz_max .*/dis_froz_max = $ef1/g" pwscf.win
 sed -i "s/dis_froz_min .*/dis_froz_min = $efb/g" pwscf.win
+grep -n "dis_froz_max" pwscf.win
+grep -n "dis_froz_min" pwscf.win
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
