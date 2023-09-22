@@ -6,7 +6,7 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO (QE) and wanni
 - Tests: QE 7.2 + Python 3.10 on Ubuntu 22.04.1 LTS (WLS2, windows11)
 - Need: cif2cell-informal_py3
 - Other tools (Now not recommend !!!): Seek-path (AttributeError: module 'pymatgen' has no attribute 'Element' )
-- Currently it does not work well with "primitive cells". A "conventional cell" can fit Wannier functions well.
+- There are times when "primitive cells" work well and times when they don't.
 
 
 ## Installation ######################################
