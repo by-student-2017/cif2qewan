@@ -1,0 +1,53 @@
+&control
+  calculation = 'bands'
+  restart_mode = 'from_scratch'
+  prefix = 'pwscf'
+  tstress = .true.
+  tprnfor = .true.
+  pseudo_dir = './../../pseudo/psl100_PBE'
+  outdir = './work'
+  wf_collect = .true.
+  disk_io = 'low'
+  verbosity = 'high'
+/
+&system
+  nbnd = 13
+  ibrav = 0
+  A =    5.75018
+  nat = 2
+  ntyp = 2
+  ecutwfc = 60.0
+  ecutrho = 244.0
+  occupations = 'smearing'
+  smearing = 'm-p'
+  degauss = 0.010
+/
+&electrons
+  mixing_mode = 'plain'
+  mixing_beta = 0.7
+  conv_thr =  1.5e-04 ,
+
+
+/
+CELL_PARAMETERS {alat}
+  0.500000000000000   0.500000000000000   0.000000000000000 
+  0.500000000000000   0.000000000000000   0.500000000000000 
+  0.000000000000000   0.500000000000000   0.500000000000000 
+
+ATOMIC_SPECIES
+  As   74.92100  As.pbe-n-kjpaw_psl.1.0.0.UPF
+  Ga   69.72300  Ga.pbe-dn-kjpaw_psl.1.0.0.UPF 
+
+ATOMIC_POSITIONS {crystal}
+  As   0.250000000000000   0.250000000000000   0.250000000000000 
+  Ga   0.000000000000000   0.000000000000000   0.000000000000000 
+
+K_POINTS {crystal_b}
+6
+   0.5000000000    0.2500000000    0.7500000000    20    !  W
+   0.0000000000    0.5000000000    0.0000000000    20    !  L
+   0.0000000000    0.0000000000    0.0000000000    20    !  G
+   0.0000000000    0.5000000000    0.5000000000    20    !  X
+   0.7500000000    0.5000000000    0.2500000000    20    !  W
+   0.7500000000    0.3750000000    0.3750000000    20    !  K
+
