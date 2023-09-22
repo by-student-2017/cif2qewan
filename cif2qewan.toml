@@ -1,12 +1,12 @@
 cif2cell_path = "cif2cell"
 pseudo_dir="./../../pseudo/psl100_PBE"
 pp_file_name = "./../../pp_psl_csv/pp_kjpaw_psl100_PBE_user.csv"
-scf_k_resolution=0.40  #  0.2:DOS, 0.3:SCF, 0.4:rough calculations
+scf_k_resolution=0.4   #  0.2:DOS, 0.3:SCF, 0.4:rough calculations
 degauss=0.01           #  0.0:default value
 conv_thr="0.0"         # "0.0" is auto (value of cif2cell-infromal_py3)
 mixing_beta=0.7        #  0.0  is auto (value of cif2cell-infromal_py3), 0.7:default value
 num_wann_times=1.00    # self.num_wann * num_wann_times (=num_bands)
 noncolin=".false."     # ".true." for non-collinear spin calculation
-band_path_type="H"     # "P", "F", "I", "H", "X" : P=SC, F=FCC, I=BCC, H=HCP, X=cif2qewan (Tips: Space group symbols and "Pearson symbols" are also helpful.)
+band_path_type="F"     # "P", "F", "I", "H", "X" : P=SC, F=FCC, I=BCC, H=HCP, X=cif2qewan (Tips: Space group symbols and "Pearson symbols" are also helpful.)
 [pw2wan]
 write_unk=".false."    # ".true." for wannier_plot
