@@ -95,6 +95,7 @@ efb=$(bc -l <<< "$ef + ${Bottom_E_from_EF}")
 sed -i "s/dis_froz_max .*/dis_froz_max = $ef1/g" pwscf.win
 sed -i "s/dis_froz_min .*/dis_froz_min = $efb/g" pwscf.win
 grep -n "dis_froz_max" pwscf.win
+echo "Fermi energy: "$ef" [eV]"
 grep -n "dis_froz_min" pwscf.win
 echo "----------------------------------------------------------------"
 
