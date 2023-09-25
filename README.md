@@ -28,19 +28,21 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO (QE) and wanni
 A series of calculations can be performed using "submit_all.sh". "submit_all.sh" and "cif2qewan.toml" are currently working in the directory created in Examples.
 The two lines immediately after "calculation command:" are from cif2cell, so don't worry about it.
 
-	% cd Examples
+	cd Examples
 
-	% cd FeS2
+	cd FeS2
 
-	% cp ./../../submit_all.sh ./
+	cp ./../../submit_all.sh ./
 
-	% chmod +x submit_all.sh
+	chmod +x submit_all.sh
 
-	% ./submit_all.sh
+	./submit_all.sh
 
-	% cd band
+	cd band
 
-	% evince band_compare_narrow.eps
+	evince band_compare_nearEF.eps
+
+	eog band_compare_nearEF.png
 
 
 Tips 1: It is recommended to adjust the value of "nexc" in the 3rd column and the trajectory of "orbitals" in the 4th column in "pp_kjpaw_psl100_PBE_user.csv". Adjusting the "number of Kohn-Sham states" of "SCF" and "NSCF" to be close values will shorten the calculation time, and in addition, it will be easier to fit the Wannier function.
