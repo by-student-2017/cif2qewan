@@ -360,7 +360,15 @@ class qe_wannier_in:
                 fp.write("spinors = .true.\n\n")
 
             fp.write("begin projections\n")
-            fp.write(self.projection_str)
+            random_switch = "no"
+            for pt in self.projection_str:
+                if(pt == "r"):
+                    random_switch = "yes"
+                    print("  Random projection:"+random_switch)
+            if(random_switch == "no"):
+                fp.write(self.projection_str)
+            else:
+                fp.write("random\n")
             fp.write("end projections\n\n")
 
             fp.write("bands_plot = .true.\n")
