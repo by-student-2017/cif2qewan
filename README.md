@@ -89,17 +89,17 @@ Tips 4: "submit_after_nscf.sh" is provided to modify and recalculate wannier90's
 ## Compare band structures of DFT and wannier90 #####
 cif2qewan.py prepares band calculation input files in directory "band".
 
-     % cd band
+	 cd band
 
-     % pw.x < ../scf.in > scf.out
+	 pw.x < ../scf.in > scf.out
 
-	 % pw.x < nscf.in > nscf.out
+	 pw.x < nscf.in > nscf.out
 
-	 % bands.x < band.in > band.out
+	 bands.x < band.in > band.out
 
-	 % cd ..
+	 cd ..
 
-	 % python3 band_comp.py
+	 python3 band_comp.py
 
 Then, you can get the band structure plot of DFT and wannier90.
 
@@ -108,17 +108,17 @@ cif2qewan.py prepares nscf input file for energy diffierence.
 Wannier90 Hamiltonian should reproduce the band energy on the kmesh for wannierzation. (For example, 8x8x8 mesh including gamma point (8 8 8 0 0 0 in QE expression).)
 Here, the code checks the energy difference of DFT and wannier90 on the shifted kmesh. (c.f., 8 8 8 1 1 1 in QE expression))
 
-	% cd check_wannier
+	 cd check_wannier
 
-	% pw.x < ../scf.in > scf.out
+	 pw.x < ../scf.in > scf.out
 
-	% pw.x < nscf.in > nscf.out
+	 pw.x < nscf.in > nscf.out
 
-	% cd ..
+	 cd ..
 
-	% python3 wannier_conv.py
+	 python3 wannier_conv.py
 
-	% cat check_wannier/CONV
+	 cat check_wannier/CONV
 
 wannier_conv.py calculates the energy differences and outputs the result in check_wannier/CONV.
  "average diff" means $\delta$ defined by
