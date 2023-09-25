@@ -81,7 +81,7 @@ echo "$MPI_PREFIX $ESPRESSO_DIR/bin/pw2wannier90.x < pw2wan.in > pw2wan.out"
 date
 export OMP_NUM_THREADS=1
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw2wannier90.x < pw2wan.in > pw2wan.out
-rm -r work
+mv work work_nscf
 echo "output files: pwscf.amn, pwscf.mmn and pwscf.eig"
 echo "----------------------------------------------------------------"
 

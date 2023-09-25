@@ -34,6 +34,12 @@ MPI_PREFIX="mpirun -n $NCORE"
 #----------------------------------------------------------------------
 
 echo "----------------------------------------------------------------"
+echo "restart after NSCF calculation"
+echo "Prepare [work_nscf] as [work]. (mv work_nscf work)"
+mv work_nscf work
+echo "----------------------------------------------------------------"
+
+echo "----------------------------------------------------------------"
 echo "wannier90 settings"
 echo "$WANNIER90_DIR/wannier90.x -pp pwscf"
 grep -n "num_bands" pwscf.win
