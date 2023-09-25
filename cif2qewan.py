@@ -371,6 +371,10 @@ class qe_wannier_in:
                 fp.write("random\n")
             fp.write("end projections\n\n")
 
+            if(random_switch != "no"):
+                fp.write("guiding_centres = .true. \n\n")
+            
+
             fp.write("bands_plot = .true.\n")
             fp.write("write_hr = .true.\n")
             fp.write("write_tb = .true.\n")
