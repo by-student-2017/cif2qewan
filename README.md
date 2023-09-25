@@ -12,9 +12,9 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO (QE) and wanni
 ## Installation ######################################
   1. Install python3, etc, e.g.
 ```
-	 sudo apt update
-	 
-	 sudo apt -y install python3 python3-dev python3-numpy python3-docopt
+sudo apt update
+
+sudo apt -y install python3 python3-dev python3-numpy python3-docopt
 ```
   
   2. Prepare cif2cell-informal_py3. (See for details, https://github.com/by-student-2017/cif2cell-informal_py3.git)
