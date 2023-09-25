@@ -60,16 +60,16 @@ Tips 4: "submit_after_nscf.sh" is provided to modify and recalculate wannier90's
 
 ## Usage (Step by Step) ######################################
   1. Enter the "cif2qewan" directory.
-  
+```
 	 cd cif2qewan
-  
+```
   
   2. Edit pseudo_dir in cif2qewan.py.
   
   3. Edit path settings in cif2qewan.toml.
   
   4. Run.
-
+```
 	 python3 cif2qewan.py *.cif cif2qewan.toml
   
 	 pw.x < scf.in > scf.out
@@ -79,12 +79,14 @@ Tips 4: "submit_after_nscf.sh" is provided to modify and recalculate wannier90's
 	 wannier90.x -pp pwscf
       
 	 pw2wannier90.x < pw2wan.in
+```
 
   5. Edit dis_froz_max in pwscf.win. Recommended value is around EF+1eV ~ EF+3eV.
 
   6. Wannierize.
-  
+```
 	 wannier90.x pwscf
+```
 
 
 ## Compare band structures of DFT and wannier90 #####
