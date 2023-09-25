@@ -7,7 +7,7 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO (QE) and wanni
 - Need: cif2cell-informal_py3
 - Other tools (Now not recommend !!!): Seek-path (AttributeError: module 'pymatgen' has no attribute 'Element' )
 - There are times when "primitive cells" work well and times when they don't.
-
+- Note: The command shown below requires only one "*.cif". A CPU is an example of 10 physical cores (not logical cores).
 
 ## Installation ######################################
   1. Install python3, etc, e.g.
