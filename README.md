@@ -74,9 +74,9 @@ python3 cif2qewan.py *.cif cif2qewan.toml
 
 export OMP_NUM_THREADS=1
 
-mpirun -np 10 pw.x < scf.in > scf.out
+mpirun -np 10 pw.x < scf.in | tee scf.out
 
-mpirun -np 10 pw.x < nscf.in > nscf.out
+mpirun -np 10 pw.x < nscf.in | tee nscf.out
 
 export OMP_NUM_THREADS=5
 
@@ -104,11 +104,11 @@ cif2qewan.py prepares band calculation input files in directory "band".
 
 	 export OMP_NUM_THREADS=1
 
-	 mpirun -np 10 pw.x < ../scf.in > scf.out
+	 mpirun -np 10 pw.x < ../scf.in | tee scf.out
 
-	 mpirun -np 10 pw.x < nscf.in > nscf.out
+	 mpirun -np 10 pw.x < nscf.in | tee nscf.out
 
-	 mpirun -np 10 bands.x < band.in > band.out
+	 mpirun -np 10 bands.x < band.in | tee band.out
 
 	 cd ..
 
@@ -125,9 +125,9 @@ Here, the code checks the energy difference of DFT and wannier90 on the shifted 
 
 	 export OMP_NUM_THREADS=1
 
-	 mpirun -np 10 pw.x < ../scf.in > scf.out
+	 mpirun -np 10 pw.x < ../scf.in | tee scf.out
 
-	 mpirun -np 10 pw.x < nscf.in > nscf.out
+	 mpirun -np 10 pw.x < nscf.in | tee nscf.out
 
 	 cd ..
 
