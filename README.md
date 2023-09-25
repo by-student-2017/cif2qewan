@@ -25,7 +25,7 @@ git clone https://github.com/by-student-2017/cif2qewan.git
 ```
 
 
-## Bash script: submit_all.sh (Examples: FeS2) ######################################
+## Bash script: submit_all.sh (Examples: FeS<sub>2</sub>) ######################################
 A series of calculations can be performed using "submit_all.sh". "submit_all.sh" and "cif2qewan.toml" are currently working in the directory created in Examples.
 The two lines immediately after "calculation command:" are from cif2cell, so don't worry about it.
 
