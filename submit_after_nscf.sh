@@ -7,9 +7,9 @@ CIF2QEWAN_DIR=./../../
 TOML_FILE=./../../cif2qewan.toml
 #----------------------------------------------------------------------
 # For dis_froz_max = EF + ${Expand_E} eV from nscf.out, Expand_E is about 1.0 to 3.0 [eV].
-Expand_E=1.0
+#Expand_E=1.0
 # For dis_froz_min = EF ${Bottom_E_from_EF} eV from nscf.out, Bottom_E_from_EF is about -12.0 [eV]
-Bottom_E_from_EF=-12.0
+#Bottom_E_from_EF=-12.0
 #----------------------------------------------------------------------
 # 0 is auto setting
 NCORE=0
@@ -58,22 +58,19 @@ echo "$MPI_PREFIX $ESPRESSO_DIR/bin/pw2wannier90.x < pw2wan.in > pw2wan.out"
 date
 export OMP_NUM_THREADS=1
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw2wannier90.x < pw2wan.in > pw2wan.out
-rm -r work
+mv work work_nscf
 echo "output files: pwscf.amn, pwscf.mmn and pwscf.eig"
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
-echo "set dis_froz_max = EF + ${Expand_E} eV from nscf.out"
-echo "set dis_froz_min = EF ${Bottom_E_from_EF} eV from nscf.out"
+#echo "set dis_froz_max = EF + ${Expand_E} eV from nscf.out"
+#echo "set dis_froz_min = EF ${Bottom_E_from_EF} eV from nscf.out"
 date
 ef=$(grep Fermi nscf.out | cut -c27-35)
-efu=$(bc -l <<< "$ef + ${Expand_E} + 20")
-ef1=$(bc -l <<< "$ef + ${Expand_E}")
-efb=$(bc -l <<< "$ef + ${Bottom_E_from_EF}")
 #sed -i "s/dis_win_max .*/dis_win_max = $efu/g" pwscf.win
 #sed -i "s/dis_win_min .*/dis_win_min = $efb/g" pwscf.win
-sed -i "s/dis_froz_max .*/dis_froz_max = $ef1/g" pwscf.win
-sed -i "s/dis_froz_min .*/dis_froz_min = $efb/g" pwscf.win
+#sed -i "s/dis_froz_max .*/dis_froz_max = $ef1/g" pwscf.win
+#sed -i "s/dis_froz_min .*/dis_froz_min = $efb/g" pwscf.win
 echo "--------------------------------"
 #grep -n "dis_win_max" pwscf.win
 grep -n "dis_froz_max" pwscf.win
@@ -99,7 +96,7 @@ echo "$MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out"
 date
 cd check_wannier
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out
-rm -r work
+#rm -r work
 cd ../
 echo "----------------------------------------------------------------"
 
@@ -110,17 +107,17 @@ date
 python3 $CIF2QEWAN_DIR/wannier_conv.py
 echo "----------------------------------------------------------------"
 
-echo "----------------------------------------------------------------"
-echo "Band calculation"
-echo "$MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out"
-echo "$MPI_PREFIX $ESPRESSO_DIR/bin/bands.x < band.in > band.out"
-date
-cd band
-$MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out
-$MPI_PREFIX $ESPRESSO_DIR/bin/bands.x < band.in > band.out
-rm -r work
-cd ../
-echo "----------------------------------------------------------------"
+#echo "----------------------------------------------------------------"
+#echo "Band calculation"
+#echo "$MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out"
+#echo "$MPI_PREFIX $ESPRESSO_DIR/bin/bands.x < band.in > band.out"
+#date
+#cd band
+#$MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out
+#$MPI_PREFIX $ESPRESSO_DIR/bin/bands.x < band.in > band.out
+#rm -r work
+#cd ../
+#echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
 echo "band_comp calculation"

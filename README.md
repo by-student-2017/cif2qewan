@@ -52,6 +52,9 @@ Tips 2: If the pseudopotential file name is "spn", the value of "nexc" in the th
 Tips 3: Adding "r" to "orbitals" in "csv" file changed it to "random". However, the Wannier function does not fit well. "GaAs" didn't work either."Random" doesn't go so well that I think it's a miracle that "Si" goes well.
 
 
+Tips 4: "submit_after_nscf.sh" is provided to modify and recalculate wannier90's pwscf.win (projection, etc.).
+
+
 ## Usage (Step by Step) ######################################
   1. Enter the "cif2qewan" directory.
   

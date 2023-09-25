@@ -122,7 +122,7 @@ echo "$MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out"
 date
 cd check_wannier
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw.x < nscf.in > nscf.out
-rm -r work
+#rm -r work
 cd ../
 echo "----------------------------------------------------------------"
 
