@@ -155,6 +155,12 @@ $$ \delta^2 = \frac{1}{N} \sum_{n,k} (e_{n,k}^{DFT} - e_{n,k}^{Wannier})^2 $$
 	 http://theossrv1.epfl.ch/Main/Pseudopotentials
 
 
+## Clean ######################################
+	cp ./../../clean_all.sh ./
+
+	./clean_all.sh
+
+
 ## Reference ######################################
 
 - [Iron-based binary ferromagnets for transverse thermoelectric conversion,  A. Sakai, S. Minami, T. Koretsune et al. Nature 581 53-57 (2020)](https://doi.org/10.1038/s41586-020-2230-z)
