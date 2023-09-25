@@ -7,7 +7,7 @@ cif2qewan.py is a simple python script to create quantum-ESPRESSO (QE) and wanni
 - Need: cif2cell-informal_py3
 - Other tools (Now not recommend !!!): Seek-path (AttributeError: module 'pymatgen' has no attribute 'Element' )
 - There are times when "primitive cells" work well and times when they don't.
-- Adding "r" to "orbitals" in "csv" file changed it to "random". However, the Wannier function does not fit well. "GaAs" didn't work either.
+- Adding "r" to "orbitals" in "csv" file changed it to "random". However, the Wannier function does not fit well. "GaAs" didn't work either."Random" doesn't go so well that I think it's a miracle that "Si" goes well.
 
 
 ## Installation ######################################
