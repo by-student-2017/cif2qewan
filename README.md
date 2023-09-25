@@ -141,6 +141,17 @@ wannier_conv.py calculates the energy differences and outputs the result in chec
 $$ \delta^2 = \frac{1}{N} \sum_{n,k} (e_{n,k}^{DFT} - e_{n,k}^{Wannier})^2 $$
 
 
+## PC specs used for operation test ######################################
++ XPS 8950
++ OS: Microsoft Windows 11 Home 64 bit
++ BIOS: 1.14.0
++ CPU： 12th Gen Intel(R) Core(TM) i7-12700
++ Base Board：0R6PCT (A01)
++ Memory：32 GB
++ GPU: NVIDIA GeForce RTX3070
++ WSL2: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+
+
 ## Reference ######################################
 
 - [Iron-based binary ferromagnets for transverse thermoelectric conversion,  A. Sakai, S. Minami, T. Koretsune et al. Nature 581 53-57 (2020)](https://doi.org/10.1038/s41586-020-2230-z)
