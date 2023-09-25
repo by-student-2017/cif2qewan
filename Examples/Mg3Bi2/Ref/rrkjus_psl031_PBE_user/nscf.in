@@ -1,0 +1,55 @@
+&control
+  calculation = 'bands'
+  restart_mode = 'from_scratch'
+  prefix = 'pwscf'
+  tstress = .true.
+  tprnfor = .true.
+  pseudo_dir = './../../pseudo/psl031_PBE'
+  outdir = './work'
+  wf_collect = .true.
+  disk_io = 'low'
+  verbosity = 'high'
+/
+&system
+  nbnd = 30
+  ibrav = 0
+  A =    4.72210
+  nat = 5
+  ntyp = 2
+  ecutwfc = 31.0
+  ecutrho = 443.0
+  occupations = 'smearing'
+  smearing = 'm-p'
+  degauss = 0.010
+/
+&electrons
+  mixing_mode = 'plain'
+  mixing_beta = 0.7
+  conv_thr =  3.7e-04 ,
+
+
+/
+CELL_PARAMETERS {alat}
+  0.866025403784439  -0.500000000000000   0.000000000000000 
+  0.000000000000000   1.000000000000000   0.000000000000000 
+  0.000000000000000   0.000000000000000   1.577467016793376 
+
+ATOMIC_SPECIES
+  Bi  208.98000  Bi.pbe-dn-rrkjus_psl.0.2.2.UPF
+  Mg   24.30500  Mg.pbe-n-rrkjus_psl.0.3.0.UPF 
+
+ATOMIC_POSITIONS {crystal}
+  Bi   0.333333333333333   0.666666666666667   0.220667000000000 
+  Bi   0.666666666666667   0.333333333333333   0.779333000000000 
+  Mg   0.333333333333333   0.666666666666667   0.629136000000000 
+  Mg   0.666666666666667   0.333333333333333   0.370864000000000 
+  Mg   0.000000000000000   0.000000000000000   0.000000000000000 
+
+K_POINTS {crystal_b}
+5
+   0.0000000000    0.0000000000    0.0000000000    20    !  G
+   0.5000000000    0.0000000000    0.0000000000    20    !  M
+   0.3330000000    0.3330000000    0.0000000000    20    !  K
+   0.0000000000    0.0000000000    0.0000000000    20    !  G
+   0.0000000000    0.0000000000    0.5000000000    20    !  A
+
