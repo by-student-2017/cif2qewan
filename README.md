@@ -156,7 +156,7 @@ $$ \delta^2 = \frac{1}{N} \sum_{n,k} (e_{n,k}^{DFT} - e_{n,k}^{Wannier})^2 $$
 
 
 ## Clean and Calculation ######################################
-If "cif_scf.in" remains, the input file will not be updated, so use "clean_all.sh".
+If "cif_scf.in" remains, the input file will not be updated, so use "clean_all.sh."
 
 	cp ./../../clean_all.sh ./
 
