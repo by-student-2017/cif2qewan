@@ -142,7 +142,6 @@ $$ \delta^2 = \frac{1}{N} \sum_{n,k} (e_{n,k}^{DFT} - e_{n,k}^{Wannier})^2 $$
 
 
 ## PC specs used for test ######################################
-+ XPS 8950
 + OS: Microsoft Windows 11 Home 64 bit
 + BIOS: 1.14.0
 + CPU： 12th Gen Intel(R) Core(TM) i7-12700
