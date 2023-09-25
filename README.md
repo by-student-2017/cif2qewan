@@ -155,10 +155,17 @@ $$ \delta^2 = \frac{1}{N} \sum_{n,k} (e_{n,k}^{DFT} - e_{n,k}^{Wannier})^2 $$
 	 http://theossrv1.epfl.ch/Main/Pseudopotentials
 
 
-## Clean ######################################
+## Clean and Calculation ######################################
+If "cif_scf.in" remains, the input file will not be updated, so use "clean_all.sh".
 	cp ./../../clean_all.sh ./
 
 	./clean_all.sh
+
+
+You can perform the calculation as follows.
+
+
+	./submit_all.sh
 
 
 ## Reference ######################################
