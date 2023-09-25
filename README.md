@@ -71,20 +71,28 @@ cd cif2qewan
   4. Run.
 ```
 python3 cif2qewan.py *.cif cif2qewan.toml
-  
-pw.x < scf.in > scf.out
-      
-pw.x < nscf.in > nscf.out
-      
+
+export OMP_NUM_THREADS=1
+
+mpirun -np 10 pw.x < scf.in > scf.out
+
+mpirun -np 10 pw.x < nscf.in > nscf.out
+
+export OMP_NUM_THREADS=5
+
 wannier90.x -pp pwscf
-      
-pw2wannier90.x < pw2wan.in
+
+export OMP_NUM_THREADS=1
+
+mpirun -np 10 pw2wannier90.x < pw2wan.in
 ```
 
   5. Edit dis_froz_max in pwscf.win. Recommended value is around EF+1eV ~ EF+3eV.
 
   6. Wannierize.
 ```
+export OMP_NUM_THREADS=5
+
 wannier90.x pwscf
 ```
 
@@ -94,11 +102,13 @@ cif2qewan.py prepares band calculation input files in directory "band".
 
 	 cd band
 
-	 pw.x < ../scf.in > scf.out
+	 export OMP_NUM_THREADS=1
 
-	 pw.x < nscf.in > nscf.out
+	 mpirun -np 10 pw.x < ../scf.in > scf.out
 
-	 bands.x < band.in > band.out
+	 mpirun -np 10 pw.x < nscf.in > nscf.out
+
+	 mpirun -np 10 bands.x < band.in > band.out
 
 	 cd ..
 
@@ -113,9 +123,11 @@ Here, the code checks the energy difference of DFT and wannier90 on the shifted 
 
 	 cd check_wannier
 
-	 pw.x < ../scf.in > scf.out
+	 export OMP_NUM_THREADS=1
 
-	 pw.x < nscf.in > nscf.out
+	 mpirun -np 10 pw.x < ../scf.in > scf.out
+
+	 mpirun -np 10 pw.x < nscf.in > nscf.out
 
 	 cd ..
 
