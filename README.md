@@ -49,7 +49,7 @@ The two lines immediately after "calculation command:" are from cif2cell, so don
 Tips 1: It is recommended to adjust the value of "nexc" in the 3rd column and the trajectory of "orbitals" in the 4th column in "pp_kjpaw_psl100_PBE_user.csv". Adjusting the "number of Kohn-Sham states" of "SCF" and "NSCF" to be close values will shorten the calculation time, and in addition, it will be easier to fit the Wannier function.
 
 
-Tips 2: If the pseudopotential file name is "spn", the value of "nexc" in the third column of "pp_kjpaw_psl100_PBE_user.csv" starts from 4 (=(s+p)/2=(2+6)/2), and then , increase or decrease to find the best fit. Think of "dn" in the same way (e.g., 5=d/2=10/2 (for projections:s,p), 6=(d+s)/2=(10+2)/2 (for projections:p), 0 (for projections:d)).
+Tips 2: If the pseudopotential file name is "spn", the value of "nexc" in the third column of "pp_kjpaw_psl100_PBE_user.csv" starts from 4 (=(s+p)/2=(2+6)/2), and then , increase or decrease to find the best fit. Think of "dn" in the same way (e.g., 5=d/2=10/2 (for projections:s,p), 6=(d+s)/2=(10+2)/2 (for projections:p), 0 (for projections:d)). The s, p, and d in the pseudopotential name mean that the semicore is included in the valence in the calculation. Therefore, it is necessary to remove it with "nexc", so this kind of processing is performed.
 
 
 Tips 3: Adding "r" to "orbitals" in "csv" file changed it to "random". However, the Wannier function does not fit well. "GaAs" didn't work either."Random" doesn't go so well that I think it's a miracle that "Si" goes well.
