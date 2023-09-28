@@ -403,7 +403,7 @@ class qe_wannier_in:
             elif(self.postw90_task.lower () == "shc"):
                 #------------------------------------
                 # spin Hall conductivity
-                fp.write("!!! -- Begin of spin Hall conductivity input -- !!!\n")
+                fp.write("!!! -- Begin of spin Hall conductivity (SHC) input -- !!!\n")
                 fp.write("berry = true\n")
                 fp.write("berry_task = shc\n")
                 fp.write("berry_kmesh =  25 25 25\n")
@@ -432,7 +432,7 @@ class qe_wannier_in:
                 fp.write("kslice_b2     = 0.3535 1.0606 0.0000\n")
                 fp.write("kslice_2dkmesh = 200 200\n")
                 fp.write("!!! -- End of Berry curvature-like term input -- !!!\n")
-                fp.write("!!! -- End of spin Hall conductivity input -- !!!\n")
+                fp.write("!!! -- End of spin Hall conductivity (SHC) input -- !!!\n")
                 fp.write("\n")
                 #------------------------------------
             elif(self.postw90_task.lower () == "achc"):
@@ -471,7 +471,7 @@ class qe_wannier_in:
             elif(self.postw90_task.lower () == "ahc"):
                 #------------------------------------
                 # anomalous Hall conductivity (berry_task=ahc)
-                fp.write("!!! -- Begin of anomalous Hall conductivity input -- !!!\n")
+                fp.write("!!! -- Begin of anomalous Hall conductivity (AHC) input -- !!!\n")
                 fp.write("berry = true\n")
                 fp.write("berry_task = ahc\n")
                 fp.write("berry_kmesh = 25 25 25\n")
@@ -486,7 +486,7 @@ class qe_wannier_in:
                 fp.write("kslice_b1     = 0.5 -0.5 -0.5\n")
                 fp.write("kslice_b2     = 0.5  0.5  0.5\n")
                 fp.write("kslice_2dkmesh = 200 200\n")
-                fp.write("!!! -- End of anomalous Hall conductivity input -- !!!\n")
+                fp.write("!!! -- End of anomalous Hall conductivity (AHC) input -- !!!\n")
                 fp.write("\n")
                 #------------------------------------
             elif(self.postw90_task.lower () == "opt"):

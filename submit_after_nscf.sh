@@ -40,7 +40,7 @@ mv work_nscf work
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
-echo "wannier90 settings"
+echo "wannier90 settings (To generate a list of the required overlaps (written into the pwscf.nnkp))"
 echo "$WANNIER90_DIR/wannier90.x -pp pwscf"
 grep -n "num_bands" pwscf.win
 grep -n "num_wann" pwscf.win
@@ -53,7 +53,8 @@ echo "Note: nscf results + pwscf.win -> pwscf.nnkp"
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
-echo "pw2wannier90 calculation"
+echo "pw2wannier90 calculation (To compute the overlaps between Bloch states and"
+echo "  the projections for the starting guess (pwscf.amn and pwscf.mmn))"
 echo "$MPI_PREFIX $ESPRESSO_DIR/bin/pw2wannier90.x < pw2wan.in > pw2wan.out"
 date
 export OMP_NUM_THREADS=1
@@ -87,7 +88,7 @@ echo "--------------------------------"
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
-echo "wannier90 calculation"
+echo "wannier90 calculation (To compute the Maximally-Localised Wannier Functions (MLWFs))"
 echo "$WANNIER90_DIR/wannier90.x pwscf"
 date
 export OMP_NUM_THREADS=$WANNIER90_OMP
