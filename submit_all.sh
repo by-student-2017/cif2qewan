@@ -153,6 +153,14 @@ python3 $CIF2QEWAN_DIR/band_comp.py
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"
+echo "postw90 calculation"
+echo "$MPI_PREFIX $ESPRESSO_DIR/bin/postw90.x pwscf"
+date
+export OMP_NUM_THREADS=1
+$MPI_PREFIX $ESPRESSO_DIR/bin/postw90.x pwscf
+echo "----------------------------------------------------------------"
+
+echo "----------------------------------------------------------------"
 echo "End"
 date
 echo $'\a' # If you want to play the ending sound, delete the "#" at the beginning of this sentence.
