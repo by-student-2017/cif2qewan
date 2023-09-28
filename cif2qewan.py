@@ -30,6 +30,7 @@ class qe_wannier_in:
         self.num_wann_times = info["num_wann_times"]
         self.noncolin     = info["noncolin"]
         self.band_path_type = info["band_path_type"]
+        self.symmetry_flag = info["symmetry_flag"]
         self.postw90_task = info["postw90_task"]
         self.info_pw2wan  = info["pw2wan"]
 
@@ -336,6 +337,8 @@ class qe_wannier_in:
             fp.write(" write_mmn = .true.\n")
             fp.write(" write_amn = .true.\n")
             fp.write(" write_unk = {}\n".format(info["write_unk"]))
+            if(self.postw90_task == "sym"):
+                fp.write(" read_sym = .true.\n")
             fp.write("/\n")
 
     def write_wannier(self, wannier_in):
@@ -365,10 +368,10 @@ class qe_wannier_in:
                 fp.write("!!! --- End of BoltzWann input --- !!!\n")
                 fp.write("\n")
                 #------------------------------------
-            elif(self.postw90_task.lower () == "lcr"):
+            elif(self.postw90_task.lower () == "bulk"):
                 #------------------------------------
-                # LCR transport
-                fp.write("!!! -- Begin of LCR transport input -- !!!\n")
+                # transport
+                fp.write("!!! -- Begin of bulk transport input -- !!!\n")
                 fp.write("transport = .true.\n")
                 fp.write("transport_mode = bulk\n")
                 fp.write("one_dim_axis = z\n")
@@ -377,6 +380,23 @@ class qe_wannier_in:
                 fp.write("tran_energy_step = 0.01\n")
                 fp.write("translation_centre_frac = 0.0 0.0 0.5\n")
                 fp.write("tran_num_bb=50\n")
+                fp.write("!!! --- End of bulk transport input --- !!!\n")
+                fp.write("\n")
+                #------------------------------------
+            elif(self.postw90_task.lower () == "lcr"):
+                #------------------------------------
+                # LCR transport
+                fp.write("!!! -- Begin of LCR transport input -- !!!\n")
+                fp.write("transport = .true.\n")
+                fp.write("transport_mode = lcr\n")
+                fp.write("tran_read_ht=.false.\n")
+                fp.write("one_dim_axis = x\n")
+                fp.write("tran_win_min = -5.0\n")
+                fp.write("tran_win_max =  5.0\n")
+                fp.write("tran_energy_step = 0.01\n")
+                fp.write("translation_centre_frac = 0.5 0.5 0.5\n")
+                fp.write("tran_num_ll = 3\n")
+                fp.write("tran_num_cell_ll = 3\n")
                 fp.write("!!! --- End of LCR transport input --- !!!\n")
                 fp.write("\n")
                 #------------------------------------
@@ -385,8 +405,8 @@ class qe_wannier_in:
                 # spin Hall conductivity
                 fp.write("!!! -- Begin of spin Hall conductivity input -- !!!\n")
                 fp.write("berry = true\n")
-                fp.write("berry_task = eval_shc\n")
-                fp.write("berry_kmesh =  25 #100\n")
+                fp.write("berry_task = shc\n")
+                fp.write("berry_kmesh =  25 25 25\n")
                 fp.write("berry_curv_unit = ang2\n")
                 fp.write("#berry_curv_adpt_kmesh = 5\n")
                 fp.write("#berry_curv_adpt_kmesh_thresh = 100.0\n")
@@ -396,20 +416,22 @@ class qe_wannier_in:
                 fp.write("shc_beta  = 2\n")
                 fp.write("shc_gamma = 3\n")
                 fp.write("\n")
+                fp.write("!!! -- Begin of Berry curvature-like term input -- !!!\n")
+                fp.write("#kpath = true\n")
+                fp.write("kpath_task = bands+shc\n")
+                fp.write("kpath_bands_colour = shc\n")
+                fp.write("kpath_num_points = 400\n")
+                fp.write("\n")
                 fp.write("#kubo_adpt_smr = false\n")
                 fp.write("#kubo_smr_fixed_en_width = 1\n")
                 fp.write("\n")
                 fp.write("#kslice = true\n")
                 fp.write("kslice_task = shc+fermi_lines\n")
-                fp.write("kslice_2dkmesh = 400\n")
                 fp.write("kslice_corner = 0.0  0.0  0.0\n")
                 fp.write("kslice_b1     = 1.0  0.0  0.0\n")
                 fp.write("kslice_b2     = 0.3535 1.0606 0.0000\n")
-                fp.write("\n")
-                fp.write("#kpath = true\n")
-                fp.write("kpath_task = bands+shc\n")
-                fp.write("kpath_bands_colour = shc\n")
-                fp.write("kpath_num_points = 400\n")
+                fp.write("kslice_2dkmesh = 200 200\n")
+                fp.write("!!! -- End of Berry curvature-like term input -- !!!\n")
                 fp.write("!!! -- End of spin Hall conductivity input -- !!!\n")
                 fp.write("\n")
                 #------------------------------------
@@ -454,17 +476,43 @@ class qe_wannier_in:
                 fp.write("berry_task = ahc\n")
                 fp.write("berry_kmesh = 25 25 25\n")
                 fp.write("\n")
+                fp.write("kpath = true\n")
+                fp.write("kpath_task = curv\n")
+                fp.write("kpath_num_points=1000\n")
+                fp.write("\n")
                 fp.write("kslice = true\n")
                 fp.write("kslice_task = curv+fermi_lines\n")
-                fp.write("kslice_2dkmesh = 200\n")
                 fp.write("kslice_corner = 0.0  0.0  0.0\n")
                 fp.write("kslice_b1     = 0.5 -0.5 -0.5\n")
                 fp.write("kslice_b2     = 0.5  0.5  0.5\n")
+                fp.write("kslice_2dkmesh = 200 200\n")
+                fp.write("!!! -- End of anomalous Hall conductivity input -- !!!\n")
+                fp.write("\n")
+                #------------------------------------
+            elif(self.postw90_task.lower () == "opt"):
+                #------------------------------------
+                # optical conductivity (berry_task=kubo)
+                fp.write("!!! -- Begin of optical conductivity input -- !!!\n")
+                fp.write("berry = true\n")
+                fp.write("berry_task = kubo\n")
+                fp.write("berry_kmesh = 25 25 25\n")
+                fp.write("\n")
+                fp.write("#kubo_freq_min = 0.0\n")
+                fp.write("kubo_freq_max = 7.0\n")
+                fp.write("#kubo_freq_step = 0.01\n")
+                fp.write("#kubo_eigval_max\n")
                 fp.write("\n")
                 fp.write("kpath = true\n")
                 fp.write("kpath_task = curv\n")
                 fp.write("kpath_num_points=1000\n")
-                fp.write("!!! -- End of anomalous Hall conductivity input -- !!!\n")
+                fp.write("\n")
+                fp.write("kslice = true\n")
+                fp.write("kslice_task = curv+fermi_lines\n")
+                fp.write("kslice_corner = 0.0  0.0  0.0\n")
+                fp.write("kslice_b1     = 0.5 -0.5 -0.5\n")
+                fp.write("kslice_b2     = 0.5  0.5  0.5\n")
+                fp.write("kslice_2dkmesh = 200 200\n")
+                fp.write("!!! -- End of optical conductivity input -- !!!\n")
                 fp.write("\n")
                 #------------------------------------
             elif(self.postw90_task.lower () == "gyro"):
@@ -480,26 +528,23 @@ class qe_wannier_in:
                 fp.write("gyrotropic_smr_max_arg=5\n")
                 fp.write("gyrotropic_band_list=4-9\n")
                 fp.write("gyrotropic_kmesh=50 50 50\n")
-                fp.write("\n")
-                fp.write("uHu_formatted=.true.")
                 fp.write("!!! -- End of gyrotropic effects input -- !!!\n")
-                fp.write("\n")
-                #------------------------------------
-            elif(self.postw90_task.lower () == "opt"):
-                #------------------------------------
-                pass
-            elif(self.postw90_task.lower () == "sym"):
-                #------------------------------------
-                # Symmetry-adapted Wannier functions
-                fp.write("!!! -- Begin of additional input for symmetry-adapted mode input -- !!!\n")
-                fp.write("site_symmetry = .true.\n")
-                fp.write("symmetrize_eps=  1d-3\n")
-                fp.write("!!! -- End of additional input for symmetry-adapted mode input -- !!!\n")
-                fp.write("wannier_plot_supercell = 2\n")
+                fp.write("uHu_formatted=.true.")
                 fp.write("\n")
                 #------------------------------------
             else:
                 pass
+            
+            if(self.symmetry_flag == "on"):
+                #------------------------------------
+                # Symmetry-adapted Wannier functions
+                fp.write("!!! -- Begin of additional input for symmetry-adapted mode input -- !!!\n")
+                fp.write("site_symmetry = .true.\n")
+                fp.write("symmetrize_eps=  1d-6\n")
+                fp.write("!!! -- End of additional input for symmetry-adapted mode input -- !!!\n")
+                fp.write("wannier_plot_supercell = 2\n")
+                fp.write("\n")
+                #------------------------------------
             #------------------------------------
             
             so_factor = 1

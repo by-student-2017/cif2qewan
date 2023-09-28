@@ -23,3 +23,5 @@ rm -f pwscf_hr.dat pwscf_tb.dat pwscf_wsvec.dat
 rm -f -r band
 rm -f -r work_nscf
 rm -f -r check_wannier
+
+rm -f -r pwscf.wpout

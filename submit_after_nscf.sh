@@ -60,6 +60,9 @@ export OMP_NUM_THREADS=1
 $MPI_PREFIX $ESPRESSO_DIR/bin/pw2wannier90.x < pw2wan.in > pw2wan.out
 mv work work_nscf
 echo "output files: pwscf.amn, pwscf.mmn and pwscf.eig"
+echo "pwscf.amn: Projection A^(k) of the Bloch states onto a set of traial localized orbitals"
+echo "pwscf.mmn: The overlap matrices M^(k,b)"
+echo "pwscf.eig: The Bloch eigenvalues at each k-point. For interpolation only."
 echo "----------------------------------------------------------------"
 
 echo "----------------------------------------------------------------"

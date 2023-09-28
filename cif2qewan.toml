@@ -8,6 +8,7 @@ mixing_beta=0.7        #  0.0  is auto (value of cif2cell-infromal_py3), 0.7:def
 num_wann_times=1.00    # self.num_wann * num_wann_times (=num_bands)
 noncolin=".false."     # ".true." for non-collinear spin calculation
 band_path_type="P"     # "P", "F", "I", "H", "X" : P=SC, F=FCC, I=BCC, H=HCP, X=cif2qewan (Tips: Space group symbols and "Pearson symbols" are also helpful.)
-postw90_task="no"      # "no", "boltz", "lrc", "shc", "achc", "ahc" or "sym", etc (Note: these are temperates.)
+symmetry_flag="off"    # "off" or "on" (Now, "on" does not work)
+postw90_task="no"      # "no", "boltz", "bulk", "lrc", "shc", "achc", "ahc" or "opt" (Note: these are temperates.)
 [pw2wan]
 write_unk=".false."    # ".true." for wannier_plot
