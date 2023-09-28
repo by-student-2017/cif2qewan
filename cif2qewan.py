@@ -337,7 +337,7 @@ class qe_wannier_in:
             fp.write(" write_mmn = .true.\n")
             fp.write(" write_amn = .true.\n")
             fp.write(" write_unk = {}\n".format(info["write_unk"]))
-            if(self.postw90_task == "sym"):
+            if(self.symmetry_flag == "on"):
                 fp.write(" read_sym = .true.\n")
             fp.write("/\n")
 
