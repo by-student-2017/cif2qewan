@@ -380,19 +380,7 @@ class qe_wannier_in:
                 fp.write("!!! --- End of LCR transport input --- !!!\n")
                 fp.write("\n")
                 #------------------------------------
-            elif(self.postw90_task.lower () == "berry"):
-                #------------------------------------
-                # Berry curvature
-                fp.write("!!! -- Begin of Berry curvature input -- !!!\n")
-                fp.write("berry = true\n")
-                fp.write("berry_task = eval_shc\n")
-                fp.write("berry_kmesh =  25 #100\n")
-                fp.write("berry_curv_unit = ang2\n")
-                fp.write("#berry_curv_adpt_kmesh = 5\n")
-                fp.write("#berry_curv_adpt_kmesh_thresh = 100.0\n")
-                fp.write("!!! --- End of Berry curvature input --- !!!\n")
-                fp.write("\n")
-            elif(self.postw90_task.lower () == "hall"):
+            elif(self.postw90_task.lower () == "shc"):
                 #------------------------------------
                 # spin Hall conductivity
                 fp.write("!!! -- Begin of spin Hall conductivity input -- !!!\n")
@@ -425,7 +413,7 @@ class qe_wannier_in:
                 fp.write("!!! -- End of spin Hall conductivity input -- !!!\n")
                 fp.write("\n")
                 #------------------------------------
-            elif(self.postw90_task.lower () == "achall"):
+            elif(self.postw90_task.lower () == "achc"):
                 #------------------------------------
                 # ac spin Hall conductivity
                 fp.write("!!! -- Begin of ac spin Hall conductivity input -- !!!\n")
@@ -458,9 +446,9 @@ class qe_wannier_in:
                 fp.write("!!! -- End of ac spin Hall conductivity input -- !!!\n")
                 fp.write("\n")
                 #------------------------------------
-            elif(self.postw90_task.lower () == "ahall"):
+            elif(self.postw90_task.lower () == "ahc"):
                 #------------------------------------
-                # anomalous Hall conductivity
+                # anomalous Hall conductivity (berry_task=ahc)
                 fp.write("!!! -- Begin of anomalous Hall conductivity input -- !!!\n")
                 fp.write("berry = true\n")
                 fp.write("berry_task = ahc\n")
@@ -496,6 +484,10 @@ class qe_wannier_in:
                 fp.write("uHu_formatted=.true.")
                 fp.write("!!! -- End of gyrotropic effects input -- !!!\n")
                 fp.write("\n")
+                #------------------------------------
+            elif(self.postw90_task.lower () == "opt"):
+                #------------------------------------
+                pass
             elif(self.postw90_task.lower () == "sym"):
                 #------------------------------------
                 # Symmetry-adapted Wannier functions
