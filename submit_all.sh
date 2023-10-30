@@ -30,7 +30,7 @@ echo "OpenMP for wannier90.x              : "$NTHRE" threads"
 export OMP_NUM_THREADS=1
 WANNIER90_OMP=$NTHRE
 #----------------------------------------------------------------------
-MPI_PREFIX="mpirun -n $NCORE"
+MPI_PREFIX="mpirun -np $NCORE"
 #----------------------------------------------------------------------
 
 echo "----------------------------------------------------------------"
