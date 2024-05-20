@@ -184,4 +184,3 @@ You can perform the calculation as follows.
 - This project (modified version) is/was partially supported by the following :
   + meguREnergy Co., Ltd.
   + ATSUMITEC Co., Ltd.
-  + RIKEN
